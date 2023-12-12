@@ -1,2 +1,2 @@
-# 2023-MSG-Website
-2023 MSG 지원사이트
+# 2024-MSG-Website
+2024 MSG 지원사이트
