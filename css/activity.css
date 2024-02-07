@@ -1,0 +1,31 @@
+/* 공통 스타일 */
+.title,
+.activity,
+.info,
+.category {
+  margin-bottom: 20px;
+}
+
+/* Title 섹션 스타일 */
+.title {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.title .top-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.title .main-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--gray-color-01);
+}
+
+.title .sub-title {
+  font-size: 32px;
+  color: var(--gray-color-02);
+  margin-top: 10px;
+}
