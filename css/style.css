@@ -1,0 +1,165 @@
+/* 모두가 공통으로 import 해야하는 기초 세팅 파일 */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    /* 변수를 사용할 때는 var(--main-color); 이렇게 사용 */
+    --main-font: 'Pretendard-Regular';
+    
+    --main-color: #2AF598;
+    
+    --background-color-dark: #232324;
+    --gray-color-01: #37373A;
+    --gray-color-02: #74748C;
+    --gray-color-03: #C4C4C4;
+    --gray-color-04: #F2F5F8;
+    --gray-color-05: #F8F9FA;
+    
+    --header-height: 50px;
+    --header-img-width: 35px;
+    
+    --header-font-size: 12px;
+
+    --light-weight: 300;
+    --regular-weight: 600;
+    --bold-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* 폰트는 전역설정 완료 */
+    font-family: var(--main-font);
+    /* height: fit-content; */
+}
+
+a {
+    text-decoration-line: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+}
+
+body {
+    padding-top: var(--header-height);
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 0 7em;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.06);
+}
+
+header>.header-img {
+    /* margin: auto; */
+    width: var(--header-img-width);
+}
+
+header > nav {
+	width:600px;
+	height:100%;
+}
+
+header ul {
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header ul > li {
+    height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+header ul > li > a:link,
+header ul > li > a:visited,
+header ul > li > a:hover,
+header ul > li > a:active,
+header ul > li > button {
+    font-size: var(--header-font-size);
+    color: var(--gray-color-02);
+}
+header ul > li > button {
+    width: 120px;
+    height: 33px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #2AF598;
+    border-radius: 3em;
+}
+
+
+/* footer */
+footer{
+    /* border-top: 1px solid #e4e4e4; */
+    background-color:var(--gray-color-05);
+    width: 100;
+    /* height: 180px; */
+    padding:2rem;
+    /* margin:1rem 0; */
+    text-align: right;
+}
+
+.footer-message{
+    font-weight: bold;
+    font-size:0.9rem;
+    color:#545e6f;
+    margin-bottom:0.3rem;
+    margin:0.6rem;
+}
+.footer-contact,
+.footer-instagram,
+.footer-copyright {
+    font-size:0.9rem;
+    color:#545e6f;
+    margin:0.6rem;
+    margin-top: 1rem;
+}
+.footer-copyright{
+    font-size:0.9rem;
+    color:#545e6f;
+    margin:0.6rem;
+}
+
+/* 스크롤바 안 보이게 하는 것 */
+::-webkit-scrollbar {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
