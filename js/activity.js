@@ -1,3 +1,4 @@
+// swiper
 document.addEventListener("DOMContentLoaded", function () {
   var mySwiper = new Swiper(".swiper-container", {
     slidesPerView: 3,
@@ -28,4 +29,93 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+});
+
+// category
+document.addEventListener("DOMContentLoaded", function () {
+  // 데이터 받아오기
+  var jsonPath = "../data/activity-category-data.json";
+
+  // 카테고리 버튼 가져오기
+  var categoryButtons = document.querySelectorAll(".inner-category p");
+
+  categoryButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var categoryId = button.id;
+
+      // all이면 모든 정보 가져오기
+      if (categoryId === "all") {
+        fetch(jsonPath)
+          .then((response) => response.json())
+          .then((data) => updateInnerBanner(data));
+      } else {
+        fetch(jsonPath)
+          .then((response) => response.json())
+          .then((data) => {
+            var categoryData = data.find(
+              (item) => item.category === categoryId
+            );
+            updateInnerBanner(categoryData.items);
+          });
+      }
+    });
+  });
+
+  function updateInnerBanner(data) {
+    var activityDetails = document.querySelector(".activity-details");
+
+    while (activityDetails.firstChild) {
+      activityDetails.removeChild(activityDetails.firstChild);
+    }
+
+    data.forEach(function (item) {
+      var activityDetail = document.createElement("div");
+      activityDetail.classList.add("activity-detail");
+
+      var topDiv = document.createElement("div");
+      var img = document.createElement("img");
+      img.src = item.img;
+      topDiv.appendChild(img);
+
+      var belowDiv = document.createElement("div");
+      belowDiv.classList.add("below");
+
+      var titleElement = document.createElement("p");
+      titleElement.id = "detail-title";
+      titleElement.textContent = item.title;
+
+      var tag1Element = document.createElement("p");
+      tag1Element.id = "detail-tag";
+      tag1Element.textContent = item["detail-tag"];
+
+      var belowTagDiv = document.createElement("div");
+      belowTagDiv.classList.add("below-tag");
+
+      // 태그 1개, 2개
+      if (item.tag2 === "") {
+        var tag = item.tag1;
+        var newTag = document.createElement("div");
+        newTag.id = "tag";
+        newTag.textContent = tag;
+        belowTagDiv.appendChild(newTag);
+      } else {
+        var tags = [item.tag1, item.tag2];
+        tags.forEach(function (tag) {
+          var newTag = document.createElement("div");
+          newTag.id = "tag";
+          newTag.textContent = tag;
+          belowTagDiv.appendChild(newTag);
+        });
+      }
+
+      belowDiv.appendChild(titleElement);
+      belowDiv.appendChild(tag1Element);
+      belowDiv.appendChild(belowTagDiv);
+
+      activityDetail.appendChild(topDiv);
+      activityDetail.appendChild(belowDiv);
+
+      activityDetails.appendChild(activityDetail);
+    });
+  }
 });
