@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSG ACTIVITY</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/activity.css" />
   </head>
@@ -38,23 +47,177 @@
           </section>
 
           <!-- activity -->
-          <section class="activity">
+          <!-- <section class="activity">
             <div class="inner">
-              <div class="group">
-                <div class="title">
-                  <p class="year">2023</p>
-                  <div class="activity-name">리액트 스터디</div>
-                  <div class="left-icon"></div>
-                  <div class="right-icon"></div>
+              <div class="activity-group swiper-container">
+                <div class="swiper-slide">
+                  <div class="title">
+                    <p class="year">2023</p>
+                    <div class="activity-name">It show</div>
+                  </div>
                   <div class="main-img">
                     <img src="" alt="" />
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="title">
+                    <p class="year">2023</p>
+                    <div class="activity-name">자료구조 스터디</div>
+                  </div>
+                  <div class="main-img">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="title">
+                    <p class="year">2023</p>
+                    <div class="activity-name">회식</div>
+                  </div>
+                  <div class="main-img">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="title">
+                    <p class="year">2023</p>
+                    <div class="activity-name">자바 gui 프로젝트</div>
+                  </div>
+                  <div class="main-img">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="title">
+                    <p class="year">2023</p>
+                    <div class="activity-name">코딩테스트</div>
+                  </div>
+                  <div class="main-img">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+                <span class="icon">
+                  <div class="left-icon">
+                    <img src="./image/activity-left-icon.svg" alt="" />
+                  </div>
+                  <div class="right-icon">
+                    <img src="./image/activity-right-icon.svg" alt="" />
+                  </div>
+                </span>
               </div>
-              <div class="progress"></div>
+              <div class="swiper-pagination">
+                <span class="swiper-pagination-bullet"></span>
+              </div>
+            </div>
+          </section> -->
+
+          <!-- activity -->
+          <section class="activity">
+            <div class="inner">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <!-- 슬라이드 내용 -->
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">It show</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity_your_planet.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">GUI 프로젝트</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">공모전</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity_gongmozon.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">자료구조 스터디</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity_ds_study.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">회식</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity_hoisick.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-next">
+                  <img src="./image/activity-right-icon.svg" alt="" />
+                </div>
+                <div class="swiper-prev">
+                  <img src="./image/activity-left-icon.svg" alt="" />
+                </div>
+              </div>
             </div>
           </section>
 
+          <script>
+            new Swiper(" .swiper-container", {
+              slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
+              spaceBetween: 40, // 슬라이드 사이 여백
+              centeredSlides: true, // 1번 스라이드가 가운데 보이기
+              loop: false, // 반복 재생
+              autoplay: {
+                delay: 5000, // 5초 간격으로 자동 재생
+              },
+              pagination: {
+                el: ".swiper-pagination", // 페이지 번호 요소 선택자
+                clickable: true, // 페이지 번호 클릭 가능 여부
+              },
+              navigation: {
+                prevEl: ".swiper-prev", // 이전 버튼 선택자
+                nextEl: ".swiper-next", // 다음 버튼 선택자
+              },
+              on: {
+                slideChange: function () {
+                  // 현재 활성 슬라이드에 대한 스타일 변경
+                  var activeSlide = this.slides[this.activeIndex];
+                  var allSlides = this.slides;
+
+                  // 기존에 활성화되었던 슬라이드의 스타일 초기화
+                  for (var i = 0; i < allSlides.length; i++) {
+                    allSlides[i].style.transform = "scale(1)";
+                  }
+
+                  // 현재 활성 슬라이드에 대한 스타일 변경
+                  activeSlide.style.transform = "scale(1.2)";
+                },
+              },
+            });
+          </script>
           <!-- info -->
           <section class="info">
             <p class="title">숫자가 보여주는 열정</p>
