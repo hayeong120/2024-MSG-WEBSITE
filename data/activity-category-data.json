@@ -1,0 +1,102 @@
+[
+  {
+    "category": "project",
+    "items": [
+      {
+        "title": "너의 행성은",
+        "img": "",
+        "detail-tag": "#13기#Web",
+        "tag1": "IT쇼",
+        "tag2": "Web"
+      },
+      {
+        "title": "PortFolio",
+        "img": "",
+        "detail-tag": "#12기#App",
+        "tag1": "앱",
+        "tag2": ""
+      },
+      {
+        "title": "소라고동",
+        "img": "",
+        "detail-tag": "#12기#App",
+        "tag1": "앱",
+        "tag2": ""
+      },
+      {
+        "title": "우주 오물오물",
+        "img": "",
+        "detail-tag": "#12기#Game",
+        "tag1": "Unity",
+        "tag2": ""
+      },
+      {
+        "title": "gui 프로젝트",
+        "img": "",
+        "detail-tag": "#14기#Swing",
+        "tag1": "gui",
+        "tag2": "java"
+      }
+    ]
+  },
+  {
+    "category": "study",
+    "items": [
+      {
+        "title": "자료구조 스터디",
+        "img": "",
+        "detail-tag": "#13기#발표",
+        "tag1": "스터디",
+        "tag2": "자료구조"
+      },
+      {
+        "title": "리액트 스터디",
+        "img": "",
+        "detail-tag": "#13기#14기#실습",
+        "tag1": "react",
+        "tag2": "스터디"
+      },
+      {
+        "title": "코딩테스트",
+        "img": "",
+        "detail-tag": "#13기#14기#코테",
+        "tag1": "coding",
+        "tag2": "1일1코테"
+      }
+    ]
+  },
+  {
+    "category": "contest",
+    "items": [
+      {
+        "title": "SmartAppChallenge",
+        "detail-tag": "#13기#14기",
+        "tag1": "가작",
+        "tag2": "수상"
+      },
+      {
+        "title": "",
+        "detail-tag": "#12기",
+        "tag1": "",
+        "tag2": ""
+      }
+    ]
+  },
+  {
+    "category": "etc",
+    "items": [
+      {
+        "title": "회식",
+        "detail-tag": "#12기#13기#14기",
+        "tag1": "회식",
+        "tag2": "미분"
+      },
+      {
+        "title": "마니또",
+        "detail-tag": "#13기#14기",
+        "tag1": "귀요미들",
+        "tag2": "ㅎ"
+      }
+    ]
+  }
+]
