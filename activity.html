@@ -184,40 +184,7 @@
             </div>
           </section>
 
-          <script>
-            new Swiper(" .swiper-container", {
-              slidesPerView: 3, // 한 번에 보여줄 슬라이드 개수
-              spaceBetween: 40, // 슬라이드 사이 여백
-              centeredSlides: true, // 1번 스라이드가 가운데 보이기
-              loop: false, // 반복 재생
-              autoplay: {
-                delay: 5000, // 5초 간격으로 자동 재생
-              },
-              pagination: {
-                el: ".swiper-pagination", // 페이지 번호 요소 선택자
-                clickable: true, // 페이지 번호 클릭 가능 여부
-              },
-              navigation: {
-                prevEl: ".swiper-prev", // 이전 버튼 선택자
-                nextEl: ".swiper-next", // 다음 버튼 선택자
-              },
-              on: {
-                slideChange: function () {
-                  // 현재 활성 슬라이드에 대한 스타일 변경
-                  var activeSlide = this.slides[this.activeIndex];
-                  var allSlides = this.slides;
-
-                  // 기존에 활성화되었던 슬라이드의 스타일 초기화
-                  for (var i = 0; i < allSlides.length; i++) {
-                    allSlides[i].style.transform = "scale(1)";
-                  }
-
-                  // 현재 활성 슬라이드에 대한 스타일 변경
-                  activeSlide.style.transform = "scale(1.2)";
-                },
-              },
-            });
-          </script>
+          <script src="./js/activity.js"></script>
           <!-- info -->
           <section class="info">
             <p class="title">숫자가 보여주는 열정</p>
