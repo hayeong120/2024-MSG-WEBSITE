@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateInnerBanner(data) {
     var activityDetails = document.querySelector(".activity-details");
 
+    // Remove existing child elements
     while (activityDetails.firstChild) {
       activityDetails.removeChild(activityDetails.firstChild);
     }
@@ -72,26 +73,20 @@ document.addEventListener("DOMContentLoaded", function () {
       var activityDetail = document.createElement("div");
       activityDetail.classList.add("activity-detail");
 
-      var topDiv = document.createElement("div");
-      var img = document.createElement("img");
-      img.src = item.img;
-      topDiv.appendChild(img);
-
       var belowDiv = document.createElement("div");
       belowDiv.classList.add("below");
+
+      var spanBelowTop = document.createElement("span");
+      spanBelowTop.classList.add("below-top");
 
       var titleElement = document.createElement("p");
       titleElement.id = "detail-title";
       titleElement.textContent = item.title;
 
-      var tag1Element = document.createElement("p");
-      tag1Element.id = "detail-tag";
-      tag1Element.textContent = item["detail-tag"];
-
       var belowTagDiv = document.createElement("div");
       belowTagDiv.classList.add("below-tag");
 
-      // 태그 1개, 2개
+      // Tags
       if (item.tag2 === "") {
         var tag = item.tag1;
         var newTag = document.createElement("div");
@@ -108,13 +103,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-      belowDiv.appendChild(titleElement);
+      spanBelowTop.appendChild(titleElement);
+      spanBelowTop.appendChild(belowTagDiv);
+      belowDiv.appendChild(spanBelowTop);
+
+      var tag1Element = document.createElement("p");
+      tag1Element.id = "detail-tag";
+      tag1Element.textContent = item["detail-tag"];
       belowDiv.appendChild(tag1Element);
-      belowDiv.appendChild(belowTagDiv);
 
-      activityDetail.appendChild(topDiv);
       activityDetail.appendChild(belowDiv);
-
       activityDetails.appendChild(activityDetail);
     });
   }
