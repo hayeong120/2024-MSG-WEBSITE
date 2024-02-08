@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
     <header>
-        <img src="./image/logo.svg" class="header-img" alt="마이페이지">
+        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="">부원</a></li>
-                <li><a href="">활동</a></li>
-                <li><a href="">QNA</a></li>
+                <li><a href="./index.html" id="current-page" onclick="goPage()">ABOUT</a></li>
+                <li><a href=""  onclick="goPage()" >부원</a></li>
+                <li><a href=""  onclick="goPage()">활동</a></li>
+                <li><a href=""  onclick="goPage()">QNA</a></li>
                 <li><button>15기 지원하기</button></li>
             </ul>
         </nav>
@@ -38,19 +39,16 @@
                         </div>
                         <button>
                             15기 지원하기
-                            <img src="./image/arrow-right-support.svg" alt="">
+                            <img src="./image/arrow-right-support.svg" alt="">                                  
                         </button>
                     </div>
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br><br><br>
-                dddd
-                <hr>
-                <br>
-                <br><br><br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br><br><br><br>
-                d
+                <div class="message-box">
+                    Make 만들고 <br>
+                    Share 공유하고 <br>
+                    Gather 참여하고 
+                </div>
+                
             </div>
         </div>
     </main>
@@ -69,5 +67,5 @@
         </div>
     </footer>
 </body>
-
+<script src="./js/script.js"></script>
 </html>
