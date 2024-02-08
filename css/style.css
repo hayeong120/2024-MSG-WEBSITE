@@ -172,3 +172,7 @@ input:focus,
 button {
     cursor: pointer;
 }
+
+#current-page {
+    color: var(--main-color);
+}
