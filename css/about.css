@@ -32,6 +32,7 @@
 
 .about-page > .container > .txt-box > .title {
     font-size: var(--title-font-size);
+    color: var(--black-color-01);
     font-weight: var(--bold-weight);
     line-height: 2.9vw;
     margin-top: 1vh;
