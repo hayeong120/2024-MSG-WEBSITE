@@ -3,6 +3,9 @@ function goHome() {
 }
 
 // 페이지 방문 시 글자 색 변경
-function goPage() {
-
+function changeFontColor() {
+    // $('.header-menu').click(() => {
+    //     let id = $(this).attr("id");
+    //     alert(id);
+    // });
 }

@@ -1,6 +1,6 @@
 .main-page {
     position: relative;
-    height: calc(100vh - var(--header-height));
+    height: var(--page-height);
     /* background-color: aqua; */
 }
 
@@ -17,7 +17,7 @@
 }
 
 .main-page > .img-box > img {
-    width: 20vw;
+    width: var(--logo-width);
 }
 
 .main-page > .txt-box {

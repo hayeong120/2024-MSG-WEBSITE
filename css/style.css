@@ -19,14 +19,15 @@
     --gray-color-03: #C4C4C4;
     --gray-color-04: #F2F5F8;
     --gray-color-05: #F8F9FA;
-    
-    --header-height: 50px;
-    --header-img-width: 35px;
+    /*  */
+    --header-height: 50px;/* 헤더 높이 */
+    --page-height: calc(100vh - var(--header-height));/* 기본 한 페이지 높이 */
+    --header-img-width: 35px;/* 헤더에 있는 로고 크기 */
+    --logo-width: 21vw;/* 로고 기본 크기 */
     
     --header-font-size: 12px;
-    --title-font-size: 64px;
-    --subtitle-font-size: 40px;
-    --modifier-font-size: 32px;
+    --title-font-size: 2.4vw;
+    --subtitle-font-size: 1.1vw;
     --small-font-size: 24px;
 
     --light-weight: 300;
@@ -90,6 +91,7 @@ header {
 header>.header-img {
     /* margin: auto; */
     width: var(--header-img-width);
+    cursor: pointer;
 }
 
 header > nav {
@@ -173,6 +175,6 @@ button {
     cursor: pointer;
 }
 
-#current-page {
+.clicked {
     color: var(--main-color);
 }
