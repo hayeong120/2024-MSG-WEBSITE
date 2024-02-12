@@ -4,7 +4,7 @@
     /* background-color: aqua; */
 }
 
-.main-page > .img-box {
+.main-page>.img-box {
     position: relative;
     float: left;
     box-sizing: border-box;
@@ -16,11 +16,11 @@
     padding-right: 50px;
 }
 
-.main-page > .img-box > img {
+.main-page>.img-box>img {
     width: var(--logo-width);
 }
 
-.main-page > .txt-box {
+.main-page>.txt-box {
     position: relative;
     float: right;
     box-sizing: border-box;
@@ -32,30 +32,56 @@
     color: var(--gray-color-02);
 }
 
-.main-page > .txt-box > .title {
+.main-page>.txt-box>.title {
     color: var(--main-color);
     font-size: 3.8vw;
     font-weight: var(--regular-weight);
 }
-.main-page > .txt-box > .sub-title {
+
+.main-page>.txt-box>.sub-title {
     font-size: 1vw;
     padding-top: 3vh;
     padding-bottom: 9vh;
     line-height: 1.4vw;
 }
 
-.main-page > .txt-box > button {
+.main-page>.txt-box>button {
     width: 11.5vw;
     font-size: 0.9vw;
     color: var(--gray-color-02);
     background-color: rgba(0, 0, 0, 0);
+    background-color: aqua;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), var(--main-color), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
     border: 1px solid var(--main-color);
     border-radius: 3em;
     padding: 0.6vw 1vw;
     display: flex;
     justify-content: space-between;
 }
-.main-page > .txt-box > button > img {
+
+.main-page>.txt-box>button:hover {
+    width: 11.5vw;
+    border: 1px solid rgba(223, 190, 106, 0);
+    color: white;
+    background-position: 99% 50%;
+    text-align: center;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px -10px var(--gray-color-02);
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+.main-page>.txt-box>button:hover img {
+    opacity: 0; /* 이미지의 투명도를 100%로 설정 */
+}
+
+.main-page>.txt-box>button>img {
     width: 2vw;
     top: 50%;
 }
