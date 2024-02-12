@@ -124,7 +124,7 @@
 
 .swiper-pagination .swiper-pagination-bullet {
   background-color: transparent;
-  background-image: url(../image/promotion_slide_paper.png);
+  background-image: url(../image/activity/promotion_slide_paper.png);
   width: 15px;
   height: 15px;
   left: -400px;
@@ -140,7 +140,7 @@
   width: 70px;
   height: 15px;
   border-radius: 20%;
-  background-image: url("../image/promotion_slide_paper_on.png");
+  background-image: url(../image/activity/promotion_slide_paper_on.png);
 }
 
 .swiper-prev,
@@ -168,30 +168,6 @@
   right: 50%;
   margin-right: -280px;
 }
-
-/* 
-.swiper-button-next {
-  position: absolute;
-  margin-right: 400px;
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin-top: 10px;
-  color: #33333300;
-  background-image: url(../image/activity-right-icon.svg);
-}
-
-.swiper-button-prev {
-  position: absolute;
-  margin-left: 400px;
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin-top: 10px;
-  color: #33333300;
-  background-image: url(../image/activity-left-icon.svg);
-  left: 100px;
-} */
 
 /* Info 섹션 스타일 */
 .info {
@@ -290,31 +266,31 @@
   transition: color 0.5s;
 }
 
-.category .inner-category p:hover {
+.category .inner-category p.underline {
   color: #000000;
   text-decoration: underline;
   text-decoration-color: var(--main-color);
 }
 
 .category .inner-banner {
-  margin-left: 30px;
+  margin-left: 50px;
   margin-top: 50px;
 }
 
 .activity-detail {
   max-width: 100%;
-  background-image: url(../image/activity_your_planet.png);
+  background-image: url(../image/activity/your_planet.png);
   background-size: cover;
   background-position: center; /* Center the background image */
   display: inline-block;
   width: 300px;
   height: 220px;
-  margin-right: 30px;
+  margin-right: 50px;
   border: 1px solid #ddd;
   border-radius: 10%;
-  padding: 10px;
   position: relative;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 .activity-detail img {

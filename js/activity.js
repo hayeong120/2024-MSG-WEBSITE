@@ -39,25 +39,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // 카테고리 버튼 가져오기
   var categoryButtons = document.querySelectorAll(".inner-category p");
 
+  // 초기 상태로 "all" 카테고리를 선택하도록 처리
+  var allCategoryButton = document.querySelector("#all"); // "all" 카테고리 버튼을 찾음
+  allCategoryButton.classList.add("underline"); // 밑줄 스타일을 추가
+  fetch(jsonPath)
+    .then((response) => response.json())
+    .then((data) => {
+      var allCategoryData = data.find((item) => item.category === "all");
+      updateInnerBanner(allCategoryData.items);
+    });
+
   categoryButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-      var categoryId = button.id;
+      categoryButtons.forEach(function (btn) {
+        btn.classList.remove("underline");
+      });
 
-      // all이면 모든 정보 가져오기
-      if (categoryId === "all") {
-        fetch(jsonPath)
-          .then((response) => response.json())
-          .then((data) => updateInnerBanner(data));
-      } else {
-        fetch(jsonPath)
-          .then((response) => response.json())
-          .then((data) => {
-            var categoryData = data.find(
-              (item) => item.category === categoryId
-            );
-            updateInnerBanner(categoryData.items);
-          });
-      }
+      button.classList.add("underline");
+
+      var categoryId = button.id;
+      fetch(jsonPath)
+        .then((response) => response.json())
+        .then((data) => {
+          var categoryData = data.find((item) => item.category === categoryId);
+          updateInnerBanner(categoryData.items);
+        });
     });
   });
 
@@ -68,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
       activityDetails.removeChild(activityDetails.firstChild);
     }
 
-    // TODO :activity-detail에 backgroud로 이미지 추가
     data.forEach(function (item) {
       var activityDetail = document.createElement("div");
       activityDetail.classList.add("activity-detail");
