@@ -19,13 +19,14 @@
     --gray-color-03: #C4C4C4;
     --gray-color-04: #F2F5F8;
     --gray-color-05: #F8F9FA;
-    /*  */
-    --header-height: 50px;/* 헤더 높이 */
+    
+
+    --header-height: 7vh;/* 헤더 높이 */
     --page-height: calc(100vh - var(--header-height));/* 기본 한 페이지 높이 */
-    --header-img-width: 35px;/* 헤더에 있는 로고 크기 */
+    --header-img-width: 2.3vw;/* 헤더에 있는 로고 크기 */
     --logo-width: 21vw;/* 로고 기본 크기 */
     
-    --header-font-size: 12px;
+    --header-font-size: 0.8vw;
     --title-font-size: 2.4vw;
     --subtitle-font-size: 1.1vw;
     --small-font-size: 24px;
@@ -89,13 +90,12 @@ header {
 }
 
 header>.header-img {
-    /* margin: auto; */
     width: var(--header-img-width);
     cursor: pointer;
 }
 
 header > nav {
-	width:600px;
+	width:40vw;
 	height:100%;
 }
 
@@ -121,14 +121,31 @@ header ul > li > button {
     color: var(--gray-color-02);
 }
 header ul > li > button {
-    width: 120px;
-    height: 33px;
-    background-color: rgba(0, 0, 0, 0);
+    width: 8vw;
+    height: 4.5vh;
     border: 1px solid #2AF598;
     border-radius: 3em;
+    color: var(--gray-color-02);
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), var(--main-color), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
 }
 
-
+header ul > li > button:hover {
+    border: 0.1vw solid rgba(223, 190, 106, 0);
+    color: white;
+    background-position: 99% 50%;
+    text-align: center;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px -10px var(--gray-color-02);
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
 /* footer */
 footer{
     /* border-top: 1px solid #e4e4e4; */
