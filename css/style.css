@@ -121,14 +121,31 @@ header ul > li > button {
     color: var(--gray-color-02);
 }
 header ul > li > button {
-    width: 120px;
-    height: 33px;
-    background-color: rgba(0, 0, 0, 0);
+    width: 8vw;
+    height: 4.5vh;
     border: 1px solid #2AF598;
     border-radius: 3em;
+    color: var(--gray-color-02);
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), var(--main-color), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
 }
 
-
+header ul > li > button:hover {
+    border: 1px solid rgba(223, 190, 106, 0);
+    color: white;
+    background-position: 99% 50%;
+    text-align: center;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px -10px var(--gray-color-02);
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
 /* footer */
 footer{
     /* border-top: 1px solid #e4e4e4; */
