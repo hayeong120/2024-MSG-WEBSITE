@@ -64,11 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateInnerBanner(data) {
     var activityDetails = document.querySelector(".activity-details");
 
-    // Remove existing child elements
     while (activityDetails.firstChild) {
       activityDetails.removeChild(activityDetails.firstChild);
     }
 
+    // TODO :activity-detail에 backgroud로 이미지 추가
     data.forEach(function (item) {
       var activityDetail = document.createElement("div");
       activityDetail.classList.add("activity-detail");
@@ -115,5 +115,43 @@ document.addEventListener("DOMContentLoaded", function () {
       activityDetail.appendChild(belowDiv);
       activityDetails.appendChild(activityDetail);
     });
+  }
+});
+
+// info
+document.addEventListener("DOMContentLoaded", function () {
+  // 각 숫자의 최종 값
+  var yearsFinalValue = 14;
+  var meetingsFinalValue = 49;
+  var blogsFinalValue = 447;
+
+  // 애니메이션 시작
+  startCountingAnimation("years", yearsFinalValue);
+  startCountingAnimation("meetings", meetingsFinalValue);
+  startCountingAnimation("blogs", blogsFinalValue);
+
+  function startCountingAnimation(id, finalValue) {
+    var element = document.getElementById(id);
+    var currentValue = 0;
+    var increment = Math.ceil(finalValue / 150); // 애니메이션 단계마다 증가할 값
+
+    function updateValue() {
+      currentValue += increment;
+      element.textContent = currentValue;
+
+      if (currentValue < finalValue) {
+        // 애니메이션 끝까지 도달할 때까지 재귀 호출
+        requestAnimationFrame(updateValue);
+      } else {
+        // 최종 값에 도달하면 애니메이션 클래스 제거
+        element.classList.remove("counting");
+      }
+    }
+
+    // 애니메이션 클래스 추가
+    element.classList.add("counting");
+
+    // 최초 애니메이션 시작
+    updateValue();
   }
 });
