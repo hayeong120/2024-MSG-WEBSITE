@@ -73,6 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
       var activityDetail = document.createElement("div");
       activityDetail.classList.add("activity-detail");
 
+      if (item.img) {
+        activityDetail.style.backgroundImage = `url(${item.img})`;
+      }
+
       var belowDiv = document.createElement("div");
       belowDiv.classList.add("below");
 
