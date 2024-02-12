@@ -39,32 +39,37 @@ document.addEventListener("DOMContentLoaded", function () {
   // 카테고리 버튼 가져오기
   var categoryButtons = document.querySelectorAll(".inner-category p");
 
+  // 초기 상태로 "all" 카테고리를 선택하도록 처리
+  var allCategoryButton = document.querySelector("#all"); // "all" 카테고리 버튼을 찾음
+  allCategoryButton.classList.add("underline"); // 밑줄 스타일을 추가
+  fetch(jsonPath)
+    .then((response) => response.json())
+    .then((data) => {
+      var allCategoryData = data.find((item) => item.category === "all");
+      updateInnerBanner(allCategoryData.items);
+    });
+
   categoryButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-      var categoryId = button.id;
+      categoryButtons.forEach(function (btn) {
+        btn.classList.remove("underline");
+      });
 
-      // all이면 모든 정보 가져오기
-      if (categoryId === "all") {
-        fetch(jsonPath)
-          .then((response) => response.json())
-          .then((data) => updateInnerBanner(data));
-      } else {
-        fetch(jsonPath)
-          .then((response) => response.json())
-          .then((data) => {
-            var categoryData = data.find(
-              (item) => item.category === categoryId
-            );
-            updateInnerBanner(categoryData.items);
-          });
-      }
+      button.classList.add("underline");
+
+      var categoryId = button.id;
+      fetch(jsonPath)
+        .then((response) => response.json())
+        .then((data) => {
+          var categoryData = data.find((item) => item.category === categoryId);
+          updateInnerBanner(categoryData.items);
+        });
     });
   });
 
   function updateInnerBanner(data) {
     var activityDetails = document.querySelector(".activity-details");
 
-    // Remove existing child elements
     while (activityDetails.firstChild) {
       activityDetails.removeChild(activityDetails.firstChild);
     }
@@ -72,6 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
     data.forEach(function (item) {
       var activityDetail = document.createElement("div");
       activityDetail.classList.add("activity-detail");
+
+      if (item.img) {
+        activityDetail.style.backgroundImage = `url(${item.img})`;
+      }
 
       var belowDiv = document.createElement("div");
       belowDiv.classList.add("below");
@@ -115,5 +124,43 @@ document.addEventListener("DOMContentLoaded", function () {
       activityDetail.appendChild(belowDiv);
       activityDetails.appendChild(activityDetail);
     });
+  }
+});
+
+// info
+document.addEventListener("DOMContentLoaded", function () {
+  // 각 숫자의 최종 값
+  var yearsFinalValue = 14;
+  var meetingsFinalValue = 49;
+  var blogsFinalValue = 447;
+
+  // 애니메이션 시작
+  startCountingAnimation("years", yearsFinalValue);
+  startCountingAnimation("meetings", meetingsFinalValue);
+  startCountingAnimation("blogs", blogsFinalValue);
+
+  function startCountingAnimation(id, finalValue) {
+    var element = document.getElementById(id);
+    var currentValue = 0;
+    var increment = Math.ceil(finalValue / 150); // 애니메이션 단계마다 증가할 값
+
+    function updateValue() {
+      currentValue += increment;
+      element.textContent = currentValue;
+
+      if (currentValue < finalValue) {
+        // 애니메이션 끝까지 도달할 때까지 재귀 호출
+        requestAnimationFrame(updateValue);
+      } else {
+        // 최종 값에 도달하면 애니메이션 클래스 제거
+        element.classList.remove("counting");
+      }
+    }
+
+    // 애니메이션 클래스 추가
+    element.classList.add("counting");
+
+    // 최초 애니메이션 시작
+    updateValue();
   }
 });

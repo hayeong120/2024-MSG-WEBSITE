@@ -1,41 +1,147 @@
 [
   {
-    "category": "project",
+    "category": "all",
     "items": [
       {
-        "title": "너의 행성은",
-        "img": "",
-        "detail-tag": "#13기#Web",
-        "tag1": "IT쇼",
-        "tag2": "Web"
-      },
-      {
         "title": "PortFolio",
-        "img": "",
+        "img": "./image/activity/portfolio.png",
         "detail-tag": "#12기#App",
         "tag1": "앱",
-        "tag2": ""
+        "tag2": "",
+        "url": ""
       },
       {
         "title": "소라고동",
-        "img": "",
+        "img": "./image/activity/sora.png",
         "detail-tag": "#12기#App",
         "tag1": "앱",
-        "tag2": ""
+        "tag2": "",
+        "url": ""
       },
       {
         "title": "우주 오물오물",
-        "img": "",
+        "img": "./image/activity/owater.png",
         "detail-tag": "#12기#Game",
         "tag1": "Unity",
-        "tag2": ""
+        "tag2": "",
+        "url": ""
       },
       {
-        "title": "gui 프로젝트",
-        "img": "",
+        "title": "너의 행성은",
+        "img": "./image/activity/your_planet_main.png",
+        "detail-tag": "#13기#Web",
+        "tag1": "IT쇼",
+        "tag2": "Web",
+        "url": ""
+      },
+      {
+        "title": "하루 한장",
+        "img": "./image/activity/dailypaper.png",
         "detail-tag": "#14기#Swing",
         "tag1": "gui",
-        "tag2": "java"
+        "tag2": "java",
+        "url": ""
+      },
+      {
+        "title": "ProMatch",
+        "img": "./image/activity/dailypaper.png",
+        "detail-tag": "#14기#Swing",
+        "tag1": "gui",
+        "tag2": "java",
+        "url": ""
+      },
+      {
+        "title": "자료구조 스터디",
+        "img": "./image/activity/ds_study_main.png",
+        "detail-tag": "#13기#발표",
+        "tag1": "자료구조",
+        "tag2": "",
+        "url": ""
+      },
+      {
+        "title": "리액트 스터디",
+        "img": "./image/activity/react_study_main.png",
+        "detail-tag": "#13기#14기#실습",
+        "tag1": "React",
+        "tag2": "",
+        "url": ""
+      },
+      {
+        "title": "CodingTest",
+        "img": "./image/activity/codingtest_main.png",
+        "detail-tag": "#13기#14기#코테",
+        "tag1": "1일 1코테",
+        "tag2": "",
+        "url": ""
+      },
+      {
+        "title": "미림 분식 회식",
+        "img": "./image/activity/hoisick_main.png",
+        "detail-tag": "#12기#13기#14기",
+        "tag1": "회식",
+        "tag2": "미분",
+        "url": ""
+      },
+      {
+        "title": "선물주고받기",
+        "img": "./image/activity/gangsick.png",
+        "detail-tag": "#13기#14기",
+        "tag1": "간식",
+        "tag2": "귀요미",
+        "url": ""
+      }
+    ]
+  },
+  {
+    "category": "project",
+    "items": [
+      {
+        "title": "PortFolio",
+        "img": "./image/activity/portfolio.png",
+        "detail-tag": "#12기#App",
+        "tag1": "앱",
+        "tag2": "",
+        "url": ""
+      },
+      {
+        "title": "소라고동",
+        "img": "./image/activity/sora.png",
+        "detail-tag": "#12기#App",
+        "tag1": "앱",
+        "tag2": "",
+        "url": ""
+      },
+      {
+        "title": "우주 오물오물",
+        "img": "./image/activity/owater.png",
+        "detail-tag": "#12기#Game",
+        "tag1": "Unity",
+        "tag2": "",
+        "url": ""
+      },
+      {
+        "title": "너의 행성은",
+        "img": "./image/activity/your_planet_main.png",
+        "detail-tag": "#13기#Web",
+        "tag1": "IT쇼",
+        "tag2": "Web",
+        "url": ""
+      },
+      {
+        "title": "하루 한장",
+        "img": "./image/activity/dailypaper.png",
+        "detail-tag": "#14기#Swing",
+        "tag1": "gui",
+        "tag2": "java",
+        "url": ""
+      },
+      {
+        "title": "ProMatch",
+        "img": "./image/activity/dailypaper.png",
+        "detail-tag": "#14기#Swing",
+        "tag1": "gui",
+        "tag2": "java",
+        "url": ""
       }
     ]
   },
@@ -44,24 +150,27 @@
     "items": [
       {
         "title": "자료구조 스터디",
-        "img": "",
+        "img": "./image/activity/ds_study_main.png",
         "detail-tag": "#13기#발표",
-        "tag1": "스터디",
-        "tag2": "자료구조"
+        "tag1": "자료구조",
+        "tag2": "",
+        "url": ""
       },
       {
         "title": "리액트 스터디",
-        "img": "",
+        "img": "./image/activity/react_study_main.png",
         "detail-tag": "#13기#14기#실습",
-        "tag1": "react",
-        "tag2": "스터디"
+        "tag1": "React",
+        "tag2": "",
+        "url": ""
       },
       {
-        "title": "코딩테스트",
-        "img": "",
+        "title": "CodingTest",
+        "img": "./image/activity/codingtest_main.png",
         "detail-tag": "#13기#14기#코테",
-        "tag1": "coding",
-        "tag2": "1일1코테"
+        "tag1": "1일 1코테",
+        "tag2": "",
+        "url": ""
       }
     ]
   },
@@ -69,16 +178,20 @@
     "category": "contest",
     "items": [
       {
-        "title": "SmartAppChallenge",
+        "title": "2023 STAC",
         "detail-tag": "#13기#14기",
+        "img": "./image/activity/stac_main.png",
         "tag1": "가작",
-        "tag2": "수상"
+        "tag2": "수상",
+        "url": ""
       },
       {
-        "title": "",
-        "detail-tag": "#12기",
-        "tag1": "",
-        "tag2": ""
+        "title": "2023 ITSHOW",
+        "img": "./image/activity/your_planet.png",
+        "detail-tag": "#13기",
+        "tag1": "Web",
+        "tag2": "",
+        "url": ""
       }
     ]
   },
@@ -86,16 +199,20 @@
     "category": "etc",
     "items": [
       {
-        "title": "회식",
+        "title": "미림 분식 회식",
+        "img": "./image/activity/hoisick_main.png",
         "detail-tag": "#12기#13기#14기",
         "tag1": "회식",
-        "tag2": "미분"
+        "tag2": "미분",
+        "url": ""
       },
       {
-        "title": "마니또",
+        "title": "선물주고받기",
+        "img": "./image/activity/gangsick.png",
         "detail-tag": "#13기#14기",
-        "tag1": "귀요미들",
-        "tag2": "ㅎ"
+        "tag1": "간식",
+        "tag2": "귀요미",
+        "url": ""
       }
     ]
   }
