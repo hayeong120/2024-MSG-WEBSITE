@@ -159,7 +159,7 @@ footer{
 
 .footer-message{
     font-weight: bold;
-    font-size:0.9rem;
+    font-size: var(--subtitle-font-size);
     color:#545e6f;
     margin-bottom:0.3rem;
     margin:0.6rem;
@@ -167,13 +167,18 @@ footer{
 .footer-contact,
 .footer-instagram,
 .footer-copyright {
-    font-size:0.9rem;
+    font-size: var(--subtitle-font-size);
     color:#545e6f;
     margin:0.6rem;
     margin-top: 1rem;
 }
+
+.footer-instagram:hover {
+    color: var(--main-color);
+}
+
 .footer-copyright{
-    font-size:0.9rem;
+    font-size: var(--subtitle-font-size);
     color:#545e6f;
     margin:0.6rem;
 }
