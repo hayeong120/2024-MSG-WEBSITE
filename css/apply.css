@@ -1,3 +1,4 @@
+/* title */
 .title-box {
     position: relative;
     text-align: left;
@@ -18,4 +19,17 @@
 .message {
     font-size: var(--subtitle-font-size);
     color: var(--gray-color-02);
+}
+
+/* Support Form */
+.support-form {
+    position: relative;
+    text-align: left;
+    line-height: 3vw;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+img {
+    position: relative;
+    width: 60px;
 }
