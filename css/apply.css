@@ -1,19 +1,21 @@
-.title {
+.title-box {
     position: relative;
-    width: 100%;
     text-align: left;
+    line-height: 3vw;
+    margin-top: 70px;
+    margin-left: 150px;
 }
-.title .title {
+.title {
     font-size: var(--title-font-size);
     color: var(--black-color-01);
     font-weight: var(--bold-weight);
 }
-.title .sub-title {
+.sub-title {
     font-size: var(--subtitle-font-size);
     color: var(--main-color);
     font-weight: var(--regular-weight);
 }
-.title .message {
+.message {
     font-size: var(--subtitle-font-size);
     color: var(--gray-color-02);
 }
