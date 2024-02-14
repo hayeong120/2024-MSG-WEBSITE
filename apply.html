@@ -28,21 +28,60 @@
     <!-- main -->
     <main>
         <div class="wrapper">
-            <div class="container">
-                
-                <!-- title -->
-                <section class="title-box">
-                    <div class="sub-title">MSG 지원 페이지</div>
-                    <div class="title">MSG 15기 지원하기</div>
-                    <div class="message">자신에 대해 마음껏 알려주세요!</div>
-                </section>
+            <div class="support-page">
+                    
+                    <!-- title -->
+                    <section id="title-box">
+                        <div id="sub-title">MSG 지원 페이지</div>
+                        <div id="title">MSG 15기 지원하기</div>
+                        <div id="message">자신에 대해 마음껏 알려주세요!</div>
+                    </section>
 
-                <!-- Support Form -->
-                <section class="support-form">
-                    <img src="./image/logo.png">
-                </section>
+                    <!-- Support Form -->
+                    <section id="support-form">
+                        <img src="./image/logo.png">
+                        <ul id="support-box">
+                            <li>
+                                <label for="name">이름을 입력해주세요.</label><br>
+                                <input type="text" id="name">
+                            </li>
+                            <li>
+                                <label for="class-number">학번을 입력해주세요.</label><br>
+                                <input type="text" id="class-number">
+                            </li>
+                            <li>
+                                <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)</label><br>
+                                <input type="tel" id="phone">
+                            </li>
+                            <li>
+                                <label for="mail">학교 이메일을 입력해주세요.</label><br>
+                                <input type="email" id="mail">
+                            </li>
+                            <li>
+                                <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.</label><br>
+                                <input type="text" id="motive">
+                            </li>
+                            <li>
+                                <label for="strength">자신의 장점에 대해 입력해주세요.</label><br>
+                                <input type="text" id="strength">
+                            </li>
+                            <li>
+                                <label for="experience">실패 경험을 입력해주세요.</label><br>
+                                <input type="text" id="experience">
+                            </li>
+                            <li>
+                                <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
+                                <input type="text" id="question">
+                            </li>
+                            <li>
+                                <label for="definition">나를 한 마디로 정의하자면?</label><br>
+                                <input type="text" id="definition">
+                            </li>
+                        </ul>
+                    </section>
+                
             </div>
-        </div>
+        </div>   
     </main>
     
     <!-- footer -->
@@ -58,6 +97,6 @@
         <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
         <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
     </footer>
-
+            
 </body>
 </html>
