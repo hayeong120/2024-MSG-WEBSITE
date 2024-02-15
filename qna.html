@@ -33,6 +33,20 @@
                     <div class="title">익명게시판<br></div>
                     <div class="message">MSG에 대해 궁금한 점을 적어주세요!</div>
                 </div>
+                <!-- 질문입력창 -->
+                <form class="form-box" action="qna.html" method="POST"> 
+                    <div class="input_button">
+                        <input id="question" type="text" placeholder="질문을 입력해주세요." class="form-control">
+                    </div>
+                    <div class="submit_button" onclick="alert('질문이 추가되었습니다')">
+                        <div class="eff"></div>
+                        <a href="#">submit</a>
+                    </div>
+                </form>
+                <!--    입력창 코드
+                    {{  form.question.label }}
+                    {{  form.question(class="form-control") }}
+                -->
             </div>
         </div>
     </main>  
