@@ -109,3 +109,19 @@
        top:5px;
     }
 }
+
+.tutorial-page {
+    position: relative;
+    height: var(--page-height);
+    background-color: var(--main-color);
+}
+
+.tutorial-page > .container {
+    position: relative;
+    /* width: 70vw; */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: var(--header-img-width);
+    background-color: antiquewhite;
+}
