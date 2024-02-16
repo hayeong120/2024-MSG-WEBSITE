@@ -98,6 +98,74 @@
     /* background-color: yellow; */
 }
 
+.main_arrow {
+    position: absolute;
+    display: inline-block;
+    /* margin-left: -10px; */
+    animation: arrow_down 1.5s infinite;
+}
+
+.scroll-arrow {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-right: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 0.2vw;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    animation: arrow-wave 1s infinite;
+    animation-direction: alternate;
+}
+
+.scroll-arrow:nth-child(1) {
+    top: 70vh;
+    animation-delay: 0.1s;
+}
+
+.scroll-arrow:nth-child(2) {
+    top: 70vh;
+    margin-top: 1px;
+    animation-delay: 0.2s;
+}
+
+.scroll-arrow:nth-child(3) {
+    top: 70vh;
+    margin-top: 1px;
+    animation-delay: 0.3s;
+}
+
+@keyframes arrow-wave {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @keyframes arrow_down {
+    0% {
+        top: 20px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 20px;
+    }
+} */
+
 @keyframes glide  {
     from {
        left:0px;
