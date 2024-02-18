@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" src="https://static.navercorp.com/static/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background: white;
+  font-family: "Open Sans";
+}
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 2px;
+  height: 2px;
+  border-radius: 100%; 
+  background: gray;
+  
+  animation-fill-mode: both;
+  opacity: 1;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  
+  var mousePos = {};
+
+ function getRandomInt(min, max) {
+   return Math.round(Math.random() * (max - min + 1)) + min;
+ }
+  
+  
+  var range = 1;
+      
+  var color = "background:pink;";//rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
+      
+  var sizeInt =  10;//getRandomInt(10, 30);
+  var size = "";
+  var left = "";
+  var top = "";
+  var offset = 0.5;
+  var lange =0;
+  var style = "";
+  var balls = [];
+  var ball_qty = 10;
+  
+  for(var i=0; i < ball_qty ; i++){
+	lange = (sizeInt - (offset*i));
+	size = "height: " + lange + "px; width: " + lange + "px;";
+	left = "left: " + (lange*i)  + "px;"; 
+	top = "top: " + (lange*i) + "px;"; 
+	style = left+top+color+size;
+	balls[i] = $("<div class='ball' id='ball_mouse_tracker_"+i+"' style='" + style + "'></div>");
+	$(balls[i]).appendTo('#wrap');
+  }
+  
+	function moveCircle(e) {
+		
+	
+		for(var i=0; i < ball_qty ; i++){
+			TweenLite.to(balls[i], (0.1 + (0.03*i)), {
+				css: {
+				  left: e.pageX - (balls[i].outerWidth()/2),
+				  top: e.pageY - (balls[i].outerHeight()/2)
+				}
+			});
+	  }
+	}
+
+$(window).on('mousemove', moveCircle);
+
+
+});
+
+
+</script>
+
+<div id="wrap">
+  <p></p>
+</div>
+</body>
+</html>
