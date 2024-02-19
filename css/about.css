@@ -39,7 +39,7 @@
 }
 
 .about-page > .container > .txt-box > .message {
-    font-size: var(--subtitle-font-size);
+    font-size: var(--message-font-size);
     color: var(--gray-color-02);
     line-height: 1.5vw;
     margin-top: 3vh;
