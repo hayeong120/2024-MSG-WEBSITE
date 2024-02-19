@@ -246,16 +246,65 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-
-.mouse-shapes{
+/* 커서 효과 */
+.mouse-shapes {
     z-index: 99999;
-    position:fixed;
-    width:1.5vw;
-    height:1.5vw;
-    border-radius:50%;
+    position: fixed;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
     background: transparent;
     border: 0.01em solid var(--main-color);
-    transform:translate(-50%,-50%);
-    transition:.1s;
-    pointer-events:none;
-  }
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    pointer-events: none;
+}
+
+/* 부원들의 목소리 */
+.opinion-page {
+    position: relative;
+    height: var(--page-height);
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.opinion-page > .txt-box {
+    position: relative;
+    width: 80vw;
+    top: 5vh;
+    margin: auto;
+    
+    /* background-color: aqua; */
+}
+
+.opinion-page>.txt-box>.title {
+    font-size: var(--title-font-size);
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 2.9vw;
+    margin-top: 1vh;
+}
+
+.opinion-page>.txt-box>.sub-title {
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+
+.opinion-page>.txt-box>.message {
+    font-size: var(--message-font-size);
+    color: var(--gray-color-02);
+    line-height: 1.5vw;
+    margin-top: 3vh;
+}
+
+.opinion-box {
+    position: relative;
+    background-color: aqua;
+}
+
+.opinion {
+    position: relative;
+    width: 50vw;
+    background-color: brown;
+}
