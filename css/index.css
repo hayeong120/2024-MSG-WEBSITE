@@ -274,7 +274,7 @@
     top: 5vh;
     margin: auto;
     
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .opinion-page>.txt-box>.title {
@@ -296,4 +296,15 @@
     color: var(--gray-color-02);
     line-height: 1.5vw;
     margin-top: 3vh;
+}
+
+.opinion-box {
+    position: relative;
+    background-color: aqua;
+}
+
+.opinion {
+    position: relative;
+    width: 50vw;
+    background-color: brown;
 }
