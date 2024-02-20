@@ -77,8 +77,10 @@
     justify-content: center;
     text-align: center; */
 }
+
 .main-page>.txt-box>button:hover img {
-    opacity: 0; /* 이미지의 투명도를 100%로 설정 */
+    opacity: 0;
+    /* 이미지의 투명도를 100%로 설정 */
 }
 
 .main-page>.txt-box>button>img {
@@ -98,15 +100,83 @@
     /* background-color: yellow; */
 }
 
-@keyframes glide  {
-    from {
-       left:0px;
-       top:-5px;
+.main_arrow {
+    position: absolute;
+    display: inline-block;
+    /* margin-left: -10px; */
+    animation: arrow_down 1.5s infinite;
+}
+
+.scroll-arrow {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-right: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 0.2vw;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    animation: arrow-wave 1s infinite;
+    animation-direction: alternate;
+}
+
+.scroll-arrow:nth-child(1) {
+    top: 70vh;
+    animation-delay: 0.1s;
+}
+
+.scroll-arrow:nth-child(2) {
+    top: 70vh;
+    margin-top: 1px;
+    animation-delay: 0.2s;
+}
+
+.scroll-arrow:nth-child(3) {
+    top: 70vh;
+    margin-top: 1px;
+    animation-delay: 0.3s;
+}
+
+@keyframes arrow-wave {
+    0% {
+        opacity: 0;
     }
-    
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @keyframes arrow_down {
+    0% {
+        top: 20px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 20px;
+    }
+} */
+
+@keyframes glide {
+    from {
+        left: 0px;
+        top: -5px;
+    }
+
     to {
-       left:0px;
-       top:5px;
+        left: 0px;
+        top: 5px;
     }
 }
 
@@ -114,14 +184,157 @@
     position: relative;
     height: var(--page-height);
     background-color: var(--main-color);
+    background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0), var(--main-color));
+    background: linear-gradient(100deg, rgba(89, 251, 213, 0.8), var(--main-color));
 }
 
-.tutorial-page > .container {
+.tutorial-page>.container {
     position: relative;
-    /* width: 70vw; */
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
     font-size: var(--header-img-width);
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+}
+
+.tutorial-page>.container>.keyword {
+    position: relative;
+    width: 30vw;
+    height: 10vh;
+    margin: auto;
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    font-style: normal;
+    /* background-color: aquamarine; */
+}
+
+.tutorial-page>.container>.keyword:nth-child(1),
+.tutorial-page>.container>.keyword:nth-child(3),
+.tutorial-page>.container>.keyword:nth-child(5) {
+    animation: fadeInLeft 1s;
+}
+
+.tutorial-page>.container>.keyword:nth-child(2),
+.tutorial-page>.container>.keyword:nth-child(4) {
+    animation: fadeInRight 1s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-10%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(10%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* 커서 효과 */
+.mouse-shapes {
+    z-index: 99999;
+    position: fixed;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background: transparent;
+    border: 0.01em solid var(--main-color);
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    pointer-events: none;
+}
+
+/* 부원들의 목소리 */
+.opinion-page {
+    position: relative;
+    height: var(--page-height);
+    text-align: center;
+    overflow-x: hidden;
+    /* background-color: antiquewhite; */
+}
+
+.opinion-page > .txt-box {
+    position: relative;
+    width: 80vw;
+    top: 5vh;
+    margin: auto;
+    
+    /* background-color: aqua; */
+}
+
+.opinion-page>.txt-box>.title {
+    font-size: var(--title-font-size);
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 2.9vw;
+    margin-top: 1vh;
+}
+
+.opinion-page>.txt-box>.sub-title {
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+
+.opinion-page>.txt-box>.message {
+    font-size: var(--message-font-size);
+    color: var(--gray-color-02);
+    line-height: 1.5vw;
+    margin-top: 3vh;
+}
+
+.opinion-box {
+    position: relative;
+    top: 13vh;
+    width: 100vw;
+    padding: 0 10vw;
+    /* background-color: aqua; */
+}
+
+.opinion-box > .opinion {
+    position: relative;
+    width: 40vw;
+    height: 10vh;
+    padding: 4vw 1vw;
+    background-color: var(--gray-color-05);
+    border-radius: 1vw;
+}
+
+.opinion-box > .opinion > .img-box > img{
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width: 1vw;
+}
+
+.opinion-box > .opinion > .message-box {
+    position: relative;
+    left: 3vw;
+    top: -2vh;
+    text-align: left;
+    color: var(--black-color-01);
+}
+
+.opinion-box > .opinion > .member-box {
+    position: relative;
+    right: 2vw;
+    text-align: right;
+    font-size: var(--header-font-size);
+    color: var(--gray-color-02);
 }

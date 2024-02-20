@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +20,18 @@
         <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
-                <li><a href="./about.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a></li>
-                <li><a href=""  class="header-menu" id="header-member" onclick="changeFontColor()" >부원</a></li>
-                <li><a href="./activity.html"  class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
-                <li><a href=""  class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
+                <li><a href="./about.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
+                </li>
+                <li><a href="" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
+                <li><a href="./activity.html" class="header-menu" id="header-activity"
+                        onclick="changeFontColor()">활동</a></li>
+                <li><a href="" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
                 <li><button>15기 지원하기</button></li>
             </ul>
         </nav>
     </header>
     <main>
+
         <div class="wrapper">
             <div class="container">
                 <div class="main-page">
@@ -41,16 +47,20 @@
                         </div>
                         <button>
                             15기 지원하기
-                            <img src="./image/arrow-right-support.svg" alt="">                                  
+                            <img src="./image/arrow-right-support.svg" alt="">
                         </button>
+                    </div>
+                    <div class="main_arrow">
+                        <div class="scroll-arrow"></div>
+                        <div class="scroll-arrow"></div>
+                        <div class="scroll-arrow"></div>
                     </div>
                 </div>
                 <div class="message-box">
                     Make 만들고 <br>
                     Share 공유하고 <br>
-                    Gather 참여하고 
+                    Gather 참여하고
                 </div>
-                
             </div>
         </div>
         <div class="wrapper">
@@ -89,9 +99,38 @@
 
             </div>
         </div>
+        <div class="opinion-page">
+            <div class="txt-box">
+                <div class="sub-title">Opinion</div>
+                <div class="title">부원들의 목소리</div>
+                <div class="message">
+                    현재 기수들의 생생한 후기 <br>
+                    MSG에서의 1년은 어땠나요?
+                </div>
+            </div>
+            <div class="opinion-box">
+                <div class="opinion">
+                    <div class="img-box">
+                        <img src="./image/opinion-icon.svg" alt="">
+                    </div>
+                    <div class="message-box">
+
+                        동아리의 부장으로 있으면서 항상 자부심을 가졌던 점은 부원들끼리의 화합이 잘 맞았다는 점이에요. <br>
+                        성장하려는 의지가 있는 사람들끼리 모이니 그 누구도 대충대충 넘기지 않고 열심히 임해주었어요. <br>
+                        서로에게 배우고 가르치며 함께 성장할 분들을 기다리고 있어요. <br>
+                        우리 MSG에서 함께 놀아요! <br>
+                    </div>
+                    <div class="member-box">13기 노하은</div>
+                </div>
+            </div>
+        </div>
+        <div class="mouse-shapes"></div>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="./js/script.js"></script>
-<script src="./js/index.js"></script>
+<script type="text/javascript" src="https://static.navercorp.com/static/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
 </html>
