@@ -265,7 +265,8 @@
     position: relative;
     height: var(--page-height);
     text-align: center;
-    background-color: antiquewhite;
+    overflow-x: hidden;
+    /* background-color: antiquewhite; */
 }
 
 .opinion-page > .txt-box {
@@ -300,11 +301,40 @@
 
 .opinion-box {
     position: relative;
-    background-color: aqua;
+    top: 13vh;
+    width: 100vw;
+    padding: 0 10vw;
+    /* background-color: aqua; */
 }
 
-.opinion {
+.opinion-box > .opinion {
     position: relative;
-    width: 50vw;
-    background-color: brown;
+    width: 40vw;
+    height: 10vh;
+    padding: 4vw 1vw;
+    background-color: var(--gray-color-05);
+    border-radius: 1vw;
+}
+
+.opinion-box > .opinion > .img-box > img{
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width: 1vw;
+}
+
+.opinion-box > .opinion > .message-box {
+    position: relative;
+    left: 3vw;
+    top: -2vh;
+    text-align: left;
+    color: var(--black-color-01);
+}
+
+.opinion-box > .opinion > .member-box {
+    position: relative;
+    right: 2vw;
+    text-align: right;
+    font-size: var(--header-font-size);
+    color: var(--gray-color-02);
 }
