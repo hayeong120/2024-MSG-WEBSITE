@@ -38,47 +38,52 @@
                     </section>
 
                     <!-- Support Form -->
-                    <section id="support-form">
+                    <form id="support-form" action="">
                         <img src="./image/logo.png">
-                        <ul id="support-box">
+                        <fieldset id="support-box">               
+                        <ul>
                             <li>
                                 <label for="name">이름을 입력해주세요.</label><br>
-                                <input type="text" id="name">
+                                <input type="text" id="name" required>
                             </li>
                             <li>
                                 <label for="class-number">학번을 입력해주세요.</label><br>
-                                <input type="text" id="class-number">
+                                <input type="text" id="class-number" required>
                             </li>
                             <li>
                                 <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)</label><br>
-                                <input type="tel" id="phone">
+                                <input type="tel" id="phone" required>
                             </li>
                             <li>
                                 <label for="mail">학교 이메일을 입력해주세요.</label><br>
-                                <input type="email" id="mail">
+                                <input type="email" id="mail" required>
                             </li>
                             <li>
                                 <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.</label><br>
-                                <input type="text" id="motive">
+                                <input type="text" id="motive" required>
                             </li>
                             <li>
                                 <label for="strength">자신의 장점에 대해 입력해주세요.</label><br>
-                                <input type="text" id="strength">
+                                <input type="text" id="strength" required>
                             </li>
                             <li>
                                 <label for="experience">실패 경험을 입력해주세요.</label><br>
-                                <input type="text" id="experience">
+                                <input type="text" id="experience" required>
+                            </li>
+                            <li>
+                                <label for="definition">나를 한 마디로 정의하자면?</label><br>
+                                <input type="text" id="definition" required>
                             </li>
                             <li>
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
                                 <input type="text" id="question">
-                            </li>
-                            <li>
-                                <label for="definition">나를 한 마디로 정의하자면?</label><br>
-                                <input type="text" id="definition">
-                            </li>
-                        </ul>
-                    </section>
+                            </li>               
+                          </ul>
+                        </fieldset>
+                        <fieldset id="button-box">
+                           <button type="submit">제출하기</button>
+                        </fieldset>                                        
+                    </form>
                 
             </div>
         </div>   
