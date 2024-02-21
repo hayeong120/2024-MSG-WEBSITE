@@ -1,9 +1,41 @@
-/* 공통 스타일 */
 .title,
 .activity,
 .info,
 .category {
   margin-bottom: 20px;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: var(--gray-color-05);
+}
+
+body.dark-mode .title {
+  color: var(--gray-color-05);
+}
+
+/* body.dark-mode .activity .year {
+  color: var(--gray-color-05);
+}
+
+body.dark-mode .activity-name {
+  color: var(--gray-color-05);
+} */
+
+body.dark-mode .swiper-slide-active {
+  background-color: var(--gray-color-05);
+}
+
+body.dark-mode .swiper-slide-active {
+  background-color: var(--gray-color-05);
+}
+
+body.dark-mode .category .inner-category p {
+  color: var(--gray-color-02);
+}
+
+body.dark-mode .category .inner-category p.underline {
+  color: var(--gray-color-05);
 }
 
 /* Title 섹션 스타일 */
@@ -402,9 +434,10 @@
   width: 100%;
   height: 32%;
   background-color: #ffffff;
-  position: relative;
+  position: static;
   border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 10%;
+  border-bottom-right-radius: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
 .activity-detail #detail-title {
