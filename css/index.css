@@ -347,13 +347,39 @@
     text-align: center;
 }
 
-.support-page > .img-box > img {
-    position: absolute;
-    z-index: -1;
-    width: 10vw;
+.support-page > .container {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    background-color: aliceblue;
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
 }
 
-.support-page > button {
+.support-page > .container > .img-box > img {
+    position: absolute;
+    z-index: -1;
+    width: 18vw;
+    left: 22.5vw;
+    top: 17vh;
+}
+
+.support-page > .container > .txt-box {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--title-font-size);
+    line-height: 6.5vh;
+}
+
+.support-page > .container > .txt-box > button {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -371,31 +397,27 @@
     padding: 0.6vw 1vw;
     display: flex;
     justify-content: space-between;
+    margin-top: 7vh;
 }
 
-.support-page>button:hover {
+.support-page > .container > .txt-box > button:hover {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -1vh);
     width: 11.5vw;
     border: 1px solid rgba(223, 190, 106, 0);
-    color: white;
+    color: var(--black-color-01);
     background-position: 99% 50%;
     text-align: center;
-    transform: translateY(-3px);
     box-shadow: 0 10px 20px -10px var(--gray-color-02);
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; */
 }
 
-.support-page>button:hover img {
+.support-page > .container > .txt-box > button:hover img {
     opacity: 0;
     /* 이미지의 투명도를 100%로 설정 */
 }
 
-.support-page>button>img {
+.support-page > .container > .txt-box > button>img {
     width: 2vw;
     top: 50%;
 }
