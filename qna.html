@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
 </head>
 
 <body>
@@ -36,11 +37,10 @@
                 <!-- 질문입력창 -->
                 <form class="form-box" action="qna.html" method="POST"> 
                     <div class="input_button">
-                        <input id="question" type="text" placeholder="질문을 입력해주세요." class="form-control">
-                    </div>
-                    <div class="submit_button" onclick="alert('질문이 추가되었습니다')">
-                        <div class="eff"></div>
-                        <a href="#">submit</a>
+                            <!-- <img src="./image/qna/qna-search.svg"/> -->
+                            <input id="question" type="text" placeholder="질문을 입력해주세요." class="form-control">
+                            
+                            <button type="submit" value="" class="search_button" style="background-image: url('./image/qna/qna-search.svg');"></button>
                     </div>
                 </form>
                 <!--    입력창 코드
@@ -66,5 +66,5 @@
 </body>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="./js/script.js"></script>
-<script src="./js/index.js"></script>
+<script src="./js/qna.js"></script>
 </html>
