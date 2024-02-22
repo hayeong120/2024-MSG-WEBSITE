@@ -1,0 +1,170 @@
+.member-page {
+    position: relative;
+    width: 60vw;
+    height: var(--page-height);
+    
+    margin: auto;
+    /* background-color: aquamarine; */
+}
+
+.member-page > .container {
+    position: relative;
+    width: 60vw;
+    height: 10vh;
+    top: 10%;
+    transform: translateY(-50%);
+    /* background-color: aqua; */
+}
+
+.member-page > .container > .txt-box > .title {
+    font-size: var(--title-font-size);
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 2.9vw;
+    margin-top: 1vh;
+}
+
+.member-page > .container > .txt-box > .message {
+    font-size: var(--subtitle-font-size);
+    color: var(--gray-color-02);
+    line-height: 1.5vw;
+    margin-top: 3vh;
+}
+
+.member-page > .container > .txt-box {
+    position: relative;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 38vh;
+    text-align: left;
+}
+
+.member-page > .container > .txt-box > .sub-title {
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+
+.member-page > .container > .count > ul {
+    width: 103px; height: 61px; left: 365px; top: 618px; color: #37373A; line-height: 51.20px; word-wrap: break-word;
+    font-size: var(--subtitle-font-size);
+	display: flex;
+}
+
+.member-page > .container > .count > ul > li {
+    width: 103px; 
+    left: 488px; 
+    top: 618px; 
+    color: #37373A;
+    font-weight: 600; 
+    word-wrap: break-word;
+    height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.member-page > .container > .member-group {
+    width: 562px;
+    height: 389px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+}
+
+.member-page > .container > .member-group > .member-box {
+    width: 559px;
+    height: 389px;
+    background: rgba(252,252,252,1);
+    opacity: 1;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 64px  ;
+}
+
+.member-page > .container > .member-group > .member-box > .class {
+    width: 213px;
+    color: rgba(42,245,152,0.8500000238418579);
+    position: absolute;
+    top: 70px;
+    left: 274px;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
+.member-page > .container > .member-group > .member-box > .name {
+    width: 83px;
+    color: rgba(25,31,40,1);
+    position: absolute;
+    top: 100px;
+    left: 274px;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
+.member-page > .container > .member-group > .member-box > .role {
+    width: 288px;
+    color: rgba(116,116,140,1);
+    position: absolute;
+    top: 147px;
+    left: 274px;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+    
+}
+
+.member-page > .container > .member-group > .member-box > .ment {
+    width: 348px;
+    color: rgba(25,31,40,1);
+    position: absolute;
+    top: 246px;
+    left: 116px;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+    
+}
+.member-page > .container > .member-group > .member-box > a > .github {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 180px;
+    left: 271px;
+    overflow: hidden;
+}
+
+.member-page > .container > .member-group > .member-box > a > .velog {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 180px;
+    left: 316px;
+    overflow: hidden;
+}
+
+.member-page > .container > .member-group > .member-box > .profile {    
+    width: 156px;
+    height: 156px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 69px;
+    left: 74px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    overflow: hidden;
+}
