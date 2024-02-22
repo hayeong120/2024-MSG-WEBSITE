@@ -38,6 +38,13 @@ body.dark-mode .category .inner-category p.underline {
   color: var(--gray-color-05);
 }
 
+body.dark-mode .swiper-prev,
+body.dark-mode .swiper-next {
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+}
+
 /* Title 섹션 스타일 */
 /* .title {
   margin-top: 70px;
@@ -192,6 +199,7 @@ body.dark-mode .category .inner-category p.underline {
 
 .swiper-prev,
 .swiper-next {
+  padding: 8px;
   width: 42px;
   height: 42px;
   outline: none;
@@ -267,6 +275,43 @@ body.dark-mode .category .inner-category p.underline {
   .swiper-next {
     right: 10px; /* 오른쪽에 위치하도록 수정 */
     margin-right: 0;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    background-image: url(../image/activity/promotion_slide_paper_small.png);
+    width: 10px;
+    height: 10px;
+    left: -400px;
+    margin-right: 6px;
+    outline: none;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    width: 46px;
+    height: 10px;
+    border-radius: 20%;
+    background-image: url(../image/activity/promotion_slide_paper_on_small.png);
+  }
+
+  body.dark-mode .swiper-prev,
+  body.dark-mode .swiper-next {
+    background-color: #00000000;
+  }
+
+  body.dark-mode .activity .year {
+    color: var(--gray-color-05);
+  }
+
+  body.dark-mode .activity-name {
+    color: var(--gray-color-05);
+  }
+
+  body.dark-mode .swiper-slide-active {
+    background-color: #00000000;
+  }
+
+  body.dark-mode .swiper-slide-active {
+    background-color: #00000000;
   }
 }
 
@@ -486,7 +531,7 @@ body.dark-mode .category .inner-category p.underline {
 
   .category .inner-category p {
     margin-right: 12px;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .category .inner-banner {
@@ -511,7 +556,7 @@ body.dark-mode .category .inner-category p.underline {
 
   .activity-detail #detail-title {
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .activity-detail .below-top {
@@ -523,7 +568,8 @@ body.dark-mode .category .inner-category p.underline {
   }
 
   .activity-detail #tag {
-    display: none;
+    font-size: 8px;
+    /* display: none; */
   }
 
   .activity-detail #detail-tag {
