@@ -389,7 +389,7 @@
     background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     transition: all 0.7s ease-out;
-    background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), var(--main-color), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background: linear-gradient(270deg, #56FF85, #2AF598, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
     background-position: 1% 50%;
     background-size: 300% 300%;
     border: 1px solid var(--main-color);
@@ -403,7 +403,7 @@
 .support-page>.container>.txt-box>button:hover {
     position: relative;
     left: 50%;
-    transform: translate(-50%, -1vh);
+    /* transform: translate(-50%, -1vh); */
     width: 11.5vw;
     border: 1px solid rgba(223, 190, 106, 0);
     background-position: 99% 50%;
