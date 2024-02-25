@@ -269,12 +269,12 @@
     /* background-color: antiquewhite; */
 }
 
-.opinion-page > .txt-box {
+.opinion-page>.txt-box {
     position: relative;
     width: 80vw;
     top: 5vh;
     margin: auto;
-    
+
     /* background-color: aqua; */
 }
 
@@ -307,7 +307,7 @@
     /* background-color: aqua; */
 }
 
-.opinion-box > .opinion {
+.opinion-box>.opinion {
     position: relative;
     width: 40vw;
     height: 10vh;
@@ -316,14 +316,14 @@
     border-radius: 1vw;
 }
 
-.opinion-box > .opinion > .img-box > img{
+.opinion-box>.opinion>.img-box>img {
     position: absolute;
     left: 2vw;
     top: 2vw;
     width: 1vw;
 }
 
-.opinion-box > .opinion > .message-box {
+.opinion-box>.opinion>.message-box {
     position: relative;
     left: 3vw;
     top: -2vh;
@@ -331,10 +331,163 @@
     color: var(--black-color-01);
 }
 
-.opinion-box > .opinion > .member-box {
+.opinion-box>.opinion>.member-box {
     position: relative;
     right: 2vw;
     text-align: right;
     font-size: var(--header-font-size);
     color: var(--gray-color-02);
+}
+
+/* 지원 */
+.support-page {
+    position: relative;
+    width: 100vw;
+    height: var(--page-height);
+    text-align: center;
+}
+
+.support-page>.container {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 50px;
+    /* background-color: aliceblue; */
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+}
+
+.support-page>.container>.img-box>img {
+    position: absolute;
+    z-index: -1;
+    width: 18vw;
+    left: 22.5vw;
+    top: 17vh;
+}
+
+.support-page>.container>.txt-box {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--title-font-size);
+    line-height: 6.5vh;
+}
+
+.support-page>.container>.txt-box>button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11.5vw;
+    font-size: 0.9vw;
+    color: var(--black-color-01);
+    background-color: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, #56FF85, #2AF598, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    border: 1px solid var(--main-color);
+    border-radius: 3em;
+    padding: 0.6vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7vh;
+}
+
+.support-page>.container>.txt-box>button:hover {
+    position: relative;
+    left: 50%;
+    /* transform: translate(-50%, -1vh); */
+    width: 11.5vw;
+    border: 1px solid rgba(223, 190, 106, 0);
+    background-position: 99% 50%;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px var(--gray-color-02);
+}
+
+.support-page>.container>.txt-box>button:hover img {
+    opacity: 0;
+    /* 이미지의 투명도를 100%로 설정 */
+}
+
+.support-page>.container>.txt-box>button>img {
+    width: 2vw;
+    top: 50%;
+}
+
+/* 자주 묻는 질문 */
+.question-page {
+    position: relative;
+    width: 80vw;
+    height: var(--page-height);
+    /* background-color: aquamarine; */
+    margin: auto;
+}
+
+.question-page>.txt-box {
+    position: relative;
+    width: 80vw;
+    top: 5vh;
+    margin: auto;
+
+    /* background-color: aqua; */
+}
+
+.question-page>.txt-box>.title {
+    position: relative;
+    /* font-size: var(--title-font-size); */
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 2.9vw;
+    margin-top: 1vh;
+}
+
+.question-page>.txt-box>.sub-title {
+    position: relative;
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+
+.question-page>.questions {
+    position: relative;
+    width: 100%;
+    top: 10vh;
+}
+
+.question-page>.questions>.question-box {
+    position: relative;
+    margin-bottom: 4vh;
+    /* background-color: aqua; */
+    background-color: var(--gray-color-05);
+    border-radius: 1vw;
+    padding: 2vw 3vw;
+    font-size: var(--subtitle-font-size);
+}
+
+.question-page>.questions>.question-box>.question {
+    position: relative;
+    margin-bottom: 2vh;
+    font-weight: var(--bold-weight);
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-page>.questions>.question-box>.question > button {
+    border: none;
+    background: transparent;
+}
+.question-page>.questions>.question-box>.question > button > img {
+    width: 1.5vw;
+    
+}
+.question-page>.questions>.question-box>.answer {
+    position: relative;
+    /* background-color: blue; */
 }
