@@ -441,11 +441,11 @@
 
 .question-page>.txt-box>.title {
     position: relative;
-    /* font-size: var(--title-font-size); */
+    font-size: 1.3vw;
     color: var(--black-color-01);
     font-weight: var(--bold-weight);
     line-height: 2.9vw;
-    margin-top: 1vh;
+    margin: 0.5vh 0;
 }
 
 .question-page>.txt-box>.sub-title {
@@ -461,33 +461,116 @@
     top: 10vh;
 }
 
-.question-page>.questions>.question-box {
+.question-page>.questions>.menu {
     position: relative;
     margin-bottom: 4vh;
-    /* background-color: aqua; */
     background-color: var(--gray-color-05);
     border-radius: 1vw;
     padding: 2vw 3vw;
     font-size: var(--subtitle-font-size);
+    --line-height-step: 2vh;
 }
 
-.question-page>.questions>.question-box>.question {
+.question-page>.questions>.menu>.question {
     position: relative;
-    margin-bottom: 2vh;
+    /* margin-bottom: 2vh; */
     font-weight: var(--bold-weight);
     display: flex;
     justify-content: space-between;
+    /* background-color: #2AF598; */
 }
 
-.question-page>.questions>.question-box>.question > button {
+.question-page>.questions>.menu>.question>button {
     border: none;
     background: transparent;
 }
-.question-page>.questions>.question-box>.question > button > img {
+
+.question-page>.questions>.menu>.question>button>img {
     width: 1.5vw;
-    
 }
-.question-page>.questions>.question-box>.answer {
+
+.question-page>.questions>.menu>.answer {
     position: relative;
     /* background-color: blue; */
+}
+
+/* 드롭다운 */
+.faq-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    /* background-color: #2AF598; */
+    padding-top: 5vh;
+}
+
+.faq {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    background-color: var(--gray-color-05);
+}
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    font-weight: var(--bold-weight);
+    margin: 0 35px 0 0;
+    font-size: var(--message-font-size);
+}
+
+.faq-text {
+    display: none;
+    margin: 3vh 0 0;
+    font-size: var(--message-font-size);
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 3em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 3vh;
+    right: 2vw;
+    height: 4.3vh;
+    width: 2vw;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    color: #fff;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: #9fa4a8;
 }
