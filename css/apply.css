@@ -30,29 +30,68 @@
 #support-form {
     position: relative;
     width: 100%;
-    height: 1200px;   
+    height: 1800px;   
 }
 #support-form img {
     position: relative;
-    width: 60px;
+    width: 6%;
     float: left;
 }
 
 #support-box {
     position: relative;
-    width: 90%;
+    width: 94%;
     height: auto;
     float: left;
+    border: none;
 }
 #support-box li {
     list-style: none;
+    width: 100%;
     height: auto;
     margin: 30px 0 20px;
 }
-input {
-    width: 100%;
-    height: 60px;
-    margin-top: 10px;
-    border-color: #ccc;
+input::placeholder textarea::placeholder {
+    color: #ccc;
+}
+#support-box input {
+    width: 97%;
+    height: 50px;
+    border: 2px solid #ccc;
     border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 3px 15px;
+}
+#support-box textarea {
+    width: 97%;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 18px;
+    resize: none;
+    outline-color: #ccc;
+}
+
+#button-box {
+    text-align: right;
+    width: 100%;
+    border: none;
+}
+#support-form button {
+    float: right;
+    border: none;
+    background-color: var(--main-color);
+    font-size: 19px;
+    color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 55px;
+	padding: 7px 25px;
+    margin: 10px 0;
+}
+#support-form button:hover {
+    background-color: rgb(15, 221, 125);
 }
