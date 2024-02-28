@@ -309,9 +309,9 @@
 
 .opinion-box>.opinion {
     position: relative;
-    width: 40vw;
-    height: 10vh;
-    padding: 4vw 1vw;
+    width: fit-content;
+    height: fit-content;
+    padding: 4vw;
     background-color: var(--gray-color-05);
     border-radius: 1vw;
 }
