@@ -314,6 +314,75 @@
     }
 }
 
+/* 활동 페이지 */
+.activity-page {
+    position: relative;
+    width: 80vw;
+    height: var(--page-height);
+    /* background-color: #9fa4a8; */
+}
+.activity-page > .container > .txt-box {
+    text-align: center;
+    margin: 2.5rem;
+}
+.activity-page > .container > .txt-box >.title {
+    font-size: var(--title-font-size);
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 2.9vw;
+    margin-top: 1vh;
+}
+
+.activity-page > .container > .txt-box >.sub-title {
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+
+.activity-page > .container > .txt-box >.message {
+    font-size: var(--message-font-size);
+    color: var(--gray-color-02);
+    line-height: 1.5vw;
+    margin-top: 2vh;
+}
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 12rem);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.content-box>.box {
+    padding: 2rem;
+    background-color: var(--gray-color-05);
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px -5px var(--gray-color-03);
+}
+.content-box>.box:hover {
+    transition: 0.5s;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 10px 20px -10px var(--gray-color-02);
+    cursor: pointer;
+}
+.content-box>.box>.title {
+    font-size: 1.1rem;
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 1.5vw;
+}
+.content-box>.box>.sub-title {
+    font-size: 0.9rem;
+    color: var(--main-color);
+    /* line-height: 1.5rem; */
+}
+.content-box>.box>.message {
+    font-size: var(--message-font-size);
+    color: var(--gray-color-02);
+    line-height: 1.3vw;
+    margin-top: 2vh;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /* 커서 효과 */
@@ -402,6 +471,7 @@
     position: relative;
     /* margin-bottom: 35vh; */
 }
+
 .opinion:nth-child(2),
 .opinion:nth-child(4),
 .opinion:nth-child(6) {
@@ -409,28 +479,35 @@
     top: -25vh;
     float: right;
 }
+
 .opinion:nth-child(1) {
     margin-bottom: 10rem;
 }
+
 .opinion:nth-child(2) {
     margin: 2rem;
     right: 5rem;
 }
+
 .opinion:nth-child(3) {
     left: 5rem;
     margin: 10rem 0;
 }
+
 .opinion:nth-child(4) {
     width: 45rem;
     margin-top: 5rem;
 }
+
 .opinion:nth-child(5) {
     width: 40rem;
     margin: 20rem 0 12rem;
 }
+
 .opinion:nth-child(6) {
     width: 30rem;
 }
+
 .opinion:nth-child(7) {
     width: 30rem;
 }
