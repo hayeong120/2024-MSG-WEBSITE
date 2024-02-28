@@ -72,19 +72,19 @@ body {
     padding-top: var(--header-height);
 }
 
-.wrapper {
+/* .wrapper {
     position: relative;
     width: 100%;
     display: flex;
     overflow-x: hidden;
-}
+} */
 
-.container {
+/* .container {
     position: relative;
     width: 100vw;
     display: flex;
     flex-direction: column;
-}
+} */
 
 header {
     z-index: 999;
