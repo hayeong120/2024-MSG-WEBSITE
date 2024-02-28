@@ -198,7 +198,9 @@
 }
 
 .tutorial-page>.container>.keyword {
-    position: relative;
+    /* display: none; */
+    position: sticky;
+    top: 0vh;
     width: 30vw;
     height: 10vh;
     margin: auto;
@@ -209,7 +211,7 @@
     /* background-color: aquamarine; */
 }
 
-.tutorial-page>.container>.keyword:nth-child(1),
+/* .tutorial-page>.container>.keyword:nth-child(1),
 .tutorial-page>.container>.keyword:nth-child(3),
 .tutorial-page>.container>.keyword:nth-child(5) {
     animation: fadeInLeft 1s;
@@ -218,7 +220,7 @@
 .tutorial-page>.container>.keyword:nth-child(2),
 .tutorial-page>.container>.keyword:nth-child(4) {
     animation: fadeInRight 1s;
-}
+} */
 
 @keyframes fadeInLeft {
     0% {
