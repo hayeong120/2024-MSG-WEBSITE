@@ -95,3 +95,28 @@ input::placeholder textarea::placeholder {
 #support-form button:hover {
     background-color: rgb(15, 221, 125);
 }
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #37373a;
+    color: #ffffff;
+}
+body.dark-mode header ul > li > a,
+body.dark-mode header ul > li > button,
+body.dark-mode footer div,
+body.dark-mode footer a {
+    color: #ffffff;
+}
+
+body.dark-mode #title {
+    color: #ffffff;
+}
+body.dark-mode #message {
+    color: var(--gray-color-03)
+}
