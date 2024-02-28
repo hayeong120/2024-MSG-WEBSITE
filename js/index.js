@@ -1,77 +1,82 @@
-// const mouse = document.querySelector('.mouse-shapes');
+// keyword 가운데로 모이는 효과 
+const options = {
+  root: null, // viewport
+  rootMargin: "0px",
+  threshold: .5,  // 50%가 viewport에 들어와 있어야 callback 실행
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+    } else {
+      entry.target.classList.remove("active");
+    }
+  });
+}, options);
+
+const titleList = document.querySelectorAll('.keyword');
+
+// 반복문을 돌려 모든 DOM에 적용
+titleList.forEach(el => observer.observe(el));
 
 
-// document.addEventListener('mousemove',function(e){
-//   position(e.pageX, e.pageY);
-// });
-
-// function position(pageX, pageY){
-//   mouse.style.left = pageX + "px";
-//   mouse.style.top = pageY+ "px";
+// 각 페이지 효과
+// const pageOptions = {
+//   root: null, // viewport
+//   rootMargin: "0px",
+//   threshold: 1.0,  // 50%가 viewport에 들어와 있어야 callback 실행
 // }
 
+// const pageObserver = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('active');
+//     } else {
+//       entry.target.classList.remove('active');
+//     }
+//   });
+// }, pageOptions);
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   var keywords = document.querySelectorAll(".tutorial-page .keyword");
-//   var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-//   var halfwayPoint = windowHeight * 0.5; // 뷰포트 높이의 50% 위치 계산
+// const boxList = document.querySelectorAll('.wrapper');
 
-//   function revealKeywords() {
-//       keywords.forEach(function(keyword, index) {
-//           setTimeout(function() {
-//               keyword.style.opacity = 1;
-//               keyword.style.transform = "translateY(0)";
-//           }, index * 100); // 각 키워드가 나타나는 시간 간격
-//       });
-//   }
+// // 반복문을 돌려 모든 DOM에 적용
+// boxList.forEach(el => pageObserver.observe(el));
 
-//   function scrollHandler() {
-//       var tutorialPage = document.querySelector(".tutorial-page");
-//       var rect = tutorialPage.getBoundingClientRect();
-      
-//       // 페이지가 뷰포트의 50% 이상 올라오면 키워드를 나타냅니다.
-//       if (rect.top <= halfwayPoint) {
-//           revealKeywords();
-//           // 스크롤 이벤트 리스너를 제거합니다.
-//           window.removeEventListener("scroll", scrollHandler);
-//       }
-//   }
+// // 한 페이지씩 이동
+// var $html = $("html");
 
-//   window.addEventListener("scroll", scrollHandler);
+// var page = 1;
+
+// var lastPage = 7;
+
+// $html.animate({scrollTop:0},10);
+// $(window).on("wheel", function(e){
+
+// 	if($html.is(":animated")) return;
+
+// 	if(e.originalEvent.deltaY > 0){
+// 		if(page== lastPage) return;
+
+// 		page++;
+// 	}else if(e.originalEvent.deltaY < 0){
+// 		if(page == 1) return;
+
+// 		page--;
+// 	}
+// 	var posTop = (page-1) * $(window).height();
+
+// 	$html.animate({scrollTop : posTop});
+
 // });
+// $(document).ready(function() {
+//   $('#fullpage').fullpage({
+//       //options here
+//       autoScrolling:true,
+//       scrollHorizontally: true
+//   });
 
-
-$(window).scroll(function () { //화면이 스크롤 될때마다 내부코드를 실행해주세요~
-  var height = $(window).scrollTop();
-  console.log(height);
-
-  //650~1150까지 스크롤바를 내리면,첫째카드의 opacity 1~0으로 서서히 바뀜
-  // y = ax + b(일차함수 형태), 대입법으로 a와 b를 구함
-  var y = (-1 / 500) * height + 1150 / 50;
-  $('.wrapper>.container>.main-page').eq(0).css('opacity', y);
-
-  //650~1150까지 스크롤바를 내리면, 카드의 크기가 1에서 0.9로 작아짐
-  //y = ax +b 일차함수에서 (650,1)과 (1150,0.9)를 동시에 지나는 식을쓰자
-
-  var z = (-1 / 5000) * height + 565 / 500;
-  $('.wrapper>.container>.main-page').eq(0).css('transform', `scale(${z})`);
-  
-});
-
-// $(window).scroll(function () { //화면이 스크롤 될때마다 내부코드를 실행해주세요~
-//   var height = $(window).scrollTop();
-//   console.log(height);
-
-//   //650~1150까지 스크롤바를 내리면,첫째카드의 opacity 1~0으로 서서히 바뀜
-//   // y = ax + b(일차함수 형태), 대입법으로 a와 b를 구함
-//   var y = (-1 / 500) * height + 5150 / 50;
-//   $('.wrapper>.tutorial-page>.container').eq(0).css('opacity', y);
-  
-
-//   //650~1150까지 스크롤바를 내리면, 카드의 크기가 1에서 0.9로 작아짐
-//   //y = ax +b 일차함수에서 (650,1)과 (1150,0.9)를 동시에 지나는 식을쓰자
-
-//   var z = (-1 / 5000) * height + 565 / 500;
-//   $('.wrapper>.tutorial-page>.container').eq(0).css('transform', `scale(${z})`);
-
+//   //methods
+//   $.fn.fullpage.setAllowScrolling(false);
 // });
