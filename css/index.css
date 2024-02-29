@@ -891,3 +891,21 @@
 .faq.active .faq-toggle {
     background-color: #9fa4a8;
 }
+
+/* 반응형 */
+@media only screen and (max-width: 600px) {
+    .title .sub-title {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  
+    .title .title {
+      font-size: 25px; /* 더 상대적인 크기로 변경 */
+    }
+  
+    .title .message {
+      font-size: 15px; /* 더 상대적인 크기로 변경 */
+      margin-top: 2px;
+      margin-bottom: 50px;
+    }
+  }
