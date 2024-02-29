@@ -1062,10 +1062,12 @@
 @media only screen and (max-width: 600px) {
     .about-page {
         width: 70vw;
+        overflow-y: hidden;
     }
     
     .about-page > .container {
         height: 60vh;
+        overflow-y: hidden;
     }
 
     .about-page > .container > .txt-box > .sub-title {
@@ -1084,5 +1086,65 @@
 
     .about-page > .container > .img-box > img {
         width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .activity-page {
+        position: relative;
+        width: 80vw;
+        height: var(--page-height);
+        overflow-y: hidden;
+    }
+    
+    .activity-page>.container>.txt-box {
+        margin: 25px;
+    }
+    
+    .activity-page>.container>.txt-box>.title {
+        font-size: 25px;
+        line-height: 29px;
+        margin-top: 1vh;
+    }
+    
+    .activity-page>.container>.txt-box>.sub-title {
+        font-size: 12px;
+        color: var(--main-color);
+    }
+    
+    .activity-page>.container>.txt-box>.message {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 12px;
+    }
+    
+    .content-box {
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 170px);
+    }
+    
+    .content-box>.box {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .content-box>.box:hover {
+        transition: 0.5s;
+    }
+    
+    .content-box>.box>.title {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    
+    .content-box>.box>.sub-title {
+        font-size: 10px;
+    }
+    
+    .content-box>.box>.message {
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: 12px;
     }
 }
