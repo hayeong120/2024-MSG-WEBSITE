@@ -463,15 +463,14 @@
   #slider>.image-box>.box {
     position: relative;
     margin-left: 2rem;
-  }
-  
-  #slider>.image-box>.box>img {
+}
+
+#slider>.image-box>.box>img {
     position: relative;
     width: 25rem;
     height: 15rem;
     border-radius: 2rem;
-    background-color: whi;
-    border: 1px solid black;
+    box-shadow: 0 5px 5px -5px var(--gray-color-03);
   }
   
   #slider>.image-box>.box>.blur-box {
@@ -518,18 +517,18 @@
     width: 2rem;
     height: 5rem;
   }
-  #slider>.image-box>.box>.blur-box>.txt-box > .sub-title {
+  #slider>.image-box>.box>.blur-box> .sub-title {
     position: relative;
     font-size: 0.7rem;
     color: var(--main-color);
   }
-  #slider>.image-box>.box>.blur-box>.txt-box > .title {
+  #slider>.image-box>.box>.blur-box>.title {
     position: relative;
     top: 1rem;
     font-size: 1.3rem;
     font-weight: var(--bold-weight);
   }
-  #slider>.image-box>.box>.blur-box>.txt-box > .message {
+  #slider>.image-box>.box>.blur-box> .message {
     position: relative;
     top: 2rem;
   }
@@ -777,6 +776,39 @@
 }
 
 /* 자주 묻는 질문 */
+.question-page {
+    position: relative;
+    width: 80vw;
+    height: var(--page-height);
+    /* background-color: aquamarine; */
+    margin: auto;
+}
+.question-page>.txt-box {
+    position: relative;
+    width: 80vw;
+    top: 5vh;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.question-page>.txt-box>.title {
+    position: relative;
+    /* font-size: var(--title-font-size); */
+    font-size: 1.3vw;
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    line-height: 2.9vw;
+    margin-top: 1vh;
+    margin: 0.5vh 0;
+}
+
+.question-page>.txt-box>.sub-title {
+    position: relative;
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+
 .faq-container {
     position: relative;
     width: 80vw;
