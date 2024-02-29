@@ -2,8 +2,8 @@
     position: relative;
     text-align: left;
     line-height: 3vw;
-    margin-top: 70px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 120px;
 }
 .sub-title {
     font-size: var(--subtitle-font-size);
@@ -24,55 +24,81 @@
 .form-box {
     position: relative;
     line-height: 3vw;
-    margin-left: 150px;
+    margin-left: 120px;
 }
+label {
+    position: relative;
+}
+/* .search_button {
+    background-color: white;
+    background-position:  0px 0px;
+    background-repeat: no-repeat;
+    width: 2.7rem;
+    height: 2.7em;
+    border: 0;
+    outline: 0;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+} */
 #question {
-    width: 60%;
-    height: 65%;
+    width: 90%;
+    height: 75%;
     margin: 10px 0;
     box-sizing: border-box;
     border: 1px solid #D2D2D2;
     border-radius: 15px;
     /* text-align: center; */
-    box-shadow: 0 3px 3px 
-    rgba(0,0,0,0.2);
+    box-shadow: 1px 1.5px 3px 
+    rgba(0,0,0,0.3);
     padding: 15px 23px;
 }
-/*submit_button*/
-.submit_button{
-    width:100px;
-    height:50px;
-    border:2px solid var(--main-color);
-    float:left;
-    text-align:center;
-    cursor:pointer;
-    position:relative;
-    box-sizing:border-box;
-    overflow:hidden;
-    border-radius:15px;
+#question:focus {
+    border-color: var(--main-color);
+    outline: none;
 }
-.submit_button a{
-    font-family:arial;
-    font-size:16px;
-    color:var(--main-color);
-    text-decoration:none;
-    line-height:50px;
-    transition:all .5s ease;
-    z-index:2;
-    position:relative;
+#question::placeholder {
+    color: #BEBEBE;
 }
-.eff{
-    width:140px;
-    height:50px;
-    bottom:-50px;
-    background:var(--main-color);
-    position:absolute;
-    transition:all .5s ease;
-    z-index:1;
+
+.input_button {
+    position: relative;
 }
-.submit_button:hover .eff{
-    bottom:0;
+.input_button button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 2em;
+    margin-top: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(../image/qna/search.svg);
+    background-size: 30px;
+    padding: 15px 15px;
 }
-.submit_button:hover a{
-    color:#fff;
+button:hover {
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+body .showAlert-title {
+    font: var(--main-font);
+    color: white;
+}
+#p {
+    position: absolute;
+    padding: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#asking {
+    position: relative;
+    padding: 50px;
+    padding-left: 34px;
+    font-weight: bold; 
+    font-size: 15px;
+}
+.answer {
+    font-weight: medium;
 }
