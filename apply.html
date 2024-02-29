@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15기 지원 페이지</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/apply.css">
+
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
 </head>
 
@@ -25,10 +28,15 @@
         </nav>
     </header>
 
+    <!-- DarkMode -->
+    <button id="darkModeBtn">Dark Mode</button>
+
     <!-- main -->
     <main>
         <div class="wrapper">
             <div class="support-page">
+
+                
                     
                     <!-- title -->
                     <section id="title-box">
@@ -44,39 +52,39 @@
                         <ul>
                             <li>
                                 <label for="name">이름을 입력해주세요.</label><br>
-                                <input type="text" id="name" required>
+                                <input type="text" id="name" placeholder="김미림" required>
                             </li>
                             <li>
                                 <label for="class-number">학번을 입력해주세요.</label><br>
-                                <input type="text" id="class-number" required>
+                                <input type="text" id="class-number" placeholder="1100" required>
                             </li>
                             <li>
                                 <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)</label><br>
-                                <input type="tel" id="phone" required>
+                                <input type="tel" id="phone" placeholder="01012345678" required>
                             </li>
                             <li>
                                 <label for="mail">학교 이메일을 입력해주세요.</label><br>
-                                <input type="email" id="mail" required>
+                                <input type="email" id="mail" placeholder="s2400@e-mirim.hs.kr" required>
                             </li>
                             <li>
                                 <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.</label><br>
-                                <input type="text" id="motive" required>
+                                <textarea type="text" id="motive" placeholder="500자 이내로 작성해주세요." required></textarea>
                             </li>
                             <li>
                                 <label for="strength">자신의 장점에 대해 입력해주세요.</label><br>
-                                <input type="text" id="strength" required>
+                                <textarea type="text" id="strength" placeholder="500자 이내로 작성해주세요." required></textarea>
                             </li>
                             <li>
                                 <label for="experience">실패 경험을 입력해주세요.</label><br>
-                                <input type="text" id="experience" required>
+                                <textarea type="text" id="experience" placeholder="500자 이내로 작성해주세요." required></textarea>
                             </li>
                             <li>
                                 <label for="definition">나를 한 마디로 정의하자면?</label><br>
-                                <input type="text" id="definition" required>
+                                <input type="text" id="definition" placeholder="20글자 이내로 작성해주세요." required>
                             </li>
                             <li>
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
-                                <input type="text" id="question">
+                                <input type="text" id="question"  placeholder="필수 사항이 아닙니다.">
                             </li>               
                           </ul>
                         </fieldset>
@@ -102,6 +110,9 @@
         <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
         <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
     </footer>
-            
+           
+    <!--JS-->
+    <script src="./js/apply.js"></script>
+
 </body>
 </html>

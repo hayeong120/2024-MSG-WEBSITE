@@ -2,15 +2,14 @@
     position: relative;
     width: 60vw;
     height: var(--page-height);
-    
     margin: auto;
     /* background-color: aquamarine; */
 }
 
 .about-page > .container {
     position: relative;
-    width: 60vw;
-    height: 70vh;
+    /* width: 60vw; */
+    /* height: 70vh; */
     top: 50%;
     transform: translateY(-50%);
     /* background-color: aqua; */
