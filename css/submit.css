@@ -39,7 +39,7 @@
     position: relative;
     text-align: center;
     border: none;
-    margin: 3vw;
+    margin: 1vw;
 }
 #button-box button {
     width: 10vw;
@@ -53,4 +53,33 @@
 #button-box button:hover {
     background-color: var(--main-color);
     color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #37373a;
+    color: #ffffff;
+}
+body.dark-mode header ul > li > a,
+body.dark-mode header ul > li > button,
+body.dark-mode footer div,
+body.dark-mode footer a {
+    color: #ffffff;
+}
+
+body.dark-mode #title {
+    color: #ffffff;
+}
+body.dark-mode #message {
+    color: var(--gray-color-03)
+}
+
+body.dark-mode #button-box button {
+    color: #ffffff;
 }
