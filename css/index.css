@@ -1059,6 +1059,7 @@
     }
 }
 
+/* about 반응형 */
 @media only screen and (max-width: 600px) {
     .about-page {
         width: 70vw;
@@ -1089,6 +1090,7 @@
     }
 }
 
+/* 활동 반응형 */
 @media only screen and (max-width: 600px) {
     .activity-page {
         position: relative;
@@ -1147,4 +1149,44 @@
         line-height: 13px;
         margin-top: 12px;
     }
+}
+
+/* 프로젝트 반응형 */
+@media only screen and (max-width: 600px) {
+    .project-page>.container>.txt-box>.title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    
+    .project-page>.container>.txt-box>.sub-title {
+        font-size: 12px;
+    }
+    
+    .project-page>.container>.txt-box>.message {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    #slider>.image-box {
+        /* 원본+클론의 총 합 */
+        width: 940rem;
+    }
+    
+    @keyframes bannermove {
+        0% {
+            transform: translate(2.5%, 0);
+        }
+    
+        100% {
+            transform: translate(-20%, 0);
+        }
+    }
+    
+    #slider>.image-box>.box>.blur-box>button>img {
+        top: 50%;
+        transform: translateY(-45%);
+        width: 2rem;
+        height: 5rem;
+    }
+    
 }
