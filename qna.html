@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- sweet alert style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+
 </head>
 
 <body>
@@ -34,34 +38,45 @@
                     <div class="title">익명게시판<br></div>
                     <div class="message">MSG에 대해 궁금한 점을 적어주세요!</div>
                 </div>
+
                 <!-- 질문입력창 -->
-                <form class="form-box" action="qna.html" method="POST"> 
+                <form class="form-box" action="qna.html" name="addQuestion" method="post" onsubmit="submitForm(event);"> 
                     <div class="input_button">
-                            <!-- <img src="./image/qna/qna-search.svg"/> -->
-                            <input id="question" type="text" placeholder="질문을 입력해주세요." class="form-control">
-                            
-                            <button type="submit" value="" class="search_button" style="background-image: url('./image/qna/qna-search.svg');"></button>
+                        <label>
+                            <input id="question" type="text" name="user_question" onkeypress="submitKey(event)" placeholder="질문을 입력해주세요." autocomplete="off">
+                            <button id="button" type="button" name="submit_btn" onclick="showBlank()"></button>
+                        </label>
+                        <div class="question_nubers" >
+                            <p id="p">0</p>
+                            <p id="asking">개의 질문들</p>
+                            <!--답변중인 질문들-->
+                            <p id="completed_asking"></p>
+                            <!--답변한 질문들-->
+                        </div>
+                        <!--질문 출력창-->
+                        <div class="answer">
+                            <p id="answer_count"></p>
+                            <p id="output"></p>
+                        </div>
                     </div>
                 </form>
-                <!--    입력창 코드
-                    {{  form.question.label }}
-                    {{  form.question(class="form-control") }}
-                -->
             </div>
         </div>
     </main>  
 
     <footer>
-        <div class="footer-message">
-            MSG <br>
-            Make Share Gather
-        </div>
+        <div class="inner">
+            <div class="footer-message">
+                MSG <br>
+                Make Share Gather
+            </div>
         <div class="footer-contact">
             13기 부장 노하은 | 010-2850-0614 <br>
             14기 부장 000 | 010-0000-0000
         </div>
             <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
             <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
+        </div>
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
