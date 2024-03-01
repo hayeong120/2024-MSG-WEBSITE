@@ -1190,3 +1190,232 @@
     }
     
 }
+
+/* 부원들의 목소리 반응형 */
+@media only screen and (max-width: 600px) {
+    .opinion-page {
+        position: relative;
+        /* width: 80vw; */
+        /* height: 80vh; */
+        width: 100vw;
+        height: var(--page-height);
+        text-align: center;
+        overflow-x: hidden;
+    }
+    
+    .opinion-page>.txt-box {
+        z-index: 99;
+        position: sticky;
+        top: 0;
+        width: 80vw;
+        height: 230px;
+        margin: auto;
+        padding-top: 50px;
+        background-color: white;
+    }
+    
+    .opinion-page>.txt-box>.title {
+        font-size: 25px;
+        line-height: 29px;
+    }
+    
+    .opinion-page>.txt-box>.sub-title {
+        font-size: 12px;
+    }
+    
+    .opinion-page>.txt-box>.message {
+        font-size: 12px;
+        color: var(--gray-color-02);
+        line-height: 15px;
+        margin-top: 13px;
+    }
+    
+    .opinion-box {
+        position: relative;
+        /* top: 13vh; */
+        width: 80vw;
+        height: 100vh;
+        /* padding: 0 10vw; */
+        /* background-color: aqua; */
+        margin: auto;
+        overflow-y: scroll;
+    }
+    
+    .opinion-box>.opinion {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        padding: 14px 14px 32.5px 14px;
+        background-color: var(--gray-color-05);
+        border-radius: 10px;
+        right: 0;
+    }
+    
+    .opinion:nth-child(1),
+    .opinion:nth-child(3),
+    .opinion:nth-child(5),
+    .opinion:nth-child(7) {
+        position: relative;
+        /* margin-bottom: 35vh; */
+    }
+    
+    .opinion:nth-child(2),
+    .opinion:nth-child(4),
+    .opinion:nth-child(6) {
+        position: relative;
+        top: 250px;
+        float: right;
+    }
+    
+    .opinion:nth-child(1) {
+        margin-bottom: -120px;
+    }
+    
+    .opinion:nth-child(2) {
+        position: relative;
+        top: 150px;
+        width: 260px;
+        right: -20px;
+    }
+    
+    .opinion:nth-child(3) {
+        top: 170px;
+        width: 260px;
+        left: 5px;
+    }
+    
+    .opinion:nth-child(4) {
+        top: -20px;
+        width: 350px;
+    }
+    
+    .opinion:nth-child(5) {
+        top: 30px;
+        width: 340px;
+        margin: 20rem 0 12rem;
+    }
+    
+    .opinion:nth-child(6) {
+        top: -130px;
+        width: 200px;
+    }
+    
+    .opinion:nth-child(7) {
+        top: -80px;
+        width: 200px;
+    }
+    
+    .opinion-box>.opinion>.img-box>img {
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        width: 11px;
+    }
+    
+    .opinion-box>.opinion>.message-box {
+        position: relative;
+        width: fit-content;
+        left: 0vw;
+        top: 12px;
+        text-align: left;
+        color: var(--black-color-01);
+        /* background-color: #2AF598; */
+    }
+    
+    .opinion-box>.opinion>.member-box {
+        position: relative;
+        bottom: -20px;
+        right: 0;
+        text-align: right;
+        font-size: 10px;
+        color: var(--gray-color-02);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .support-page {
+        position: relative;
+        /* width: 100vw;
+        height: 100vh;
+        height: var(--page-height); */
+        width: 80vw;
+        height: 80vh;
+        text-align: center;
+    }
+    
+    .support-page>.container {
+        position: relative;
+        box-sizing: border-box;
+        text-align: center;
+        width: 80vw;
+        height: 80vh;
+        /* width: 100vw;
+        height: 80vh; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-left: 50px;
+        /* background-color: aliceblue; */
+        color: var(--black-color-01);
+        font-weight: var(--bold-weight);
+    }
+    
+    .support-page>.container>.img-box>img {
+        position: absolute;
+        z-index: -1;
+        width: 180px;
+        left: 22px;
+        top: 170px;
+    }
+    
+    .support-page>.container>.txt-box {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        line-height: 60px;
+    }
+    
+    .support-page>.container>.txt-box>button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 135px;
+        font-size: 19px;
+        color: var(--black-color-01);
+        background-color: rgba(0, 0, 0, 0);
+        text-transform: uppercase;
+        transition: all 0.7s ease-out;
+        background: linear-gradient(270deg, #56FF85, #2AF598, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+        background-position: 1% 50%;
+        background-size: 300% 300%;
+        border: 1px solid var(--main-color);
+        border-radius: 3em;
+        padding: 0.6vw 1vw;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7vh;
+    }
+    
+    .support-page>.container>.txt-box>button:hover {
+        position: relative;
+        left: 50%;
+        /* transform: translate(-50%, -1vh); */
+        width: 11.5vw;
+        border: 1px solid rgba(223, 190, 106, 0);
+        background-position: 99% 50%;
+        text-align: center;
+        box-shadow: 0 10px 20px -10px var(--gray-color-02);
+    }
+    
+    .support-page>.container>.txt-box>button:hover img {
+        opacity: 0;
+        /* 이미지의 투명도를 100%로 설정 */
+    }
+    
+    .support-page>.container>.txt-box>button>img {
+        width: 2vw;
+        top: 50%;
+    }
+}
