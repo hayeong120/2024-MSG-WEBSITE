@@ -1,52 +1,56 @@
-:root{
-    --background-color:#F9F9F9;
-    --background-color-2:#ffffff;
-    --title-color:#232324;
-    --message-color:#74748C;
-    --box-color:#F2F2F2;
+:root {
+    --background-color: #F9F9F9;
+    --background-color-2: #ffffff;
+    --title-color: #232324;
+    --message-color: #74748C;
+    --box-color: #F2F2F2;
 }
 
-[data-theme="dark"]{
-    --background-color:#37373A;
-    --background-color-2:#232324;
-    --title-color:#ffffff;
-    --message-color:#C4C4C4;
-    --box-color:#ffffff;
+[data-theme="dark"] {
+    --background-color: #37373A;
+    --background-color-2: #232324;
+    --title-color: #ffffff;
+    --message-color: #C4C4C4;
+    --box-color: #ffffff;
 }
 
-.content-first{
+.content-first {
     padding-top: 188px;
     text-align: center;
     background-color: var(--background-color);
-    height: 300px;
+    height: 550px;
     width: 100%;
 }
 
-.content-first > .sub-title{
-    font-size: var(--subtitle-font-size);
+.content-first>.sub-title {
+    font-size: 1.4rem;
     color: var(--main-color);
     font-weight: var(--regular-weight);
     margin-bottom: 7px;
 }
-.content-first > .title{
-    font-size: var(--title-font-size);
+
+.content-first>.title {
+    font-size: 2.5rem;
     color: var(--title-color);
     font-weight: var(--bold-weight);
 }
-.content-first > .content{
-    font-size: var(--subtitle-font-size);
+
+.content-first>.content {
+    font-size: 1.3rem;
     color: var(--message-color);
     margin-bottom: 10px;
 }
-#lh{
-    line-height: 0.8;
+
+#lh {
+    line-height: 1.4;
 }
-.btn{
+
+.content-first>.btn {
     background-color: transparent;
     border: 1px solid var(--main-color);
     color: var(--message-color);
     border-radius: 50px;
-    font-size: var(--header-font-size);
+    font-size: 1.2rem;
     text-transform: uppercase;
     transition: all 0.7s ease-out;
     background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), var(--main-color), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
@@ -54,12 +58,13 @@
     background-size: 300% 300%;
     position: relative;
     overflow: hidden;
-    display: inline-block; /* 필요에 따라 조정 */
-    padding: 10px 12px 12px 8px; /* 텍스트에 맞춘 padding */
+    display: inline-block;
+    padding: 10px 12px 12px 8px;
+    /* 텍스트에 맞춘 padding */
     transition: all 0.7s ease;
 }
 
-.btn:hover {
+.content-first>.btn:hover {
     border: 0.1vw solid rgba(223, 190, 106, 0);
     color: white;
     background-position: 99% 50%;
@@ -68,68 +73,83 @@
     box-shadow: 0 10px 10px -10px var(--gray-color-02);
     padding-right: 50px;
 }
-.btn::after {
+
+.content-first>.btn::after {
     content: url('/image/guidelines/go.png');
     position: absolute;
-    right: 10px; /* 이미지 위치 조정 */
+    right: 10px;
+    /* 이미지 위치 조정 */
     top: 40%;
-    transform: translateY(-50%) scale(0); /* 처음에는 이미지를 숨깁니다 */
-    opacity: 0; /* 이미지 투명하게 */
+    transform: translateY(-50%) scale(0);
+    /* 처음에는 이미지를 숨깁니다 */
+    opacity: 0;
+    /* 이미지 투명하게 */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.btn:hover::after {
-    transform: translateY(-50%) scale(1); /* 호버 시 이미지를 보여줍니다 */
+.content-first>.btn:hover::after {
+    transform: translateY(-50%) scale(1);
+    /* 호버 시 이미지를 보여줍니다 */
     opacity: 1;
 }
-.content-second{
+
+.content-second {
     background-color: var(--background-color-2);
 }
-.content-second > .greentext{
+
+.content-second>.greentext {
     color: var(--main-color);
     font-weight: bold;
     font-size: 28px;
     text-align: center;
     padding-top: 150px;
 }
-.content-second > .area{
+
+.content-second>.area {
     display: flex;
     justify-content: center;
 }
-.content-second > .area > .box{
+
+.content-second>.area>.box {
     width: 250px;
     height: 170px;
     background-color: var(--box-color);
     display: flex;
     justify-content: center;
-    flex-direction: column; /* 내용을 세로로 정렬 */
+    flex-direction: column;
+    /* 내용을 세로로 정렬 */
     border-radius: 25px;
     margin: 70px;
     margin-bottom: 0;
-    
+
 }
-.content-second > .area > .box > .box-title{
+
+.content-second>.area>.box>.box-title {
     font-weight: var(--bold-weight);
     margin-left: 25px;
-    font-size: medium;
     font-size: 18px;
 }
-.content-second > .area > .box > .box-content-bold{
+
+.content-second>.area>.box>.box-content-bold {
     font-weight: var(--regular-weight);
     margin-left: 25px;
 }
-.content-second > .area > .box > .box-content{
+
+.content-second>.area>.box>.box-content {
     align-items: flex-start;
     margin-left: 25px;
 }
 
-.content-second > .area2 {
+.content-second>.area2 {
     display: flex;
-    flex-wrap: wrap; /* 필요하다면 줄 바꿈 허용 */
+    flex-wrap: wrap;
+    /* 필요하다면 줄 바꿈 허용 */
     justify-content: center;
-    gap: 20px; /* 박스 사이의 간격 조정 */
+    gap: 20px;
+    /* 박스 사이의 간격 조정 */
 }
-.content-second > .area2 > .box2{
+
+.content-second>.area2>.box2 {
     width: 290px;
     height: 80px;
     display: flex;
@@ -138,25 +158,122 @@
     background-color: var(--box-color);
     border-radius: 10px;
 }
-.content-second > .area2 > .box2:nth-child(1) {
+
+.content-second>.area2>.box2:nth-child(1) {
     margin-top: 40px;
 }
 
-.content-second > .area2 > .box2:nth-child(2) {
-    margin-top: 140px; 
+.content-second>.area2>.box2:nth-child(2) {
+    margin-top: 140px;
 }
 
-.content-second > .area2 > .box2:nth-child(3) {
-    margin-top: 240px; 
+.content-second>.area2>.box2:nth-child(3) {
+    margin-top: 240px;
     margin-bottom: 200px;
 }
-.content-second > .area2 > .box2 > .box-title{
+
+.content-second>.area2>.box2>.box-title {
     font-weight: var(--bold-weight);
     margin-left: 25px;
     margin-bottom: 10px;
 }
-.content-second > .area2 > .box2 > .box-content{
+
+.content-second>.area2>.box2>.box-content {
     align-items: flex-start;
     margin-left: 25px;
     font-size: 14px;
+}
+
+
+@media (max-width: 575px) {
+    .content-first .sub-title {
+        font-size: 1.3rem;
+    }
+
+    .content-first .title {
+        font-size: 2.3rem;
+    }
+
+    .content-first .content {
+        font-size: 1.2rem;
+    }
+
+    .content-first .btn {
+        font-size: 1.0rem;
+        padding: 10px 15px;
+    }
+    .content-second > .area {
+        flex-direction: row; /* 가로 방향으로 요소를 배치 */
+        flex-wrap: wrap; /* 공간이 부족할 경우 다음 줄로 요소들을 넘김 */
+        justify-content: center; /* 가운데 정렬 */
+    }
+    .content-second > .area > .box {
+        width: 70%; /* 모바일 화면에 맞게 박스 너비 조정, 필요에 따라 % 대신 고정값(px) 사용 가능 */
+        margin: 10px; /* 박스 간의 간격 조정 */
+        /* 필요에 따라 height도 조정할 수 있습니다. */
+    }
+}
+@media (max-width: 1023px){
+    .content-second > .area > .box {
+        width: 30%; /* 모바일 화면에 맞게 박스 너비 조정, 필요에 따라 % 대신 고정값(px) 사용 가능 */
+        margin: 10px; /* 박스 간의 간격 조정 */
+        margin-top: 60px;
+        /* 필요에 따라 height도 조정할 수 있습니다. */
+    }
+    .content-second>.area2 {
+        flex-direction: row; /* 가로 방향으로 요소를 배치 */
+        flex-wrap: wrap; /* 공간이 부족할 경우 다음 줄로 요소들을 넘김 */
+        justify-content: center; /* 가운데 정렬 */
+    }
+    
+    .content-second>.area2>.box2 {
+        width: 70%; /* 모바일 화면에 맞게 박스 너비 조정, 필요에 따라 % 대신 고정값(px) 사용 가능 */
+    }
+    
+    .content-second>.area2>.box2:nth-child(1) {
+        margin-top: 40px;
+    }
+    
+    .content-second>.area2>.box2:nth-child(2) {
+        margin-top: 40px;
+    }
+    
+    .content-second>.area2>.box2:nth-child(3) {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px){
+    .content-second > .area {
+        flex-direction: row; /* 가로 방향으로 요소를 배치 */
+        flex-wrap: wrap; /* 공간이 부족할 경우 다음 줄로 요소들을 넘김 */
+        justify-content: center; /* 가운데 정렬 */
+    }
+    .content-second > .area > .box {
+        width: 70%; /* 모바일 화면에 맞게 박스 너비 조정, 필요에 따라 % 대신 고정값(px) 사용 가능 */
+        margin: 10px; /* 박스 간의 간격 조정 */
+        margin-top: 50px;
+        /* 필요에 따라 height도 조정할 수 있습니다. */
+    }
+    .content-second>.area2 {
+        flex-direction: row; /* 가로 방향으로 요소를 배치 */
+        flex-wrap: wrap; /* 공간이 부족할 경우 다음 줄로 요소들을 넘김 */
+        justify-content: center; /* 가운데 정렬 */
+    }
+    
+    .content-second>.area2>.box2 {
+        width: 70%; /* 모바일 화면에 맞게 박스 너비 조정, 필요에 따라 % 대신 고정값(px) 사용 가능 */
+        margin: 10px; 
+    }
+    
+    .content-second>.area2>.box2:nth-child(1) {
+        margin-top: 40px;
+    }
+    
+    .content-second>.area2>.box2:nth-child(2) {
+        margin-top: 40px;
+    }
+    
+    .content-second>.area2>.box2:nth-child(3) {
+        margin-top: 40px;
+    }
 }
