@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>15기 지원 페이지</title>
+
+    <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/apply.css">
+
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
 </head>
 
@@ -19,17 +22,20 @@
                 <li><a href="./about.html" class="header-menu" id="header-about">ABOUT</a></li>
                 <li><a href="" class="header-menu" id="header-member">부원</a></li>
                 <li><a href="./activity.html" class="header-menu" id="header-activity">활동</a></li>
-                <li><a href="" class="header-menu" id="header-qna">QNA</a></li>
+                <li><a href="./qna.html" class="header-menu" id="header-qna">QNA</a></li>
                 <li><button>15기 지원하기</button></li>
             </ul>
         </nav>
     </header>
 
+    <!-- DarkMode -->
+    <button id="darkModeBtn">Dark Mode</button>
+
     <!-- main -->
     <main>
         <div class="wrapper">
             <div class="support-page">
-                    
+                     
                     <!-- title -->
                     <section id="title-box">
                         <div id="sub-title">MSG 지원 페이지</div>
@@ -81,7 +87,7 @@
                           </ul>
                         </fieldset>
                         <fieldset id="button-box">
-                           <button type="submit">제출하기</button>
+                           <button type="submit" onclick="location.href='./applySubmit.html';">제출하기</button>
                         </fieldset>                                        
                     </form>
                 
@@ -102,6 +108,9 @@
         <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
         <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
     </footer>
-            
+           
+    <!--JS-->
+    <script src="./js/apply.js"></script>
+
 </body>
 </html>
