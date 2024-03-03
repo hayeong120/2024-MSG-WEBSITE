@@ -735,8 +735,8 @@
     position: absolute;
     z-index: -1;
     width: 18vw;
-    left: 22.5vw;
-    top: 17vh;
+    left: 10.5vw;
+    top: 15vh;
 }
 
 .support-page>.container>.txt-box {
@@ -1364,25 +1364,27 @@
         position: absolute;
         z-index: -1;
         width: 180px;
-        left: 22px;
-        top: 170px;
+        height: 150px;
+        left: 12px;
+        top: 190px;
     }
     
     .support-page>.container>.txt-box {
         position: relative;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-        line-height: 60px;
+        transform: translate(-55%, -50%);
+        font-size: 20px;
+        line-height: 30px;
     }
     
     .support-page>.container>.txt-box>button {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        width: 135px;
-        font-size: 19px;
+        width: 105px;
+        height: 20px;
+        font-size: 10px;
         color: var(--black-color-01);
         background-color: rgba(0, 0, 0, 0);
         text-transform: uppercase;
@@ -1391,18 +1393,20 @@
         background-position: 1% 50%;
         background-size: 300% 300%;
         border: 1px solid var(--main-color);
-        border-radius: 3em;
-        padding: 0.6vw 1vw;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         justify-content: space-between;
-        margin-top: 7vh;
+        margin-top: 50px;
     }
     
     .support-page>.container>.txt-box>button:hover {
         position: relative;
         left: 50%;
         /* transform: translate(-50%, -1vh); */
-        width: 11.5vw;
+        width: 105px;
+        height: 20px;
         border: 1px solid rgba(223, 190, 106, 0);
         background-position: 99% 50%;
         text-align: center;
@@ -1415,7 +1419,14 @@
     }
     
     .support-page>.container>.txt-box>button>img {
-        width: 2vw;
+        position: absolute;
+        width: 19px;
         top: 50%;
+        right: 10px;
+        transform: translateY(-70%);
     }
+}
+
+@media only screen and (max-width: 600px) {
+
 }
