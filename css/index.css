@@ -585,7 +585,7 @@
     height: 30vh;
     margin: auto;
     padding-top: 5vh;
-    background-color: white;
+    background-color: transparent;
 }
 
 .opinion-page>.txt-box>.title {
@@ -1519,4 +1519,60 @@
     .faq.active .faq-toggle {
         background-color: #9fa4a8;
     }
+}
+
+/* 다크모드 css */
+body.dark-mode {
+    background-color: var(--black-color-01);
+    color: var(--gray-color-05);
+}
+
+body.dark-mode .tutorial-page > .container > .keyword {
+    color: black;
+}
+
+body.dark-mode .activity-page > .container > .txt-box > .title,
+body.dark-mode .about-page > .container > .txt-box > .title,
+body.dark-mode .project-page > .container > .txt-box > .title,
+body.dark-mode .opinion-page > .txt-box > .title,
+body.dark-mode .support-page > .container > .txt-box,
+body.dark-mode .support-page > .container> .txt-box > button,
+body.dark-mode .question-page > .txt-box > .title
+{
+    font-weight: 100;
+    color: white;
+}
+
+body.dark-mode .activity-page > .container > .txt-box > .sub-title,
+body.dark-mode .about-page > .container > .txt-box > .sub-title,
+body.dark-mode .project-page > .container > .txt-box > .sub-title,
+body.dark-mode .opinion-page > .txt-box > .sub-title,
+body.dark-mode .support-page > .txt-box,
+body.dark-mode .support-page > .txt-box > button,
+body.dark-mode .question-page > .txt-box > .sub-title {
+    font-weight: 100;
+}
+
+body.dark-mode .opinion-page>.txt-box {
+    background-color: var(--black-color-01);
+}
+
+body.dark-mode .wrapper {
+    background-color: var(--black-color-01);
+}
+
+body.dark-mode .faq-container > .faq {
+    color: black;
+}
+
+body.dark-mode footer {
+    background-color: var(--gray-color-01);
+}
+
+body.dark-mode footer > .inner > .footer-message,
+body.dark-mode footer > .inner > .footer-contact,
+body.dark-mode footer > .inner > a,
+body.dark-mode footer > .inner > .footer-copyright {
+    color: white;
+    font-weight: 100;
 }
