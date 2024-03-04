@@ -1,0 +1,479 @@
+:root {
+    --width-web: 100%;
+    --speech-width: 45vw;
+    --speech-width-mid: 50vw;
+    --speech-width-phone: 65vw;
+    --speech-margin: calc(var(--width-web) - var(--speech-width));
+    --speech-margin-mid: calc(var(--width-web) - var(--speech-width-mid));
+    --speech-margin-phone: calc(var(--width-web) - var(--speech-width-phone));
+    --image-width: 500px;
+    --image-width-phone: 350px;
+}
+
+* {
+    overflow-x: visible;
+}
+
+.title,
+.activity,
+.info,
+.category {
+    margin-bottom: 20px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 130px;
+    margin-bottom: 150px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-width: 50%;
+    gap: 30px;
+}
+
+.title .below-tag {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.what .title {
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bold;
+    color: var(--gray-color-01);
+}
+
+.title .message {
+    text-align: left;
+    margin-bottom: 30px;
+    color: var(--gray-color-02);
+}
+
+.title .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.title .sub {
+    display: flex;
+    font-size: large;
+    margin-bottom: 10px;
+    flex-direction: row;
+}
+
+.title .sub-tit {
+    width: 200px;
+    font-size: medium;
+    font-weight: bold;
+    color: var(--gray-color-01);
+}
+
+.title .sub-message {
+    font-size: 16px;
+    color: var(--gray-color-01);
+}
+
+.any {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.any-button {
+    min-width: 15vw;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    font-weight: 900;
+}
+
+.below-tag {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#tag {
+    border-radius: 15px;
+    padding: 5px 10px;
+    min-width: 50px;
+    text-align: center;
+    background-color: var(--main-color);
+    font-size: small;
+}
+
+.explan {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.slider {
+    width: 40vw;
+    height: auto;
+}
+
+.slider-container {
+    position: relative;
+    width: var(--image-width);
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    width: var(--image-width);
+    height: 300px;
+    flex: 0 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-item>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-top: -20px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: white;
+    border: 0px;
+    margin: 0 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.slide-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    width: 36px;
+    background-color: var(--main-color);
+}
+
+.explan-text {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    gap: 30px;
+    padding-bottom: 10%;
+}
+
+.speech {
+    display: flex;
+    width: var(--width-web);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.speech-group {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #F6F6F6;
+    border-radius: .4em;
+    padding: 20px;
+    width: var(--speech-width);
+    min-height: 40px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 55%;
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-radius: 5px;
+    border-right-color: #F6F6F6;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -10px;
+    margin-left: -20px;
+
+}
+
+.speech-text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: end;
+}
+
+.speech-name {
+    position: relative;
+    width: var(--speech-margin);
+    height: 100%;
+    margin: 0 30px;
+}
+
+#name {
+    position: absolute;
+    font-size: small;
+    color: var(--gray-color-02);
+}
+
+.speech-group:nth-child(odd)>.speech-name>#name {
+    left: 0;
+    bottom: 0;
+}
+
+.speech-group:nth-child(even)>.speech-name>#name {
+    right: 0;
+    bottom: 0;
+}
+
+/* Right align even speech bubbles */
+.speech-group:nth-child(even)>.speech-bubble {
+    transform: scaleX(-1);
+}
+
+.speech-group:nth-child(odd)>.speech-bubble>.speech-text {
+    text-align: end;
+}
+
+.speech-group:nth-child(even)>.speech-bubble>.speech-text {
+    text-align: end;
+    transform: scaleX(-1);
+}
+
+.speech-group:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1200px) {
+    .explan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        width: 100vw;
+    }
+
+    .explan-text {
+        width: 40vw;
+    }
+
+    .speech-text {
+        font-size: small;
+    }
+
+    .speech-name {
+        width: var(--speech-margin-mid);
+        margin: 0 25px;
+    }
+
+    #name {
+        font-size: xx-small;
+    }
+}
+
+/* 휴대폰 사이즈에 대한 미디어 쿼리 추가 */
+@media only screen and (max-width: 600px) {
+    .title {
+        gap: 10px;
+    }
+
+    .title .sub-title {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .title .sub-tit {
+        width: 120px;
+    }
+
+    .title .message {
+        font-size: 15px;
+        margin-top: 2px;
+        margin-bottom: 50px;
+    }
+
+    .slider-container {
+        width: var(--image-width-phone);
+    }
+
+    .slider-item {
+        width: var(--image-width-phone);
+        height: 200px;
+    }
+
+    .container {
+        gap: 60px;
+        margin-bottom: 70px;
+    }
+
+    .speech-bubble {
+        padding: 10px;
+        width: var(--speech-width-phone);
+    }
+
+    .explan-text {
+        width: 55vw;
+    }
+
+    .explan-title {
+        font-size: medium;
+    }
+
+    .explan-detail {
+        font-size: small
+    }
+
+    .speech-text {
+        font-size: small;
+    }
+
+    .speech-name {
+        width: var(--speech-margin-phone);
+        margin: 0 20px;
+    }
+
+    #name {
+        font-size: xx-small;
+    }
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: var(--gray-color-05);
+}
+
+body.dark-mode .title {
+    color: var(--gray-color-05);
+}
+
+.dark-mode .title .message {
+    color: var(--gray-color-04);
+}
+
+.dark-mode .sub-tit {
+    color: var(--gray-color-04);
+}
+
+.dark-mode .sub-message {
+    color: var(--gray-color-04);
+}
+
+.dark-mode .any-button {
+    background-color: var(--main-color);
+    color: black;
+    /* Change this to your desired text color */
+}
+
+.dark-mode #tag {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.dark-mode .prev,
+.next {
+    color: var(--main-color);
+}
+
+.dark-mode .prev:hover,
+.next:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.dark-mode .indicator.active {
+    background-color: var(--main-color);
+}
+
+.dark-mode .name {
+    color: var(--gray-color-03);
+}
+
+
+.dark-mode .prev,
+.dark-mode .next {
+    background-color: black;
+}
