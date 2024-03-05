@@ -330,7 +330,7 @@ body.dark-mode .swiper-prev {
     padding: 2%;
     text-align: center;
     /* 그룹을 가운데 정렬하기 위해 */
-    padding-top: 35%;
+    padding-top: 20%;
     align-items: flex-start;
 }
 
@@ -437,7 +437,7 @@ body.dark-mode .swiper-prev {
 /* TODO : 태그, 이름 길때 안내려가도록 스타일 수정 */
 /* Category 섹션 스타일 */
 .category {
-    margin-top: 10%;
+    margin-top: 13%;
     padding: 2%;
 }
 
