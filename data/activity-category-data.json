@@ -27,11 +27,27 @@
         "url": ""
       },
       {
+        "title": "기억",
+        "img": "./image/activity/memory_main.png",
+        "detail-tag": "#12기#web",
+        "tag1": "web",
+        "tag2": "IT쇼",
+        "url": ""
+      },
+      {
         "title": "너의 행성은",
         "img": "./image/activity/your_planet_main.png",
         "detail-tag": "#13기#Web",
         "tag1": "IT쇼",
         "tag2": "Web",
+        "url": ""
+      },
+      {
+        "title": "MSG 지원사이트",
+        "img": "./image/activity/website_main.png",
+        "detail-tag": "#13기#Web",
+        "tag1": "Web",
+        "tag2": "",
         "url": ""
       },
       {
@@ -48,6 +64,14 @@
         "detail-tag": "#14기#Swing",
         "tag1": "gui",
         "tag2": "java",
+        "url": ""
+      },
+       {
+        "title": "2023 STAC",
+        "detail-tag": "#13기#14기",
+        "img": "./image/activity/stac_main.png",
+        "tag1": "가작",
+        "tag2": "수상",
         "url": ""
       },
       {
@@ -120,6 +144,14 @@
         "url": ""
       },
       {
+        "title": "기억",
+        "img": "./image/activity/memory_main.png",
+        "detail-tag": "#12기#web",
+        "tag1": "web",
+        "tag2": "IT쇼",
+        "url": ""
+      },
+      {
         "title": "너의 행성은",
         "img": "./image/activity/your_planet_main.png",
         "detail-tag": "#13기#Web",
@@ -137,7 +169,7 @@
       },
       {
         "title": "ProMatch",
-        "img": "./image/activity/dailypaper.png",
+        "img": "./image/activity/promatch.png",
         "detail-tag": "#14기#Swing",
         "tag1": "gui",
         "tag2": "java",
