@@ -1,3 +1,10 @@
+// 다크 모드 토글 버튼 클릭 이벤트 핸들러
+document
+  .getElementById("darkModeToggle")
+  .addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+  });
+
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
   var mySwiper = new Swiper(".swiper-container", {
@@ -128,16 +135,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // info
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function () {
   // 각 숫자의 최종 값
   var yearsFinalValue = 14;
   var meetingsFinalValue = 49;
   var blogsFinalValue = 447;
 
-  // 애니메이션 시작
-  startCountingAnimation("years", yearsFinalValue);
-  startCountingAnimation("meetings", meetingsFinalValue);
-  startCountingAnimation("blogs", blogsFinalValue);
+  // 애니메이션이 시작되었는지 확인하는 플래그
+  var animationStarted = false;
+
+  // 스크롤 이벤트 리스너
+  $(window).on("scroll", function () {
+    // 슬라이드가 뷰포트 내에 있는지 확인
+    var slideTop = $(".slide").offset().top;
+    var windowHeight = $(window).height();
+    var scrollPosition = $(window).scrollTop();
+
+    if (scrollPosition + windowHeight > slideTop && !animationStarted) {
+      startCountingAnimation("years", yearsFinalValue);
+      startCountingAnimation("meetings", meetingsFinalValue);
+      startCountingAnimation("blogs", blogsFinalValue);
+
+      // 애니메이션이 시작되었음을 나타내는 플래그를 true로 설정
+      animationStarted = true;
+    }
+  });
 
   function startCountingAnimation(id, finalValue) {
     var element = document.getElementById(id);

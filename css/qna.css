@@ -1,0 +1,141 @@
+.title-box {
+    position: relative;
+    text-align: left;
+    line-height: 3vw;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+.sub-title {
+    font-size: var(--subtitle-font-size);
+    color: var(--main-color);
+    font-weight: var(--regular-weight);
+}
+.title {
+    font-size: var(--title-font-size);
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+}
+.message {
+    font-size: var(--subtitle-font-size);
+    color: var(--gray-color-02);
+    font-weight: var(--light-weight);
+}
+/*input_button*/
+.form-box {
+    position: relative;
+    line-height: 3vw;
+    margin-left: 120px;
+}
+label {
+    position: relative;
+}
+#question-input {
+    width: 90%;
+    height: 75%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #D2D2D2;
+    border-radius: 15px;
+    box-shadow: 1px 1.5px 3px 
+    rgba(0,0,0,0.3);
+    padding: 15px 23px;
+}
+#question-input:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+#question-input::placeholder {
+    color: #BEBEBE;
+}
+
+.input_button {
+    position: relative;
+}
+.input_button button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 2em;
+    margin-top: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(../image/qna/search.svg);
+    background-size: 30px;
+    padding: 15px 15px;
+}
+.input_button button:hover {
+    background-color: var(--main-color);
+    transition: 0.5s;
+}
+body .showAlert-title {
+    font: var(--main-font);
+    color: white;
+}
+#p {
+    position: absolute;
+    padding: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#asking {
+    position: relative;
+    padding: 50px;
+    padding-left: 34px;
+    font-weight: bold; 
+    font-size: 15px;
+}
+.answer {
+    font-weight: medium;
+    padding: 50px;
+}
+#warning {
+    margin-left: 5px;
+    color: red;  
+}
+/* 답변 폼 스타일 */
+.question-and-answer {
+    position: relative;
+    width: 90%;
+    height: 75%;
+    /* margin: 20px 0; */
+    box-sizing: border-box;
+    border: 1px solid #D2D2D2;
+    border-radius: 15px;
+    padding: 20px 50px;
+    background-repeat: no-repeat;
+    display: none;
+}
+.question-and-answer #textAnswer {
+    position: relative;
+    /* padding-top: 2px;
+    padding-left: 70px; */
+
+}
+.question-and-answer #line {
+    position: relative;
+    width: 90%;
+    height: 75%;
+    /* margin: 5px 5; */
+}
+.question-and-answer #vector {
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    /* margin-left: 10px;
+    margin-top: -10px; */
+}
+
+.question-and-answer #answerInput {
+    position: relative;
+    width: 60%;
+    margin-left: 45px;
+    margin-top: 11px;
+    border: none;
+    outline: none;
+}
+
+
+/*darkMode*/
