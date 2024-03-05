@@ -87,7 +87,7 @@
     margin-right: 64px  ;
 }
 
-.member-page > .container > .member-group > .member-box > .class {
+.member-page > .container > .member-group > .member-box > .class  {
     width: 213px;
     color: rgba(42,245,152,0.8500000238418579);
     position: absolute;
