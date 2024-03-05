@@ -337,7 +337,7 @@ body.dark-mode .swiper-prev {
 .info .title {
     text-align: left;
     margin-left: 100px;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: bold;
     color: var(-background-color-dark);
 }
@@ -345,7 +345,7 @@ body.dark-mode .swiper-prev {
 .group {
     display: flex;
     justify-content: space-around;
-    margin-top: 9%;
+    margin-top: 6%;
 }
 
 .group :hover {
@@ -372,7 +372,7 @@ body.dark-mode .swiper-prev {
 
 .info .sub-title {
     margin: 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: var(-background-color-dark);
     padding-bottom: 1.2%;
     background-color: rgba(255, 255, 255, 0);
@@ -381,7 +381,7 @@ body.dark-mode .swiper-prev {
 .info .top {
     display: flex;
     margin: 0;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     color: var(-background-color-dark);
     background-color: rgba(255, 255, 255, 0);
@@ -448,7 +448,7 @@ body.dark-mode .swiper-prev {
 .category .inner-category p {
     display: inline-block;
     margin-right: 5%;
-    font-size: 28px;
+    font-size: 1.7vw;
     color: var(--gray-color-01);
     cursor: pointer;
     transition: color 0.5s;
@@ -462,7 +462,7 @@ body.dark-mode .swiper-prev {
 
 .category .inner-banner {
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .activity-detail {
