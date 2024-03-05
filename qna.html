@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- sweet alert style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
+        <nav>
+            <ul>
+                <li><a href="./about.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a></li>
+                <li><a href=""  class="header-menu" id="header-member" onclick="changeFontColor()" >부원</a></li>
+                <li><a href="./activity.html"  class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
+                <li><a href=""  class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
+                <li><button>15기 지원하기</button></li>
+            </ul>
+        </nav>
+    </header>
+    <!--darkMode-->
+    <button id="darkModeToggle">다크 모드 토글</button>
+    <main>
+        <div class="wrapper">
+            <div class="container">
+                <div class="title-box">
+                    <div class="sub-title">QNA</div>
+                    <div class="title">익명게시판<br></div>
+                    <div class="message">MSG에 대해 궁금한 점을 적어주세요!</div>
+                </div>
+
+                <!-- 질문입력창 -->
+                <form class="form-box" action="qna.html" name="addQuestion" method="post" onsubmit="submitForm(event);"> 
+                    <div class="input_button">
+                        <label>
+                            <input id="question-input" type="text" name="question" onkeypress="submitKey(event)" placeholder="질문을 입력해주세요." autocomplete="off">
+                            <button id="button" type="button" name="submit_btn" onclick="showBlank()"></button>
+                        </label>
+                        <h5 id="warning">* Enter 누를 시 질문이 제출되므로 주의하시길 바랍니다 *</h5>
+                        <div class="question_nubers" >
+                            <p id="p">0</p>
+                            <p id="asking">개의 질문들</p>
+                        </div>
+                    </div>
+                    <label for="answer-box">
+                        <!--질문 출력창-->
+                        <div class="question-and-answer" id="questionContainer"> 
+                            <div id="textAnswer">
+                                <p id="answer_count"></p>
+                                <p id="user_question"></p>
+                                <img src="./image/qna/Line 33.svg" id="line"><br>
+                        <!--답변 폼-->
+                                <img src="./image/qna/Vector.svg" id="vector">
+                                <div id="answerForm">
+                                    <input id="answerInput" placeholder="답변 준비 중입니다." autocomplete="off" style="background-color: transparent;">
+                                    <button id="submitAnswerBtn" onclick="submitAnswer(questionId)">답변 제출</button>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!--질문과 답변 출력-->
+                            <div id="qna-list"></div>
+                        </div>
+                    </label>
+                </form>
+            </div> 
+        </div>
+    </main>  
+
+    <footer>
+        <div class="inner">
+            <div class="footer-message">
+                MSG <br>
+                Make Share Gather
+            </div>
+        <div class="footer-contact">
+            13기 부장 노하은 | 010-2850-0614 <br>
+            14기 부장 000 | 010-0000-0000
+        </div>
+            <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
+            <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/qna.js"></script>
+</html>

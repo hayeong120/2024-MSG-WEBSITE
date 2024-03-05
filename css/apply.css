@@ -12,17 +12,17 @@
     margin: 70px 0;
 }
 #title {
-    font-size: var(--title-font-size);
+    font-size: 40px;
     color: var(--black-color-01);
     font-weight: var(--bold-weight);
 }
 #sub-title {
-    font-size: var(--subtitle-font-size);
+    font-size: 20px;
     color: var(--main-color);
     font-weight: var(--regular-weight);
 }
 #message {
-    font-size: var(--subtitle-font-size);
+    font-size: 18px;
     color: var(--gray-color-02);
 }
 
@@ -30,29 +30,149 @@
 #support-form {
     position: relative;
     width: 100%;
-    height: 1200px;   
+    height: 1750px;   
 }
 #support-form img {
     position: relative;
-    width: 60px;
+    width: 6%;
     float: left;
 }
 
 #support-box {
     position: relative;
-    width: 90%;
+    width: 94%;
     height: auto;
-    float: left;
+    float: right;
+    border: none;
 }
 #support-box li {
     list-style: none;
+    width: 100%;
     height: auto;
     margin: 30px 0 20px;
 }
-input {
+input::placeholder textarea::placeholder {
+    color: #ccc;
+}
+#support-box input {
+    box-sizing: border-box;
     width: 100%;
-    height: 60px;
-    margin-top: 10px;
-    border-color: #ccc;
+    height: 9vh;
+    border: 2px solid #ccc;
     border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 3px 15px;
+}
+#support-box textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30vh;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 18px;
+    resize: none;
+    outline-color: #ccc;
+}
+
+#button-box {
+    text-align: right;
+    width: 100%;
+    border: none;
+}
+#support-form button {
+    float: right;
+    border: none;
+    background-color: var(--main-color);
+    font-size: 19px;
+    color: #fff;
+    border-radius: 5px;
+    width: 150px;
+    height: 55px;
+	padding: 7px 25px;
+    margin: 10px 0;
+}
+#support-form button:hover {
+    background-color: rgb(15, 221, 125);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #37373a;
+    color: #f5f5f5;
+}
+body.dark-mode header ul > li > a,
+body.dark-mode header ul > li > button,
+body.dark-mode footer div,
+body.dark-mode footer a {
+    color: #f5f5f5;
+}
+
+body.dark-mode #title {
+    color: #f5f5f5;
+}
+body.dark-mode #message {
+    color: var(--gray-color-03)
+}
+
+/* Media queries max-width: 450px */
+@media screen and (max-width: 450px) {
+    #title-box { 
+        line-height: 23px;
+        margin: 40px 0; 
+    }
+    #title { font-size: 22px }
+    #sub-title { font-size: 11px; }
+    #message { font-size: 10px; }
+
+    #support-form { height: inherit; }
+    #support-form img { width: 10%; }
+    #support-box { width: 90%; }
+    #support-box li { margin: 10px 0; }
+    #support-box li > label { font-size: 12px; }
+    #support-box input { 
+        height: 35px; 
+        font-size: 11px;
+        margin: 5px 0;
+    }
+    #support-box textarea { 
+        height: 130px; 
+        font-size: 11px;
+        margin: 5px 0;
+        padding: 12px;
+     }
+
+    #button-box button {
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Media queries max : 1024px min : 451px*/
+@media screen and (max-width: 1024px) and (min-width: 451px) {
+    #title-box { 
+        line-height: 30px;
+        margin: 50px 0; 
+    }
+    #title { font-size: 32px }
+    #sub-title { font-size: 16px; }
+    #message { font-size: 15px; }
+
+    #support-form { height: inherit; }
+    #button-box button {
+        width: 130px;
+        height: 50px;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
 }

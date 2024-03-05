@@ -2,15 +2,14 @@
     position: relative;
     width: 60vw;
     height: var(--page-height);
-    
     margin: auto;
     /* background-color: aquamarine; */
 }
 
 .about-page > .container {
     position: relative;
-    width: 60vw;
-    height: 70vh;
+    /* width: 60vw; */
+    /* height: 70vh; */
     top: 50%;
     transform: translateY(-50%);
     /* background-color: aqua; */
@@ -39,7 +38,7 @@
 }
 
 .about-page > .container > .txt-box > .message {
-    font-size: var(--subtitle-font-size);
+    font-size: var(--message-font-size);
     color: var(--gray-color-02);
     line-height: 1.5vw;
     margin-top: 3vh;
