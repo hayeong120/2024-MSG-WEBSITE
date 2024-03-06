@@ -12,350 +12,349 @@
     <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
 </head>
 
-    <body>
-        <header>
-            <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
-            <nav>
-                <ul>
-                    <li><a href="./about.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a></li>
-                    <li><a href=""  class="header-menu" id="header-member" onclick="changeFontColor()" >부원</a></li>
-                    <li><a href="./activity.html"  class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
-                    <li><a href=""  class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
-                    <li><button>15기 지원하기</button></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header>
+        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
+        <nav>
+            <ul>
+                <li><a href="./about.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a></li>
+                <li><a href=""  class="header-menu" id="header-member" onclick="changeFontColor()" >부원</a></li>
+                <li><a href="./activity.html"  class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
+                <li><a href="./"  class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
+                <li><button>15기 지원하기</button></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main><!-- 실제 우리가 보여줄 것들이 들어가는 곳 -->
-            <div class="wrapper"><!-- wrapper로 크게 감싸고 -->
-                <div class = "member-page">
-                    <div class="container"><!-- container 안에 요소 넣기 (반드시!) -->
+    <main><!-- 실제 우리가 보여줄 것들이 들어가는 곳 -->
+        <div class="wrapper"><!-- wrapper로 크게 감싸고 -->
+            <div class = "member-page">
+                <div class="container"><!-- container 안에 요소 넣기 (반드시!) -->
 
-                        <div class="txt-box">
-                            <div class="sub-title">
-                                Member
-                            </div>
-                            <div class="title">
-                                부원 소개
-                            </div>    
-                            <div class="message">
-                                열정 가득, 애정 가득 동아리 부원을 소개할게요 <br>
-                                부원을 클릭하면 더 자세한 정보를 알 수 있어요
-                            </div>
+                    <div class="txt-box">
+                        <div class="sub-title">
+                            Member
                         </div>
-                        <br>
-                        <div class = "count">
-                            <ul>
-                                <li>13기</li>
-                                <li><a href="member-2.html">14기</a></li>
-                            </ul>
+                        <div class="title">
+                            부원 소개
+                        </div>    
+                        <div class="message">
+                            열정 가득, 애정 가득 동아리 부원을 소개할게요 <br>
+                            부원을 클릭하면 더 자세한 정보를 알 수 있어요
                         </div>
-                        <br>
+                    </div>
+                    <br>
+                    <div class = "count">
+                        <ul>
+                            <li>13기</li>
+                            <li><a href="member-2.html">14기</a></li>
+                        </ul>
+                    </div>
+                    <br>
 
-                        <div class = "member-group">
-                            <div class = "member-box">
-                                <img src="image/member/image.jpg" class = "profile">
-                                <div class = "class"> 13기 SW </div>
-                                <input type="checkbox" id ="layerPopup  " class="ipbox">
-                                <label for="layerPopup" class="name"> 노하은 </label>
-                                <div id="layer_bg1">
-                                    <div id="popup1">
-                                        <h2>
-                                            부원들의 인터뷰
-                                            <label for="layerPopup">X</label>
-                                        </h2>
-                                        <div class="class1">
-                                            13기 SW
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line" >
-                                        <img src="image/member/int-haeun.svg" class="int-img" >
-                                        <div class="q1">
-                                            Q1. 자기소개 해주세요
-                                        </div>
-                                        <div class="a1">
-                                            A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
-                                            혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
-                                            성장하고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line1">
-                                        <div class="q2">
-                                            Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
-                                        </div>
-                                        <div class="a2">
-                                            A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
-                                            다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
-                                            참여하여 프로그래밍 역량을 향상시키고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line2">
-                                        <div class="q3">
-                                            Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
-                                        </div>
-                                        <div class="a3">
-                                            A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
-                                            다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, <br> 이를 통해 
-                                            프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
-                                        </div>
-                                        <div class="name-i">
-                                            노하은
-                                        </div>
-                                        <div class="role-i">
-                                            #부장
-                                        </div>
-                                        <a href="https://github.com/haeunNoh06">
-                                            <img src="image/member/github-mark 1.svg"  class = "github-i">
-                                        </a>
-                                        <a href="https://velog.io/@1109_haeun/posts">
-                                            <img src="image/member/Vector.svg" class = "velog-i">
-                                        </a>
+                    <div class = "member-group">
+                        <div class = "member-box">
+                            <img src="image/member/image.jpg" class = "profile">
+                            <div class = "class"> 13기 SW </div>
+                            <a href="#popupA" class="opener"> 노하은 </a>
+                            <div id="popupA" class="layer">
+                                <div class="box">
+                                  <h2>
+                                      부원들의 인터뷰
+                                  </h2>
+                                  <div class="class1">
+                                      13기 SW
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line" >
+                                  <img src="image/member/int-haeun.svg" class="int-img" >
+                                  <div class="q1">
+                                      Q1. 자기소개 해주세요
+                                  </div>
+                                  <div class="a1">
+                                      A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
+                                      혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
+                                      성장하고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line1">
+                                  <div class="q2">
+                                      Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
+                                  </div>
+                                  <div class="a2">
+                                      A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
+                                      다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
+                                      참여하여 프로그래밍 역량을 향상시키고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line2">
+                                  <div class="q3">
+                                      Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
+                                  </div>
+                                  <div class="a3">
+                                      A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
+                                      다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, 이를 통해 
+                                      프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
+                                  </div>
+                                  <div class="name-i">
+                                      노하은
+                                  </div>
+                                  <div class="role-i">
+                                      #부장
+                                  </div>
+                                  <a href="https://github.com/haeunNoh06">
+                                      <img src="image/member/github-mark 1.svg"  class = "github-i">
+                                  </a>
+                                  <a href="https://velog.io/@1109_haeun/posts">
+                                      <img src="image/member/Vector.svg" class = "velog-i">
+                                  </a>
+                                  <a href="#" class="close"> X </a>
+                                </div>
+                              </div>
 
-                                    </div>
-                                </div>
-                                <div class = "role"> #부장</div>
-                                <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
-                                    실천하고 있어요 자유로운 분위기 추구하며 <br>
-                                    다양한 프로젝트를 부원들과 진행하고<br>
-                                    저 스스로도 많이 배우고 있어요
-                                </div>
-                                <a href="https://github.com/haeunNoh06">
-                                    <img src="image/member/github-mark 1.svg"  class = "github">
-                                </a>
-                                <a href="https://velog.io/@1109_haeun/posts">
-                                    <img src="image/member/Vector.svg" class = "velog">
-                                </a>
+                            <div class = "role"> #부장</div>
+                            <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
+                                실천하고 있어요 자유로운 분위기 추구하며 <br>
+                                다양한 프로젝트를 부원들과 진행하고<br>
+                                저 스스로도 많이 배우고 있어요
                             </div>
-
-
-                            <div class = "member-box">
-                                <img src="image/member/pro-2.svg" class = "profile">
-                                <div class = "class"> 13기 WS </div>
-                                <input type="checkbox" class ="layerPopup">
-                                <label for="layerPopup" class="name"> 이가현 </label>
-                                <div id="layer_bg2">
-                                    <div id="popup2">
-                                        <h2>
-                                            부원들의 인터뷰
-                                            <label for="layerPopup">X</label>
-                                        </h2>
-                                        <div class="class1">
-                                            13기 WS
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line" >
-                                        <img src="image/member/int-haeun.svg" class="int-img" >
-                                        <div class="q1">
-                                            Q1. 자기소개 해주세요
-                                        </div>
-                                        <div class="a1">
-                                            A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
-                                            혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
-                                            성장하고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line1">
-                                        <div class="q2">
-                                            Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
-                                        </div>
-                                        <div class="a2">
-                                            A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
-                                            다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
-                                            참여하여 프로그래밍 역량을 향상시키고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line2">
-                                        <div class="q3">
-                                            Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
-                                        </div>
-                                        <div class="a3">
-                                            A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
-                                            다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, <br> 이를 통해 
-                                            프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
-                                        </div>
-                                        <div class="name-i">
-                                            이가현
-                                        </div>
-                                        <div class="role-i">
-                                            #부부장
-                                        </div>
-                                        <a href="https://github.com/leeda06">
-                                            <img src="image/member/github-mark 1.svg" class = "github-i">
-                                        </a>
-                                        <a href="https://velog.io/@bnm_08/posts">
-                                            <img src="image/member/Vector.svg" class = "velog-i">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class = "role"> #부부장</div>
-                                <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
-                                    실천하고 있어요 자유로운 분위기 추구하며 <br>
-                                    다양한 프로젝트를 부원들과 진행하고<br>
-                                    저 스스로도 많이 배우고 있어요
-                                </div>
-                                <a href="https://github.com/leeda06">
-                                    <img src="image/member/github-mark 1.svg" class = "github">
-                                </a>
-                                <a href="https://velog.io/@bnm_08/posts">
-                                    <img src="image/member/Vector.svg" class = "velog">
-                                </a>
-                            </div>
-
-                            <div class = "member-box">
-                                <img src="image/member/pro-3.svg" class = "profile">
-                                <div class = "class"> 13기 SW </div>
-                                <input type="checkbox" class ="layerPopup">
-                                <label for="layerPopup" class="name"> 임지현 </label>
-                                <div id="layer_bg3">
-                                    <div id="popup3">
-                                        <h2>
-                                            부원들의 인터뷰
-                                            <label for="layerPopup">X</label>
-                                        </h2>
-                                        <div class="class1">
-                                            13기 WS
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line" >
-                                        <img src="image/member/int-jihyun.svg" class="int-img" >
-                                        <div class="q1">
-                                            Q1. 자기소개 해주세요
-                                        </div>
-                                        <div class="a1">
-                                            A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
-                                            혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
-                                            성장하고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line1">
-                                        <div class="q2">
-                                            Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
-                                        </div>
-                                        <div class="a2">
-                                            A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
-                                            다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
-                                            참여하여 프로그래밍 역량을 향상시키고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line2">
-                                        <div class="q3">
-                                            Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
-                                        </div>
-                                        <div class="a3">
-                                            A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
-                                            다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, <br> 이를 통해 
-                                            프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
-                                        </div>
-                                        <div class="name-i">
-                                            임지현
-                                        </div>
-                                        <div class="role-i">
-                                            #부원
-                                        </div>
-                                        <a href="https://github.com/mic050r">
-                                            <img src="image/member/github-mark 1.svg" class = "github-i">
-                                        </a>
-                                        <a href="https://velog.io/@mic050r/posts">
-                                            <img src="image/member/Vector.svg" class = "velog-i">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class = "role"> #부원</div>
-                                <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
-                                    실천하고 있어요 자유로운 분위기 추구하며 <br>
-                                    다양한 프로젝트를 부원들과 진행하고<br>
-                                    저 스스로도 많이 배우고 있어요
-                                </div>
-                                <a href="https://github.com/mic050r">
-                                    <img src="image/member/github-mark 1.svg" class = "github">
-                                </a>
-                                <a href="https://velog.io/@mic050r/posts">
-                                    <img src="image/member/Vector.svg" class = "velog">
-                                </a>
-                            </div>
-
-                            <div class = "member-box">
-                                <img src="image/member/pro-4.svg" class = "profile">
-                                <div class = "class"> 13기 SW </div>
-                                <input type="checkbox" class ="layerPopup">
-                                <label for="layerPopup" class="name"> 박희현 </label>
-                                <div id="layer_bg4">
-                                    <div id="popup4">
-                                        <h2>
-                                            부원들의 인터뷰
-                                            <label for="layerPopup">X</label>
-                                        </h2>
-                                        <div class="class1">
-                                            13기 SW
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line" >
-                                        <img src="image/member/int-haeun.svg" class="int-img" >
-                                        <div class="q1">
-                                            Q1. 자기소개 해주세요
-                                        </div>
-                                        <div class="a1">
-                                            A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
-                                            혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
-                                            성장하고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line1">
-                                        <div class="q2">
-                                            Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
-                                        </div>
-                                        <div class="a2">
-                                            A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
-                                            다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
-                                            참여하여 프로그래밍 역량을 향상시키고 있습니다.
-                                        </div>
-                                        <img src="image/member/Line 32.svg" class="line2">
-                                        <div class="q3">
-                                            Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
-                                        </div>
-                                        <div class="a3">
-                                            A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
-                                            다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, <br> 이를 통해 
-                                            프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
-                                        </div>
-                                        <div class="name-i">
-                                            박희현
-                                        </div>
-                                        <div class="role-i">
-                                            #부원
-                                        </div>
-                                        <a href="https://github.com/huihyeon06">
-                                            <img src="image/member/github-mark 1.svg" class = "github-i">
-                                        </a>
-                                        <a href="https://velog.io/@huihyeon_velog/posts">
-                                            <img src="image/member/Vector.svg" class = "velog-i">
-                                        </a>
-                                        </div>
-                                    </div>
-                                <div class = "role"> #부원</div>
-                                <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
-                                    실천하고 있어요 자유로운 분위기 추구하며 <br>
-                                    다양한 프로젝트를 부원들과 진행하고<br>
-                                    저 스스로도 많이 배우고 있어요
-                                </div>
-                                <a href="https://github.com/huihyeon06">
-                                    <img src="image/member/github-mark 1.svg" class = "github">
-                                </a>
-                                <a href="https://velog.io/@huihyeon_velog/posts">
-                                    <img src="image/member/Vector.svg" class = "velog">
-                                </a>
-                            </div>
-
+                            <a href="https://github.com/haeunNoh06">
+                                <img src="image/member/github-mark 1.svg"  class = "github">
+                            </a>
+                            <a href="https://velog.io/@1109_haeun/posts">
+                                <img src="image/member/Vector.svg" class = "velog">
+                            </a>
                         </div>
 
-                </div>
+
+                        <div class = "member-box">
+                            <img src="image/member/pro-2.svg" class = "profile">
+                            <div class = "class"> 13기 WS </div>
+                            <a href="#popupB" class="opener"> 이가현 </a>
+                            <div id="popupB" class="layer">
+                                <div class="box">
+                                  <h2>
+                                      부원들의 인터뷰
+                                  </h2>
+                                  <div class="class1">
+                                      13기 WS
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line" >
+                                  <img src="image/member/int-gahyun.svg" class="int-img" >
+                                  <div class="q1">
+                                      Q1. 자기소개 해주세요
+                                  </div>
+                                  <div class="a1">
+                                      A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
+                                      혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
+                                      성장하고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line1">
+                                  <div class="q2">
+                                      Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
+                                  </div>
+                                  <div class="a2">
+                                      A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
+                                      다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
+                                      참여하여 프로그래밍 역량을 향상시키고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line2">
+                                  <div class="q3">
+                                      Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
+                                  </div>
+                                  <div class="a3">
+                                      A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
+                                      다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, 이를 통해 
+                                      프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
+                                  </div>
+                                  <div class="name-i">
+                                      이가현
+                                  </div>
+                                  <div class="role-i">
+                                      #부부장
+                                  </div>
+                                    <a href="https://github.com/leeda06">
+                                        <img src="image/member/github-mark 1.svg" class = "github-i">
+                                    </a>
+                                    <a href="https://velog.io/@bnm_08/posts">
+                                        <img src="image/member/Vector.svg" class = "velog-i">
+                                    </a>
+                                  <a href="#" class="close"> X </a>
+                                </div>
+                              </div>
+
+                            <div class = "role"> #부부장</div>
+                            <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
+                                실천하고 있어요 자유로운 분위기 추구하며 <br>
+                                다양한 프로젝트를 부원들과 진행하고<br>
+                                저 스스로도 많이 배우고 있어요
+                            </div>
+                            <a href="https://github.com/leeda06">
+                                <img src="image/member/github-mark 1.svg" class = "github">
+                            </a>
+                            <a href="https://velog.io/@bnm_08/posts">
+                                <img src="image/member/Vector.svg" class = "velog">
+                            </a>
+                        </div>
+
+                        <div class = "member-box">
+                            <img src="image/member/pro-3.svg" class = "profile">
+                            <div class = "class"> 13기 SW </div>
+                            <a href="#popupC" class="opener"> 임지현 </a>
+                            <div id="popupC" class="layer">
+                                <div class="box">
+                                  <h2>
+                                      부원들의 인터뷰
+                                  </h2>
+                                  <div class="class1">
+                                      13기 SW
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line" >
+                                  <img src="image/member/int-jihyun.svg" class="int-img" >
+                                  <div class="q1">
+                                      Q1. 자기소개 해주세요
+                                  </div>
+                                  <div class="a1">
+                                      A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
+                                      혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
+                                      성장하고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line1">
+                                  <div class="q2">
+                                      Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
+                                  </div>
+                                  <div class="a2">
+                                      A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
+                                      다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
+                                      참여하여 프로그래밍 역량을 향상시키고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line2">
+                                  <div class="q3">
+                                      Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
+                                  </div>
+                                  <div class="a3">
+                                      A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
+                                      다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, 이를 통해 
+                                      프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
+                                  </div>
+                                  <div class="name-i">
+                                      임지현
+                                  </div>
+                                  <div class="role-i">
+                                      #부원
+                                  </div>
+                                    <a href="https://github.com/mic050r">
+                                        <img src="image/member/github-mark 1.svg" class = "github-i">
+                                    </a>
+                                    <a href="https://velog.io/@mic050r/posts">
+                                        <img src="image/member/Vector.svg" class = "velog-i">
+                                    </a>
+                                  <a href="#" class="close"> X </a>
+                                </div>
+                              </div>
+
+                            <div class = "role"> #부원</div>
+                            <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
+                                실천하고 있어요 자유로운 분위기 추구하며 <br>
+                                다양한 프로젝트를 부원들과 진행하고<br>
+                                저 스스로도 많이 배우고 있어요
+                            </div>
+                            <a href="https://github.com/mic050r">
+                                <img src="image/member/github-mark 1.svg" class = "github">
+                            </a>
+                            <a href="https://velog.io/@mic050r/posts">
+                                <img src="image/member/Vector.svg" class = "velog">
+                            </a>
+                        </div>
+
+                        <div class = "member-box">
+                            <img src="image/member/pro-4.svg" class = "profile">
+                            <div class = "class"> 13기 SW </div>
+                            <a href="#popupD" class="opener"> 박희현 </a>
+                            <div id="popupD" class="layer">
+                                <div class="box">
+                                  <h2>
+                                      부원들의 인터뷰
+                                  </h2>
+                                  <div class="class1">
+                                      13기 SW
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line" >
+                                  <img src="image/member/int-huihyun.svg" class="int-img" >
+                                  <div class="q1">
+                                      Q1. 자기소개 해주세요
+                                  </div>
+                                  <div class="a1">
+                                      A. 안녕하세요, 저는 IT 개발 동아리의 일원으로 참여하고 있는 노하은입니다. 새로운 기술과 
+                                      혁신에 관심을 가지고 있으며, 소프트웨어 개발 분야에서 창의적이고 협력적인 활동을 통해 
+                                      성장하고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line1">
+                                  <div class="q2">
+                                      Q2. 동아리에서 어떤 프로젝트에 참여했거나 주로 어떤 활동을 하고 있나요?
+                                  </div>
+                                  <div class="a2">
+                                      A. 주로 웹 개발 프로젝트에 참여하고 있습니다. 최신 프론트엔드 및 백엔드 <br>기술을 활용하여
+                                      다양한 웹 애플리케이션을 개발하고 있습니다. 또한, 알고리즘 <br> 문제 해결이나 해커톤 대회에
+                                      참여하여 프로그래밍 역량을 향상시키고 있습니다.
+                                  </div>
+                                  <img src="image/member/Line 32.svg" class="line2">
+                                  <div class="q3">
+                                      Q3. 동아리에서의 가장 도전적이었던 경험은 무엇인가요?
+                                  </div>
+                                  <div class="a3">
+                                      A. 최근에 진행한 대규모 프로젝트에서는 팀원들과의 의사소통과 일정 관리가 중요한 과제였습니다. 
+                                      다양한 역할을 맡아 진행하면서 효율적인 협업 방법을 찾는 것이 도전적이었지만, 이를 통해 
+                                      프로젝트 관리 능력과 팀워크를 향상시킬 수 있었습니다.
+                                  </div>
+                                  <div class="name-i">
+                                      박희현
+                                  </div>
+                                  <div class="role-i">
+                                      #부원
+                                  </div>
+                                    <a href="https://github.com/huihyeon06">
+                                        <img src="image/member/github-mark 1.svg" class = "github-i">
+                                    </a>
+                                    <a href="https://velog.io/@huihyeon_velog/posts">
+                                        <img src="image/member/Vector.svg" class = "velog-i">
+                                    </a>
+                                  <a href="#" class="close"> X </a>
+                                </div>
+                              </div>
+
+                            <div class = "role"> #부원</div>
+                            <div class = "ment">항상 동아리의 발전에 대해 생각하고 <br> 
+                                실천하고 있어요 자유로운 분위기 추구하며 <br>
+                                다양한 프로젝트를 부원들과 진행하고<br>
+                                저 스스로도 많이 배우고 있어요
+                            </div>
+                            <a href="https://github.com/huihyeon06">
+                                <img src="image/member/github-mark 1.svg" class = "github">
+                            </a>
+                            <a href="https://velog.io/@huihyeon_velog/posts">
+                                <img src="image/member/Vector.svg" class = "velog">
+                            </a>
+                        </div>
+
+                    </div>
+
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer><!-- 푸터도 index.html에 있는 것 복붙해서 사용 -->
-            <div class="inner">
-                <div class="footer-message">
-                    MSG <br>
-                    Make Share Gather
-                </div>
-                <div class="footer-contact">
-                    13기 부장 노하은 | 010-2850-0614 <br>
-                    14기 부장 000 | 010-0000-0000
-                </div>
-                <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
-                <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
+    <footer><!-- 푸터도 index.html에 있는 것 복붙해서 사용 -->
+        <div class="inner">
+            <div class="footer-message">
+                MSG <br>
+                Make Share Gather
             </div>
-        </footer>
-    </body>
+            <div class="footer-contact">
+                13기 부장 노하은 | 010-2850-0614 <br>
+                14기 부장 000 | 010-0000-0000
+            </div>
+            <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
+            <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
+        </div>
+    </footer>
+</body>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <script src="./js/script.js"></script>
         <script src="./js/index.js"></script>
