@@ -29,7 +29,8 @@
             </ul>
         </nav>
     </header>
-
+    <!--darkMode-->
+    <button id="darkModeToggle">다크 모드 토글</button>
     <main>
         <div class="wrapper">
             <div class="container">
@@ -43,24 +44,37 @@
                 <form class="form-box" action="qna.html" name="addQuestion" method="post" onsubmit="submitForm(event);"> 
                     <div class="input_button">
                         <label>
-                            <input id="question" type="text" name="user_question" onkeypress="submitKey(event)" placeholder="질문을 입력해주세요." autocomplete="off">
+                            <input id="question-input" type="text" name="question" onkeypress="submitKey(event)" placeholder="질문을 입력해주세요." autocomplete="off">
                             <button id="button" type="button" name="submit_btn" onclick="showBlank()"></button>
                         </label>
+                        <h5 id="warning">* Enter 누를 시 질문이 제출되므로 주의하시길 바랍니다 *</h5>
                         <div class="question_nubers" >
                             <p id="p">0</p>
                             <p id="asking">개의 질문들</p>
-                            <!--답변중인 질문들-->
-                            <p id="completed_asking"></p>
-                            <!--답변한 질문들-->
-                        </div>
-                        <!--질문 출력창-->
-                        <div class="answer">
-                            <p id="answer_count"></p>
-                            <p id="output"></p>
                         </div>
                     </div>
+                    <label for="answer-box">
+                        <!--질문 출력창-->
+                        <div class="question-and-answer" id="questionContainer"> 
+                            <div id="textAnswer">
+                                <p id="answer_count"></p>
+                                <p id="user_question"></p>
+                                <img src="./image/qna/Line 33.svg" id="line"><br>
+                        <!--답변 폼-->
+                                <img src="./image/qna/Vector.svg" id="vector">
+                                <div id="answerForm">
+                                    <input id="answerInput" placeholder="답변 준비 중입니다." autocomplete="off" style="background-color: transparent;">
+                                    <button id="submitAnswerBtn" onclick="submitAnswer(questionId)">답변 제출</button>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!--질문과 답변 출력-->
+                            <div id="qna-list"></div>
+                        </div>
+                    </label>
                 </form>
-            </div>
+            </div> 
         </div>
     </main>  
 

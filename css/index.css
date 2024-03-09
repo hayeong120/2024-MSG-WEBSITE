@@ -353,6 +353,7 @@
     grid-template-rows: repeat(3, 12rem);
     column-gap: 20px;
     row-gap: 20px;
+    padding: 1vw;
 }
 
 .content-box>.box {
@@ -735,8 +736,8 @@
     position: absolute;
     z-index: -1;
     width: 18vw;
-    left: 22.5vw;
-    top: 17vh;
+    left: 10.5vw;
+    top: 15vh;
 }
 
 .support-page>.container>.txt-box {
@@ -839,7 +840,7 @@
 .faq {
     position: relative;
     background-color: transparent;
-    border: 1px solid #9fa4a8;
+    /* border: 1px solid #9fa4a8; */
     border-radius: 10px;
     margin: 20px 0;
     padding: 30px;
@@ -851,6 +852,7 @@
 
 .faq.active {
     background-color: #fff;
+    border: 1px solid #9fa4a8;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -1065,27 +1067,27 @@
         width: 70vw;
         overflow-y: hidden;
     }
-    
-    .about-page > .container {
+
+    .about-page>.container {
         height: 60vh;
         overflow-y: hidden;
     }
 
-    .about-page > .container > .txt-box > .sub-title {
+    .about-page>.container>.txt-box>.sub-title {
         font-size: 15px;
     }
-    
-    .about-page > .container > .txt-box > .title {
+
+    .about-page>.container>.txt-box>.title {
         font-size: 25px;
         line-height: 29px;
     }
-    
-    .about-page > .container > .txt-box > .message {
+
+    .about-page>.container>.txt-box>.message {
         font-size: 11px;
         line-height: 15px;
     }
 
-    .about-page > .container > .img-box > img {
+    .about-page>.container>.img-box>img {
         width: 200px;
     }
 }
@@ -1098,52 +1100,52 @@
         height: var(--page-height);
         overflow-y: hidden;
     }
-    
+
     .activity-page>.container>.txt-box {
         margin: 25px;
     }
-    
+
     .activity-page>.container>.txt-box>.title {
         font-size: 25px;
         line-height: 29px;
         margin-top: 1vh;
     }
-    
+
     .activity-page>.container>.txt-box>.sub-title {
         font-size: 12px;
         color: var(--main-color);
     }
-    
+
     .activity-page>.container>.txt-box>.message {
         font-size: 12px;
         line-height: 15px;
         margin-top: 12px;
     }
-    
+
     .content-box {
         margin-top: 50px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 170px);
     }
-    
+
     .content-box>.box {
         padding: 20px;
         border-radius: 10px;
     }
-    
+
     .content-box>.box:hover {
         transition: 0.5s;
     }
-    
+
     .content-box>.box>.title {
         font-size: 13px;
         line-height: 15px;
     }
-    
+
     .content-box>.box>.sub-title {
         font-size: 10px;
     }
-    
+
     .content-box>.box>.message {
         font-size: 10px;
         line-height: 13px;
@@ -1157,38 +1159,38 @@
         font-size: 25px;
         line-height: 29px;
     }
-    
+
     .project-page>.container>.txt-box>.sub-title {
         font-size: 12px;
     }
-    
+
     .project-page>.container>.txt-box>.message {
         font-size: 12px;
         line-height: 15px;
     }
-    
+
     #slider>.image-box {
         /* 원본+클론의 총 합 */
         width: 940rem;
     }
-    
+
     @keyframes bannermove {
         0% {
             transform: translate(2.5%, 0);
         }
-    
+
         100% {
             transform: translate(-20%, 0);
         }
     }
-    
+
     #slider>.image-box>.box>.blur-box>button>img {
         top: 50%;
         transform: translateY(-45%);
         width: 2rem;
         height: 5rem;
     }
-    
+
 }
 
 /* 부원들의 목소리 반응형 */
@@ -1202,7 +1204,7 @@
         text-align: center;
         overflow-x: hidden;
     }
-    
+
     .opinion-page>.txt-box {
         z-index: 99;
         position: sticky;
@@ -1213,23 +1215,23 @@
         padding-top: 50px;
         background-color: white;
     }
-    
+
     .opinion-page>.txt-box>.title {
         font-size: 25px;
         line-height: 29px;
     }
-    
+
     .opinion-page>.txt-box>.sub-title {
         font-size: 12px;
     }
-    
+
     .opinion-page>.txt-box>.message {
         font-size: 12px;
         color: var(--gray-color-02);
         line-height: 15px;
         margin-top: 13px;
     }
-    
+
     .opinion-box {
         position: relative;
         /* top: 13vh; */
@@ -1240,7 +1242,7 @@
         margin: auto;
         overflow-y: scroll;
     }
-    
+
     .opinion-box>.opinion {
         position: relative;
         width: fit-content;
@@ -1250,7 +1252,7 @@
         border-radius: 10px;
         right: 0;
     }
-    
+
     .opinion:nth-child(1),
     .opinion:nth-child(3),
     .opinion:nth-child(5),
@@ -1258,7 +1260,7 @@
         position: relative;
         /* margin-bottom: 35vh; */
     }
-    
+
     .opinion:nth-child(2),
     .opinion:nth-child(4),
     .opinion:nth-child(6) {
@@ -1266,52 +1268,52 @@
         top: 250px;
         float: right;
     }
-    
+
     .opinion:nth-child(1) {
         margin-bottom: -120px;
     }
-    
+
     .opinion:nth-child(2) {
         position: relative;
         top: 150px;
         width: 260px;
         right: -20px;
     }
-    
+
     .opinion:nth-child(3) {
         top: 170px;
         width: 260px;
         left: 5px;
     }
-    
+
     .opinion:nth-child(4) {
         top: -20px;
         width: 350px;
     }
-    
+
     .opinion:nth-child(5) {
         top: 30px;
         width: 340px;
         margin: 20rem 0 12rem;
     }
-    
+
     .opinion:nth-child(6) {
         top: -130px;
         width: 200px;
     }
-    
+
     .opinion:nth-child(7) {
         top: -80px;
         width: 200px;
     }
-    
+
     .opinion-box>.opinion>.img-box>img {
         position: absolute;
         left: 12px;
         top: 12px;
         width: 11px;
     }
-    
+
     .opinion-box>.opinion>.message-box {
         position: relative;
         width: fit-content;
@@ -1321,7 +1323,7 @@
         color: var(--black-color-01);
         /* background-color: #2AF598; */
     }
-    
+
     .opinion-box>.opinion>.member-box {
         position: relative;
         bottom: -20px;
@@ -1342,7 +1344,7 @@
         height: 80vh;
         text-align: center;
     }
-    
+
     .support-page>.container {
         position: relative;
         box-sizing: border-box;
@@ -1359,30 +1361,32 @@
         color: var(--black-color-01);
         font-weight: var(--bold-weight);
     }
-    
+
     .support-page>.container>.img-box>img {
         position: absolute;
         z-index: -1;
         width: 180px;
-        left: 22px;
-        top: 170px;
+        height: 150px;
+        left: 12px;
+        top: 190px;
     }
-    
+
     .support-page>.container>.txt-box {
         position: relative;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 24px;
-        line-height: 60px;
+        transform: translate(-55%, -50%);
+        font-size: 20px;
+        line-height: 30px;
     }
-    
+
     .support-page>.container>.txt-box>button {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        width: 135px;
-        font-size: 19px;
+        width: 105px;
+        height: 20px;
+        font-size: 10px;
         color: var(--black-color-01);
         background-color: rgba(0, 0, 0, 0);
         text-transform: uppercase;
@@ -1391,31 +1395,186 @@
         background-position: 1% 50%;
         background-size: 300% 300%;
         border: 1px solid var(--main-color);
-        border-radius: 3em;
-        padding: 0.6vw 1vw;
+        border-radius: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
         display: flex;
         justify-content: space-between;
-        margin-top: 7vh;
+        margin-top: 50px;
     }
-    
+
     .support-page>.container>.txt-box>button:hover {
         position: relative;
         left: 50%;
         /* transform: translate(-50%, -1vh); */
-        width: 11.5vw;
+        width: 105px;
+        height: 20px;
         border: 1px solid rgba(223, 190, 106, 0);
         background-position: 99% 50%;
         text-align: center;
         box-shadow: 0 10px 20px -10px var(--gray-color-02);
     }
-    
+
     .support-page>.container>.txt-box>button:hover img {
         opacity: 0;
         /* 이미지의 투명도를 100%로 설정 */
     }
-    
+
     .support-page>.container>.txt-box>button>img {
-        width: 2vw;
+        position: absolute;
+        width: 19px;
         top: 50%;
+        right: 10px;
+        transform: translateY(-70%);
     }
+}
+
+/* 자주 묻는 질문 반응형 */
+@media only screen and (max-width: 600px) {
+    .question-page>.txt-box>.title {
+        font-size: 13px;
+    }
+
+    .question-page>.txt-box>.sub-title {
+        font-size: 11px;
+    }
+
+    .faq-container {
+        position: relative;
+        width: 80vw;
+        height: 80vh;
+        height: fit-content;
+        margin: 0;
+        padding: 5vh 0;
+        /* background-color: #2AF598; */
+        padding-top: 5vh;
+    }
+
+    .faq {
+        position: relative;
+        background-color: transparent;
+        border: 1px solid #9fa4a8;
+        border-radius: 10px;
+        margin: 20px 0;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease;
+        background-color: var(--gray-color-05);
+    }
+
+    .faq.active {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-title {
+        font-weight: var(--bold-weight);
+        margin: 0 5px 0 0;
+        font-size: 11px;
+    }
+
+    .faq-text {
+        display: none;
+        margin: 3vh 0 0;
+        font-size: 11px;
+    }
+
+    .faq.active .faq-text {
+        display: block;
+    }
+
+    .faq-toggle {
+        background-color: transparent;
+        border: 0;
+        border-radius: 3em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 0;
+        position: absolute;
+        top: 3vh;
+        right: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .faq-toggle:focus {
+        outline: 0;
+    }
+
+    .faq-toggle .fa-times {
+        display: none;
+    }
+
+    .faq.active .faq-toggle .fa-times {
+        color: #fff;
+        display: block;
+    }
+
+    .faq.active .faq-toggle .fa-chevron-down {
+        display: none;
+    }
+
+    .faq.active .faq-toggle {
+        background-color: #9fa4a8;
+    }
+}
+
+/* 다크모드 css */
+body.dark-mode {
+    background-color: var(--black-color-01);
+    color: var(--gray-color-05);
+}
+
+body.dark-mode .tutorial-page > .container > .keyword {
+    color: black;
+}
+
+body.dark-mode .activity-page > .container > .txt-box > .title,
+body.dark-mode .about-page > .container > .txt-box > .title,
+body.dark-mode .project-page > .container > .txt-box > .title,
+body.dark-mode .opinion-page > .txt-box > .title,
+body.dark-mode .support-page > .container > .txt-box,
+body.dark-mode .support-page > .container> .txt-box > button,
+body.dark-mode .question-page > .txt-box > .title
+{
+    font-weight: 100;
+    color: white;
+}
+
+body.dark-mode .activity-page > .container > .txt-box > .sub-title,
+body.dark-mode .about-page > .container > .txt-box > .sub-title,
+body.dark-mode .project-page > .container > .txt-box > .sub-title,
+body.dark-mode .opinion-page > .txt-box > .sub-title,
+body.dark-mode .support-page > .txt-box,
+body.dark-mode .support-page > .txt-box > button,
+body.dark-mode .question-page > .txt-box > .sub-title {
+    font-weight: 100;
+}
+
+body.dark-mode .opinion-page>.txt-box {
+    background-color: var(--black-color-01);
+}
+
+body.dark-mode .wrapper {
+    background-color: var(--black-color-01);
+}
+
+body.dark-mode .faq-container > .faq {
+    color: black;
+}
+
+body.dark-mode footer {
+    background-color: var(--gray-color-01);
+}
+
+body.dark-mode footer > .inner > .footer-message,
+body.dark-mode footer > .inner > .footer-contact,
+body.dark-mode footer > .inner > a,
+body.dark-mode footer > .inner > .footer-copyright {
+    color: white;
+    font-weight: 100;
 }
