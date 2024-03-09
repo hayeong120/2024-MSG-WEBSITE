@@ -95,6 +95,16 @@ body .showAlert-title {
     margin-left: 5px;
     color: red;  
 }
+.answer-box {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+.answer-box.show {
+    position: static;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease;
+}
 /* 답변 폼 스타일 */
 .question-and-answer {
     position: relative;
@@ -102,11 +112,14 @@ body .showAlert-title {
     height: 75%;
     /* margin: 20px 0; */
     box-sizing: border-box;
-    border: 1px solid #D2D2D2;
+    border: 0.5px solid #D2D2D2;
     border-radius: 15px;
     padding: 20px 50px;
     background-repeat: no-repeat;
     display: none;
+    margin-bottom: 50px;
+    box-shadow: 1px 1.5px 3px 
+    #777777;
 }
 .question-and-answer #textAnswer {
     position: relative;
@@ -132,7 +145,7 @@ body .showAlert-title {
     position: relative;
     width: 60%;
     margin-left: 45px;
-    margin-top: 11px;
+    margin-top: 1px;
     border: none;
     outline: none;
 }
