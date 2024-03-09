@@ -6,18 +6,18 @@
 
 #img-box {
     position: relative;
-    width: 70%;
-    margin: 8vw auto 30px;
+    width: 100%;
+    margin: 9vw 0 30px;
     text-align: center;
 }
 #img-box img {
-    width: 25%;
+    width: 18%;
 }
 
 #title-box {
     position: relative;
     text-align: center;
-    line-height: 3.7vw;
+    line-height: 3.4vw;
     margin: auto;
 }
 #title {
@@ -82,4 +82,49 @@ body.dark-mode #message {
 
 body.dark-mode #button-box button {
     color: #ffffff;
+}
+
+/* Media queries max-width: 450px */
+@media screen and (max-width: 450px) {
+    .completion-page { 
+        width: 100%; 
+        margin: 25vh 0;
+    }
+
+    #img-box img { width: 30%; }
+    #title-box { line-height: 24px; }
+    #title { font-size: 18px; }
+    #sub-title { font-size: 12px; }
+    #message { font-size: 11px; }
+
+    #button-box { margin: 10px; }
+    #button-box button {
+        width: 80px;
+        height: 30px;
+        font-size: 9px;
+        border-radius: 13px;
+    }
+}
+
+/* Media queries max : 1024px min : 451px*/
+@media screen and (max-width: 1024px) and (min-width: 451px) {
+    .completion-page { 
+        width: 100%; 
+        margin: 25vh 0;
+    }
+
+    #img-box { margin: 0 0 40px; }
+    #img-box img { width: 30%; }
+    #title-box { line-height: 50px; }
+    #title { font-size: 42px; }
+    #sub-title { font-size: 21px; }
+    #message { font-size: 20px; }
+
+    #button-box { margin: 10px; }
+    #button-box button {
+        width: 150px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
 }
