@@ -30,7 +30,7 @@
 #support-form {
     position: relative;
     width: 100%;
-    height: 1750px;   
+    height: auto;   
 }
 #support-form img {
     position: relative;
@@ -38,37 +38,38 @@
     float: left;
 }
 
-#support-box {
+.support-box {
     position: relative;
     width: 94%;
     height: auto;
     float: right;
     border: none;
 }
-#support-box li {
+.support-box li {
     list-style: none;
     width: 100%;
-    height: auto;
-    margin: 30px 0 20px;
+    margin: 30px 0 0;
 }
 input::placeholder textarea::placeholder {
     color: #ccc;
 }
-#support-box input {
+.support-box input {
     box-sizing: border-box;
     width: 100%;
     height: 9vh;
-    border: 2px solid #ccc;
+    border: 2px solid ;
+    border-color: #ccc;
     border-radius: 7px;
     font-size: 15px;
     margin-top: 10px;
     padding: 3px 15px;
 }
-#support-box textarea {
+.support-box textarea {
     box-sizing: border-box;
     width: 100%;
     height: 30vh;
-    border: 2px solid #ccc;
+    border: 2px solid ;
+    border-color: #ccc;
     border-radius: 7px;
     font-size: 15px;
     margin-top: 10px;
@@ -92,11 +93,25 @@ input::placeholder textarea::placeholder {
     width: 150px;
     height: 55px;
 	padding: 7px 25px;
-    margin: 10px 0;
+    margin: 40px 0 100px;
 }
 #support-form button:hover {
     background-color: rgb(15, 221, 125);
 }
+
+/* Error Message*/
+small {
+    color: #FF483E;
+    margin: 10px;
+    display: none;
+} 
+/* .form-control small {
+    visibility: hidden;
+} 
+
+.form-control.error :required {
+    border-color: #FF483E;
+}*/
 
 /* Dark Mode */
 body.dark-mode {
