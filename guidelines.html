@@ -15,14 +15,17 @@
 <body>
     <!-- header -->
     <header>
-        <img src="./image/logo.svg" class="header-img" alt="마이페이지" />
+        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="">부원</a></li>
-                <li><a href="./activity.html">활동</a></li>
-                <li><a href="./qna.html">QNA</a></li>
-                <li><button>15기 지원하기</button></li>
+                <li><a href="./index.html" class="header-menu" id="header-about"
+                        onclick="changeFontColor()">ABOUT</a>
+                </li>
+                <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
+                <li><a href="./activity.html" class="header-menu" id="header-activity"
+                        onclick="changeFontColor()">활동</a></li>
+                <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
+                <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
             </ul>
         </nav>
     </header>
@@ -73,7 +76,7 @@
                     <div class="box-content">2024.00.00(목)</div>
                 </div>
             </div>
-            <button id="darkModeToggle">다크 모드</button>
+            <!-- <button id="darkModeToggle">다크 모드</button> -->
         </div>
         <script src="js/guidelines.js"></script>
     </main>
