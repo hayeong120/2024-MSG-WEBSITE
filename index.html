@@ -19,7 +19,7 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="cssscreen.css">
-<link rel="stylesheet" type="text/css" media="print" href="cssprint.css">
+    <link rel="stylesheet" type="text/css" media="print" href="cssprint.css">
 </head>
 
 <body>
@@ -29,14 +29,16 @@
             <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
             <nav>
                 <ul>
-                    <li><a href="./about.html" class="header-menu" id="header-about"
+                    <li><a href="./index.html" class="header-menu" id="header-about"
                             onclick="changeFontColor()">ABOUT</a>
                     </li>
-                    <li><a href="" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
+                    <li><a href="./member.html" class="header-menu" id="header-member"
+                            onclick="changeFontColor()">부원</a></li>
                     <li><a href="./activity.html" class="header-menu" id="header-activity"
                             onclick="changeFontColor()">활동</a></li>
-                    <li><a href="" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
-                    <li><button>15기 지원하기</button></li>
+                    <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
+                    </li>
+                    <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
                 </ul>
             </nav>
         </header>
@@ -445,7 +447,7 @@
             <div class="wrapper section" data-anchor="sixth" id="section6">
                 <div class="question-page">
                     <div class="txt-box">
-                        <div class="sub-title">FNA</div>
+                        <div class="sub-title">FAQ</div>
                         <div class="title">자주 묻는 질문</div>
                     </div>
                     <div class="faq-container">
@@ -464,11 +466,10 @@
                         </div>
                         <div class="faq">
                             <p class="faq-title">전공에 대한 지식과 실력이 없어도 지원할 수 있나요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-text">
+                                물론입니다! 저희도 처음 학교에 들어왔을 때는 아무것도 몰랐어요. 하지만 언니들이 언어부터 git 사용법, 툴까지 하나하나 알려주고 동아리 내에서 자체적으로
+                                진행했던 스터디와 협업 프로젝트들 덕분에 많은 성장을 할 수 있었답니다💕
+                            </p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -477,11 +478,11 @@
                         </div>
                         <div class="faq">
                             <p class="faq-title">동아리 분위기는 어떤가요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-text">
+                                MSG는 언제나 화목합니다🌞
+                                친구같은 선후배관계를 고수해오고 있으며, 무엇보다 스터디, 동아리 회식, 공모전 준비 등등을 통해 부원들은 물론 선배들과의 친목을 다질 수
+                                있습니다!
+                            </p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -489,12 +490,11 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <p class="faq-title">동아리 활동은 어떤 게 있나요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-title">동아리 활동으로는 무엇을 하나요? </p>
+                            <p class="faq-text">
+                                MSG는 교내외 공모전, IT쇼, 협업 프로젝트, 자율스터디, 개발블로그 작성 등 다양한 활동을 통해 전공 실력은 물론
+                                새학기 친해지기 프로젝트, 회식, 네트워킹을 통해 서로간의 친목을 다질 수 있답니다😍 궁금한 전공 질문,학교 질문 다 물어보세용
+                            </p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -502,12 +502,8 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <p class="faq-title">동아리 분위기는 어떤가요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-title">담당 선생님은 누구신가요? </p>
+                            <p class="faq-text">MSG의 담당선생님은 이대형선생님으로 현재 2학년 국어를 맡고 계십니다🥰</p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
