@@ -19,6 +19,7 @@
         <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
+<<<<<<< HEAD
                 <li><a href="./index.html" class="header-menu" id="header-about"
                         onclick="changeFontColor()">ABOUT</a>
                 </li>
@@ -27,12 +28,21 @@
                         onclick="changeFontColor()">활동</a></li>
                 <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
                 <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
+=======
+                <li><a href="./about.html" class="header-menu" id="header-about">ABOUT</a></li>
+                <li><a href="./member.html" class="header-menu" id="header-member">부원</a></li>
+                <li><a href="./activity.html" class="header-menu" id="header-activity">활동</a></li>
+                <li><a href="./qna.html" class="header-menu" id="header-qna">QNA</a></li>
+                <li><button>15기 지원하기</button></li>
+>>>>>>> d9cb80887bdc609623d8acca67327996f3c75a15
             </ul>
         </nav>
     </header>
 
-    <!-- DarkMode -->
-    <button id="darkModeBtn">Dark Mode</button>
+    <!-- 
+        DarkMode 
+        <button id="darkModeBtn">Dark Mode</button>
+    -->
 
     <!-- main -->
     <main>
@@ -47,41 +57,49 @@
                     </section>
 
                     <!-- Support Form -->
-                    <form id="support-form" action="">
-                        <img src="./image/logo.png">
-                        <fieldset id="support-box">               
+                    <form id="support-form" action="#">
+                        <img src="./image/apply/logo.png">
+                        <fieldset class="support-box">               
                         <ul>
-                            <li>
-                                <label for="name">이름을 입력해주세요.</label><br>
-                                <input type="text" id="name" placeholder="김미림" required>
+                            <li class="form-control">
+                                <label for="username">이름을 입력해주세요.</label><br>
+                                <input type="text" id="username" placeholder="김미림" required>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="class-number">학번을 입력해주세요.</label><br>
                                 <input type="text" id="class-number" placeholder="1100" required>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)</label><br>
                                 <input type="tel" id="phone" placeholder="01012345678" required>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="mail">학교 이메일을 입력해주세요.</label><br>
                                 <input type="email" id="mail" placeholder="s2400@e-mirim.hs.kr" required>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.</label><br>
                                 <textarea type="text" id="motive" placeholder="500자 이내로 작성해주세요." required></textarea>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="strength">자신의 장점에 대해 입력해주세요.</label><br>
                                 <textarea type="text" id="strength" placeholder="500자 이내로 작성해주세요." required></textarea>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="experience">실패 경험을 입력해주세요.</label><br>
                                 <textarea type="text" id="experience" placeholder="500자 이내로 작성해주세요." required></textarea>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="definition">나를 한 마디로 정의하자면?</label><br>
                                 <input type="text" id="definition" placeholder="20글자 이내로 작성해주세요." required>
+                                <small class="error">필수 입력입니다.</small>
                             </li>
                             <li>
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
@@ -90,10 +108,10 @@
                           </ul>
                         </fieldset>
                         <fieldset id="button-box">
-                           <button type="submit" onclick="onSubmit()">제출하기</button>
+                           <button type="submit" id="submit-button">제출하기</button>
                         </fieldset>                                        
                     </form>
-                
+
             </div>
         </div>   
     </main>
