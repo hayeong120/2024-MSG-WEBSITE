@@ -45,7 +45,7 @@
                 <section id="title-box">
                     <div id="sub-title">MSG 지원 페이지</div>
                     <div id="title">MSG 15기 지원하기</div>
-                    <div id="message">다양한 스터디, 나만의 웹/앱 서비스, 다양한 교내외부 활동이 궁금하신가요? 지금이 바로 MSG를 지원할 때!</div>
+                    <div id="message">안녕하세요 MSG입니다! 2024년 MSG를 이끌 15기 부원을 모집하고 있으니 많은 관심 부탁드립니다🥰</div>
                 </section>
 
                 <!-- Support Form -->
@@ -102,7 +102,7 @@
                                 <small class="error">필수 입력입니다.</small>
                                 <small class="wrong">잘못된 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
                                 <input type="text" id="question" placeholder="">
                                 <small class="wrong">잘못된 입력입니다.</small>
@@ -118,27 +118,11 @@
         </div>
     </main>
 
-    <!-- footer -->
-    <footer>
-        <div class="footer-message">
-            MSG <br>
-            Make Share Gather
-        </div>
-        <div class="footer-contact">
-            13기 부장 노하은 | 010-2850-0614 <br>
-            14기 부장 000 | 010-0000-0000
-        </div>
-        <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
-        <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/apply.js"></script>
     <script>
-
-
         // HTML을 업데이트하여 질문과 답변을 표시하는 함수
         function apply() {
             let name = $('#username').val();
