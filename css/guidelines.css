@@ -81,7 +81,7 @@
 .content-first > .btn::after {
   content: url("/image/guidelines/go.png");
   position: absolute;
-  right: 10px;
+  left: 165px;
   /* 이미지 위치 조정 */
   top: 40%;
   transform: translateY(-50%) scale(0);
