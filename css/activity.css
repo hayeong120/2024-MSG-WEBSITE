@@ -1,6 +1,6 @@
-/* * {
+* {
   overflow-x: visible !important;
-} */
+}
 
 .activity,
 .category,
@@ -68,7 +68,7 @@ body.dark-mode .swiper-prev {
   font-size: var(--small-font-size);
   color: var(--gray-color-02);
   margin-top: 1vw;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
 }
 
 /* 휴대폰 사이즈에 대한 미디어 쿼리 추가 */
@@ -93,27 +93,27 @@ body.dark-mode .swiper-prev {
 
 /* Activity 섹션 스타일 */
 .activity {
+  position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 /* 내부 컨테이너 스타일링 */
-.activity > .inner {
-  overflow-x: hidden;
+.inner {
+  margin: 0 auto;
   height: 700px;
 }
 
 .swiper-container {
+  overflow: hidden;
   position: relative;
   width: 100%;
-  /* height: 600px; */
 }
 
 .swiper-slide {
-  overflow: hidden;
-  transition: transform 0.3s ease;
   opacity: 0.5;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide-content {
@@ -122,11 +122,10 @@ body.dark-mode .swiper-prev {
 
 .swiper-slide-active {
   margin-top: 50px;
-  padding-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transform: scale(1.2);
   border-radius: 3%;
   opacity: 1;
+  padding-bottom: 20px;
 }
 
 /* 슬라이드 내 제목 스타일링 */
@@ -135,7 +134,7 @@ body.dark-mode .swiper-prev {
   position: relative;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -166,13 +165,13 @@ body.dark-mode .swiper-prev {
   height: 260px;
   border-radius: 2%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
 }
 
 .swiper-pagination {
   position: relative;
   z-index: 1;
   margin-top: 5%;
+  bottom: 4%;
   left: 0;
   right: 0;
 }
@@ -324,7 +323,7 @@ body.dark-mode .swiper-prev {
   padding: 2%;
   text-align: center;
   /* 그룹을 가운데 정렬하기 위해 */
-  padding-top: 10%;
+  padding-top: 20%;
   align-items: flex-start;
 }
 

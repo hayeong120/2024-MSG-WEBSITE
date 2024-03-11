@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 3,
     spaceBetween: 40,
     centeredSlides: true,
-    loop: false,
+    loop: true,
     autoplay: {
       delay: 5000,
     },
