@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var categoryButtons = document.querySelectorAll(".inner-category p");
   var activityDetailsContainer = document.querySelector(".activity-details");
 
-  // Initial state: Select "all" category
   var allCategoryButton = document.querySelector("#all");
   allCategoryButton.classList.add("underline");
   fetch(jsonPath)
@@ -72,15 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Event listener for clicking on activity details
   activityDetailsContainer.addEventListener("click", function (event) {
     var clickedActivityDetail = event.target.closest(".activity-detail");
 
     if (clickedActivityDetail) {
-      var title = clickedActivityDetail.querySelector("#detail-title").textContent;
+      var title =
+        clickedActivityDetail.querySelector("#detail-title").textContent;
 
-      // Navigate to activityDetails.html with the values
-      window.location.href = "activityDetail.html?title=" + encodeURIComponent(title);
+      window.location.href =
+        "activityDetail.html?title=" + encodeURIComponent(title);
     }
   });
 
