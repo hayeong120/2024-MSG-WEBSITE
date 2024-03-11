@@ -310,7 +310,7 @@
     right: 0;
     bottom: 0;
     top: 0;
-    
+
 }
 
 
@@ -727,6 +727,10 @@ h2 {
         top: 40px;
     }
 
+    .member-page > .container > .count > ul{
+        font-size: 12px;
+    }
+
     .opener {
         font-size: 15px;
         left: 140px;
@@ -763,13 +767,26 @@ h2 {
         line-height: 23px;
     }
 
+    .member-page>.container>.txt-box>.sub-title {
+        font-size: 10px;
+    }
+    
+    .member-page>.container>.txt-box>.message {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .member-page>.container>.txt-box>.title {
+        font-size: 20px;
+    }
+
     .class1 {
         font-size: 10px;
         left: 200px;
         top: 110px;
     }
 
-    .box > img {
+    .box>img {
         top: 90px;
         /* left: 0  ; */
     }
@@ -855,7 +872,7 @@ h2 {
         top: 600px;
     }
 
-    .title {
+    /* .title {
         font-size: 22px;
     }
 
@@ -865,11 +882,7 @@ h2 {
 
     .message {
         font-size: 10px;
-    }
-
-    ul {
-        font-size: 11px;
-    }
+    } */
 
     h2 {
         font-size: 17px;
