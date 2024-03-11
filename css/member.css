@@ -317,9 +317,9 @@
 .box {
     z-index: 10000;
     position: relative;
-    padding: 10px 20px 100px;
+    padding: 10px 20px 10px;
     margin: 10px;
-    width: 800px;
+    width: 700px;
     height: 500px;
     background-color: #fff;
     border-radius: 10px;
@@ -804,7 +804,7 @@ h2 {
     }
 
     .box {
-        height: 800px;
+        height: 700px;
     }
 
     .q1,
