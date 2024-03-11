@@ -36,7 +36,7 @@
   box-sizing: border-box;
   border: 1px solid #d2d2d2;
   border-radius: 15px;
-  box-shadow: 1px 1.5px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   padding: 15px 23px;
 }
 #question-input:focus {
@@ -75,8 +75,10 @@ body .showAlert-title {
   position: absolute;
   padding: 50px;
   padding-left: 10px;
+  padding-top: 49px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
+  /* background-color: antiquewhite; */
 }
 
 #asking {
@@ -88,9 +90,11 @@ body .showAlert-title {
 }
 
 .answer {
+  position: relative;
   font-weight: medium;
-  padding: 10px;
+  top: 10px;
   margin-left: 1vw;
+  padding-left: 10px;
 }
 
 #warning {
@@ -100,33 +104,35 @@ body .showAlert-title {
 
 .answer-box {
   width: 90%;
-  height: 75%;
-  padding: 20px;
+  height: fit-content;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border: 0.5px solid #d2d2d2;
   border-radius: 15px;
-  padding: 20px 50px;
+  padding: 30px 50px;
   margin-bottom: 2%;
 }
 
 /* 질문 및 답변 텍스트 스타일링 */
 .answer-box p {
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 10px;
+  /* background-color: aqua; */
+  font-weight: 900;
 }
 
 /* 답변 부분 스타일링 */
 .answer-box p:last-child {
-  font-weight: bold;
-  color: #4caf50;
+  color: var(--gray-color-02);
+  font-weight: 300;
+  /* background-color: antiquewhite; */
 }
 
 .question-and-answer #line {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 75%;
   /* margin: 5px 5; */
 }
@@ -144,6 +150,7 @@ body .showAlert-title {
   margin-top: 1px;
   border: none;
   outline: none;
+  padding-left: 100px; 
 }
 
 /* 반응형 스타일 */
