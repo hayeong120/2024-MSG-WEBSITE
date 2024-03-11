@@ -102,7 +102,7 @@
                                 <small class="error">필수 입력입니다.</small>
                                 <small class="wrong">잘못된 입력입니다.</small>
                             </li>
-                            <li>
+                            <li class="form-control">
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
                                 <input type="text" id="question" placeholder="">
                                 <small class="wrong">잘못된 입력입니다.</small>
@@ -118,27 +118,11 @@
         </div>
     </main>
 
-    <!-- footer -->
-    <footer>
-        <div class="footer-message">
-            MSG <br>
-            Make Share Gather
-        </div>
-        <div class="footer-contact">
-            13기 부장 노하은 | 010-2850-0614 <br>
-            14기 부장 000 | 010-0000-0000
-        </div>
-        <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
-        <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/apply.js"></script>
     <script>
-
-
         // HTML을 업데이트하여 질문과 답변을 표시하는 함수
         function apply() {
             let name = $('#username').val();
