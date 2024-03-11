@@ -50,7 +50,9 @@
     text-align: right;
     top: 50%;
     transform: translateY(-50%);
+    padding: 3vh 0;
     padding-right: 3vw;
+    /* background-color: #2AF598; */
 }
 
 .main-page>.img-box>img {
@@ -98,6 +100,7 @@
     border: 1px solid var(--main-color);
     border-radius: 3em;
     padding: 0.6vw 1vw;
+    margin: 3vw 0;
     display: flex;
     justify-content: space-between;
 }
@@ -353,7 +356,7 @@
     grid-template-rows: repeat(3, 12rem);
     column-gap: 20px;
     row-gap: 20px;
-    padding: 1vw;
+    padding: 3vh 3vw;
 }
 
 .content-box>.box {
@@ -488,8 +491,8 @@
     position: absolute;
     left: 0.01vw;
     top: 0.1vh;
-    width: 24.9rem;
-    height: 14.9rem;
+    width: 25rem;
+    height: 15rem;
     border-radius: 2rem;
     padding: 2rem 2.5rem;
     margin: auto;
@@ -521,7 +524,7 @@
 }
 
 #slider>.image-box>.box>.blur-box>button:hover {
-    background-color: black;
+    background-color: white;
 }
 
 #slider>.image-box>.box>.blur-box>button>img {
@@ -765,6 +768,7 @@
     border: 1px solid var(--main-color);
     border-radius: 3em;
     padding: 0.6vw 1vw;
+    margin: 3vh;
     display: flex;
     justify-content: space-between;
     margin-top: 7vh;
@@ -1453,7 +1457,6 @@
     .faq {
         position: relative;
         background-color: transparent;
-        border: 1px solid #9fa4a8;
         border-radius: 10px;
         margin: 20px 0;
         padding: 30px;

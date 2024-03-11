@@ -19,22 +19,14 @@
         <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
-<<<<<<< HEAD
-                <li><a href="./index.html" class="header-menu" id="header-about"
-                        onclick="changeFontColor()">ABOUT</a>
+                <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
                 </li>
-                <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
+                <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a>
+                </li>
                 <li><a href="./activity.html" class="header-menu" id="header-activity"
                         onclick="changeFontColor()">활동</a></li>
                 <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
                 <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
-=======
-                <li><a href="./about.html" class="header-menu" id="header-about">ABOUT</a></li>
-                <li><a href="./member.html" class="header-menu" id="header-member">부원</a></li>
-                <li><a href="./activity.html" class="header-menu" id="header-activity">활동</a></li>
-                <li><a href="./qna.html" class="header-menu" id="header-qna">QNA</a></li>
-                <li><button>15기 지원하기</button></li>
->>>>>>> d9cb80887bdc609623d8acca67327996f3c75a15
             </ul>
         </nav>
     </header>
@@ -48,18 +40,18 @@
     <main>
         <div class="wrapper">
             <div class="support-page">
-                     
-                    <!-- title -->
-                    <section id="title-box">
-                        <div id="sub-title">MSG 지원 페이지</div>
-                        <div id="title">MSG 15기 지원하기</div>
-                        <div id="message">자신에 대해 마음껏 알려주세요!</div>
-                    </section>
 
-                    <!-- Support Form -->
-                    <form id="support-form" action="#">
-                        <img src="./image/apply/logo.png">
-                        <fieldset class="support-box">               
+                <!-- title -->
+                <section id="title-box">
+                    <div id="sub-title">MSG 지원 페이지</div>
+                    <div id="title">MSG 15기 지원하기</div>
+                    <div id="message">자신에 대해 마음껏 알려주세요!</div>
+                </section>
+
+                <!-- Support Form -->
+                <form id="support-form" action="#">
+                    <img src="./image/apply/logo.png">
+                    <fieldset class="support-box">
                         <ul>
                             <li class="form-control">
                                 <label for="username">이름을 입력해주세요.</label><br>
@@ -93,7 +85,8 @@
                             </li>
                             <li class="form-control">
                                 <label for="experience">실패 경험을 입력해주세요.</label><br>
-                                <textarea type="text" id="experience" placeholder="500자 이내로 작성해주세요." required></textarea>
+                                <textarea type="text" id="experience" placeholder="500자 이내로 작성해주세요."
+                                    required></textarea>
                                 <small class="error">필수 입력입니다.</small>
                             </li>
                             <li class="form-control">
@@ -103,19 +96,19 @@
                             </li>
                             <li>
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
-                                <input type="text" id="question"  placeholder="필수 사항이 아닙니다.">
-                            </li>               
-                          </ul>
-                        </fieldset>
-                        <fieldset id="button-box">
-                           <button type="submit" id="submit-button">제출하기</button>
-                        </fieldset>                                        
-                    </form>
+                                <input type="text" id="question" placeholder="필수 사항이 아닙니다.">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset id="button-box">
+                        <button type="submit" id="submit-button" onclick="apply()">제출하기</button>
+                    </fieldset>
+                </form>
 
             </div>
-        </div>   
+        </div>
     </main>
-    
+
     <!-- footer -->
     <footer>
         <div class="footer-message">
@@ -129,9 +122,75 @@
         <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
         <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
     </footer>
-           
-    <!--JS-->
-    <script src="./js/apply.js"></script>
 
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/apply.js"></script>
+    <script>
+
+
+        // HTML을 업데이트하여 질문과 답변을 표시하는 함수
+        function apply() {
+            let name = $('#username').val();
+            let studentId = $('#class-number').val();
+            let tel = $('#phone').val();
+            let email = $('#mail').val();
+            let purpose = $('#motive').val();
+            let strengths = $('#strength').val();
+            let failure = $('#experience').val();
+            let definition = $('#definition').val();
+            let question = $('#question').val();
+
+            // 공백 확인
+            if (name === '' ||
+                studentId === '' ||
+                tel === '' ||
+                email === '' ||
+                purpose === '' ||
+                strengths === '' ||
+                failure === '' ||
+                definition === ''
+            ) {
+                console.log(name);
+                console.log(studentId);
+                console.log(tel);
+                console.log(email);
+                console.log(purpose);
+                console.log(strengths);
+                console.log(failure);
+                console.log(definition);
+                console.log(question);
+                console.log("입력 필요한 것 있음");
+            }
+            else {
+                let param = {
+                    "name": name,
+                    "studentId": studentId,
+                    "tel": tel,
+                    "email": email,
+                    "purpose": purpose,
+                    "strengths": strengths,
+                    "failure": failure,
+                    "definition": definition,
+                    "question": question
+                };
+
+                $.ajax({
+                    type: 'post',           // 타입 (get, post, put 등등)
+                    url: `http://210.114.18.202:8081/support-form`,           // 요청할 서버url
+                    async: true,            // 비동기화 여부 (default : true)
+                    dataType: 'json',       // 데이터 타입 (html, xml, json, text 등등)
+                    data: JSON.stringify(param),
+                    contentType: "application/json",
+                    success: async function (data) { // 결과 성공 콜백함수
+                        location.href = `./applySubmit.html`;
+                    }
+                });
+            }
+
+        }
+    </script>
 </body>
+
 </html>
