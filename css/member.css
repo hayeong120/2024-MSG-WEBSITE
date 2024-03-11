@@ -1,18 +1,21 @@
 .member-page {
     position: relative;
     width: 60vw;
-    height: 1300px;
     margin: auto;
-    /* background-color: aquamarine; */
+    height: auto;
 }
 
-.member-page > .container {
+
+.container {
     position: relative;
-    width: 60vw;
-    height: 10vh;
-    top: 10%;
-    transform: translateY(-50%);
+    /* width: 60vw; */
     /* background-color: aqua; */
+}
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
 }
 
 .member-page > .container > .txt-box > .title {
@@ -33,8 +36,9 @@
 .member-page > .container > .txt-box {
     position: relative;
     /* background-color: antiquewhite; */
+    margin-top: 8%;
     width: 100%;
-    height: 38vh;
+    height: 20vh;
     text-align: left;
 }
 
@@ -46,9 +50,9 @@
 
 .member-page > .container > .count > ul {
     width: 103px; 
-    height: 61px; 
+    height: 55px; 
     left: 365px; 
-    top: 618px;
+    top: 600px;
     line-height: 51.20px;
     font-size: var(--subtitle-font-size);
     display: inline;
@@ -71,7 +75,7 @@
 }
 
 .member-page > .container > .member-group > .member-box {
-
+    z-index: 900;
     width: 400px;
     height: 310px;
     background: rgba(252,252,252,1);
@@ -143,6 +147,7 @@
 }
 
 .member-page > .container > .member-group > .member-box > .ment {
+    z-index: 1;
     width: 348px;
     color: rgba(25,31,40,1);
     position: absolute;
@@ -191,75 +196,13 @@
 }
 
 
-input {
-    display: none;
-    background-color: transparent;
-}
-
-
-#layer_bg1,
-#layer_bg2,
-#layer_bg3,
-#layer_bg4 {
-    display:none;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
-}
-
-#layer_bg1 > #popup1,
-#layer_bg2 > #popup2,
-#layer_bg3 > #popup3,
-#layer_bg4 > #popup4 {
-    z-index: 1;
-    position:absolute;
-    padding:15px;
-    box-sizing:border-box;
-    border-radius:15px; 
-    top:50%;
-    left:50%;
-    margin-left: 50%;
-    margin-top: -20%;
-    transform:translate(-50%, -50%);
-    width:700px;
-    height:400px;
-    background:#fff;
-    box-shadow: 7px 7px 5px rgba(0,0,0,0.2); 
-}
-
-#layer_bg1 > #popup1 > h2,
-#layer_bg2 > #popup2 > h2,
-#layer_bg3 > #popup3 > h2,
-#layer_bg4 > #popup4 > h2 {
-    font-size: 20px;
-    margin-bottom:25px;
-    text-align: center;
-}
-
-#layer_bg1 > #popup1 > h2 > label,
-#layer_bg2 > #popup2 > h2 > label,
-#layer_bg3 > #popup3 > h2 > label,
-#layer_bg4 > #popup4 > h2 > label {
-    float: right;
-    cursor: pointer;
-}
-
-input:checked + label + #layer_bg1,
-input:checked + label + #layer_bg2,
-input:checked + label + #layer_bg3,
-input:checked + label + #layer_bg4 {
-    display:block;
-}
-
 .class1 {
+    position: absolute;
     width: 80px;
     color: rgba(42,245,152,0.8500000238418579);
     font-size: 20px;
     font-weight: 600;
-    margin-left: 40px;
+    left: 40px;
 }
 
 .int-img {
@@ -267,7 +210,7 @@ input:checked + label + #layer_bg4 {
     top: 110px;
     width: 200px;
     margin-top: -10px;
-    margin-left: 20px;
+    margin-left: 0px;
     height: 190px;
 }
 
@@ -276,58 +219,58 @@ input:checked + label + #layer_bg4 {
     width: 100px;
     font-size: 20px;
     font-weight: 600;
-    bottom: 75px;
-    left: 55px;
+    bottom: 95px;
+    left: 40px;
 }
 
 .role-i {
     position: absolute;
     width: 100px;
     font-size: 10px;
-    bottom: 60px;
-    left: 55px;
+    bottom: 75px;
+    left: 44px;
 }
 
 .github-i {
     position: absolute;
     width: 20px;
-    bottom: 30px;
-    left: 55px;
+    bottom: 40px;
+    left: 40px;
 }
 
 .velog-i {
     position: absolute;
     width: 20px;
-    bottom: 30px;
-    left: 85px;
+    bottom: 40px;
+    left: 70px;
 }
 
 .line {
     position: absolute;
     top: 80px;
-    right: 35px;
-    width: 430px;
+    right: 65px;
+    width: 510px;
 }
 
 .line1 {
     position: absolute;
-    width: 430px;
-    top: 190px;
-    right: 35px;
+    top: 180px;
+    right: 65px;
+    width: 510px;
 }
 
 .line2 {
     position: absolute;
-    width: 430px;
-    top: 295px;
-    right: 35px;
+    width: 510px;
+    top: 300px;
+    right: 65px;
 }
 
 .q1 {
     color: black;
     position: absolute;
     width: 150px;
-    top: 90px;
+    top: 80px;
     left: 230px;
     font-size: 15px;
     font-weight: 700;
@@ -338,7 +281,7 @@ input:checked + label + #layer_bg4 {
     color: black;
     position: absolute;
     width: 450px;
-    top: 190px;
+    top: 180px;
     left: 230px;
     font-size: 15px;
     font-weight: 700;
@@ -361,7 +304,7 @@ input:checked + label + #layer_bg4 {
     position: absolute;
     font-size: 13px;
     width: 460px;
-    top: 130px;
+    top: 120px;
     left: 230px;
 }
 
@@ -370,7 +313,7 @@ input:checked + label + #layer_bg4 {
     position: absolute;
     font-size: 13px;
     width: 470px;
-    top: 230px;
+    top: 220px;
     left: 230px;
 }
 
@@ -382,4 +325,74 @@ input:checked + label + #layer_bg4 {
     width: 470px;
     top: 340px;
     left: 230px;
+}
+
+
+.opener {
+    width: 83px;
+    color: rgba(25,31,40,1);
+    position: absolute;
+    top: 70px;
+    left: 254px;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+    color: var(--black-color-01);   
+    font-weight: var(--regular-weight);
+}
+
+.opener:hover {
+  color: rgba(42,245,152,0.8500000238418579);
+}
+
+.layer {
+    z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.layer .box {
+z-index: 10000;
+  position: relative;
+  padding: 20px 20px 60px;
+  margin: 20px;
+  width: 800px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.layer .box .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 1000;
+  transition: all 0.2s ease-in-out;
+}
+
+.layer .box .close:hover {
+  transform: scale(1.1);
+}
+
+.layer:target {
+  display: flex;
+  animation: open 0.5s;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom:25px;
+    text-align: center;
 }
