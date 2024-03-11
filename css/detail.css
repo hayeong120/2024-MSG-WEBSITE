@@ -231,7 +231,7 @@
     text-align: left;
     justify-content: center;
     flex-direction: column;
-    width: 40vw;
+    width: 20vw;
     gap: 30px;
     margin-bottom: 10%;
 }
@@ -246,7 +246,7 @@
 }
 
 .speech-group {
-    width: 50vw;
+    min-width: 50vw;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -257,7 +257,7 @@
     background: #F6F6F6;
     border-radius: .4em;
     padding: 20px;
-    width: 100%;
+    width: fit-content;
     min-height: auto;
 }
 
@@ -343,7 +343,7 @@
     }
 
     .explan-text {
-        width: 40vw;
+        width: 60vw;
     }
 
     .speech-text {
@@ -357,6 +357,11 @@
 
     #name {
         font-size: xx-small;
+    }
+    #tag{
+        padding: 3px 7px;
+        min-width: 35px;
+        font-size: x-small;
     }
 }
 
@@ -413,7 +418,7 @@
     }
 
     .explan-text {
-        width: 55vw;
+        width: 70vw;
     }
 
     .explan-title {
