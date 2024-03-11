@@ -1,9 +1,9 @@
 // 다크 모드 토글 버튼 클릭 이벤트 핸들러
-document
-  .getElementById("darkModeToggle")
-  .addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-  });
+// document
+//   .getElementById("darkModeToggle")
+//   .addEventListener("click", function () {
+//     document.body.classList.toggle("dark-mode");
+//   });
 
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
