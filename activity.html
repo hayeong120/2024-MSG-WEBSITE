@@ -23,6 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/activity.css" />
+    <script src="./js/script.js"></script>
   </head>
 
   <body>
@@ -104,8 +105,12 @@
             <div class="inner">
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <!-- 슬라이드 내용 -->
+                  <!-- 각각의 활동 슬라이드 -->
+                  <div
+                    class="swiper-slide"
+                    data-year="2023"
+                    data-name="It show"
+                  >
                     <div class="slide-content">
                       <div class="title">
                         <p class="year">2023</p>
@@ -117,7 +122,11 @@
                     </div>
                   </div>
 
-                  <div class="swiper-slide">
+                  <div
+                    class="swiper-slide"
+                    data-year="2023"
+                    data-name="GUI 프로젝트"
+                  >
                     <div class="slide-content">
                       <div class="title">
                         <p class="year">2023</p>
@@ -128,7 +137,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+
+                  <div class="swiper-slide" data-year="2023" data-name="공모전">
                     <div class="slide-content">
                       <div class="title">
                         <p class="year">2023</p>
@@ -139,7 +149,12 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+
+                  <div
+                    class="swiper-slide"
+                    data-year="2023"
+                    data-name="자료구조 스터디"
+                  >
                     <div class="slide-content">
                       <div class="title">
                         <p class="year">2023</p>
@@ -150,7 +165,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+
+                  <div class="swiper-slide" data-year="2023" data-name="회식">
                     <div class="slide-content">
                       <div class="title">
                         <p class="year">2023</p>
@@ -162,6 +178,8 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Swiper 페이징, 이전/다음 버튼 -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-next">
                   <img src="./image/activity/activity-right-icon.svg" alt="" />
@@ -242,10 +260,18 @@
           Make Share Gather
         </div>
         <div class="footer-contact">
-          13기 부장 노하은 | 010-2850-0614 <br />
-          14기 부장 000 | 010-0000-0000
+          <a class="instagram" href="https://www.instagram.com/haeunnohh/"
+            >13기 부장 노하은</a
+          >
+          | 010-2850-0614 <br />
+          <a class="instagram" href="https://www.instagram.com/hy_____120/"
+            >14기 부장 장하영</a
+          >
+          | 010-3147-0249
         </div>
-        <div class="footer-instagram">@mirim_msg</div>
+        <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram"
+          >@mirim_msg</a
+        >
         <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
       </div>
     </footer>

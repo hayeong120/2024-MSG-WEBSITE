@@ -158,8 +158,8 @@ header ul>li>button:hover {
     color: white;
     background-position: 99% 50%;
     text-align: center;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 10px -10px var(--gray-color-02);
+    transform: translateY(-2px);
+    /* box-shadow: 0 10px 10px -10px var(--gray-color-02); */
     /* display: flex;
     align-items: center;
     justify-content: center;
@@ -192,6 +192,10 @@ footer {
     color: #545e6f;
     margin: 0.6rem;
     margin-top: 1rem;
+}
+
+.footer-contact > .instagram:hover {
+    color: pink;
 }
 
 .footer-instagram:hover {
