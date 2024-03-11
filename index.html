@@ -19,7 +19,7 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="cssscreen.css">
-<link rel="stylesheet" type="text/css" media="print" href="cssprint.css">
+    <link rel="stylesheet" type="text/css" media="print" href="cssprint.css">
 </head>
 
 <body>
@@ -29,18 +29,20 @@
             <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
             <nav>
                 <ul>
-                    <li><a href="./about.html" class="header-menu" id="header-about"
+                    <li><a href="./index.html" class="header-menu" id="header-about"
                             onclick="changeFontColor()">ABOUT</a>
                     </li>
-                    <li><a href="" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
+                    <li><a href="./member.html" class="header-menu" id="header-member"
+                            onclick="changeFontColor()">부원</a></li>
                     <li><a href="./activity.html" class="header-menu" id="header-activity"
                             onclick="changeFontColor()">활동</a></li>
-                    <li><a href="" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
-                    <li><button>15기 지원하기</button></li>
+                    <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
+                    </li>
+                    <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
                 </ul>
             </nav>
         </header>
-        <button id="darkModeToggle">다크 모드 토글</button>
+        <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
         <main>
             <div class="wrapper section active" id="section1" data-anchor="first">
                 <div class="container">
@@ -55,7 +57,7 @@
                                 나의 의견을 공유하고 <br>
                                 함께 모여 성장하는 동아리<br>
                             </div>
-                            <button>
+                            <button onclick="location.href='./guidelines.html'">
                                 15기 지원하기
                                 <img src="./image/arrow-right-support.svg" alt="">
                             </button>
@@ -198,27 +200,51 @@
                             <div class="image-box">
                                 <div class="box">
                                     <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
+                                        <div class="sub-title">12기 App</div>
+                                        <div class="title">PortFolio</div>
                                         <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
+                                            자신의 프로필, 공부한 언어, 취득 자격증, 프로젝트 등<br>정보를 작성하면 정리해서 보여주는 앱
                                         </div>
-                                        <button>
+                                        <button onclick="window.location.href='activitydetail.html?title=PortFolio'">
                                             <img src="./image/arrow-right-support.svg" alt="">
                                         </button>
                                     </div>
-                                    <img class="" src="./image/activity/dailypaper.png" alt="">
+                                    <img class="" src="./image/activity/portfolio.png" alt="">
                                 </div>
                                 <div class="box">
                                     <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
+                                        <div class="sub-title">12기 App</div>
+                                        <div class="title">소라고동</div>
                                         <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트 히히히히ㅣ히히히
+                                            사용자가 한 질문에 대한 대답을 해주는 앱
                                         </div>
-                                        <button>
+                                        <button onclick="window.location.href='activitydetail.html?title=소라고동'">
+                                            <img src="./image/arrow-right-support.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <img class="" src="./image/activity/sora.png" alt="">
+                                </div>
+                                <div class="box">
+                                    <div class="blur-box">
+                                        <div class="sub-title">12기 Unity Game</div>
+                                        <div class="title">우주 오물오물</div>
+                                        <div class="message">
+                                            우주쓰레기를 치우는 게임 (슈팅게임)
+                                        </div>
+                                        <button onclick="window.location.href='activitydetail.html?title=우주 오물오물'">
+                                            <img src="./image/arrow-right-support.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <img class="" src="./image/activity/owater.png" alt="">
+                                </div>
+                                <div class="box">
+                                    <div class="blur-box">
+                                        <div class="sub-title">12기 web IT show</div>
+                                        <div class="title">기억</div>
+                                        <div class="message">
+                                            기억을 소재로 한 온라인 전시회<br>자신의 기억을 전시해서 공유할 수 있는 웹페이지
+                                        </div>
+                                        <button onclick="window.location.href='activitydetail.html?title=기억'">
                                             <img src="./image/arrow-right-support.svg" alt="">
                                         </button>
                                     </div>
@@ -232,7 +258,7 @@
                                             사용자의 성격을 행성의 특징에 비유하여 <br>
                                             나의 행성을 보여주는 성격 유형 검사 웹사이트
                                         </div>
-                                        <button>
+                                        <button onclick="window.location.href='activitydetail.html?title=너의 행성은'">
                                             <img src="./image/arrow-right-support.svg" alt="">
                                         </button>
                                     </div>
@@ -240,13 +266,12 @@
                                 </div>
                                 <div class="box">
                                     <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
+                                        <div class="sub-title">13기 Web</div>
+                                        <div class="title">MSG 지원사이트</div>
                                         <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
+                                            MSG 동아리 웹사이트
                                         </div>
-                                        <button>
+                                        <button onclick="window.location.href='activitydetail.html?title=MSG 지원사이트'">
                                             <img src="./image/arrow-right-support.svg" alt="">
                                         </button>
                                     </div>
@@ -254,59 +279,29 @@
                                 </div>
                                 <div class="box">
                                     <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
+                                        <div class="sub-title">14기 Swing java gui</div>
+                                        <div class="title">하루 한장</div>
                                         <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
+                                            하루에 한 번 질문에 대한 자신의 생각을 일기처럼 작성하여<br>시간이 지났을 때 지난 날의 나의 생각들을 보며 나의 성장을 볼 수 있는 성장 기록 앱사이트
                                         </div>
-                                        <button>
+                                        <button onclick="window.location.href='activitydetail.html?title=하루 한장'">
                                             <img src="./image/arrow-right-support.svg" alt="">
                                         </button>
                                     </div>
-                                    <img class="" src="./image/activity/portfolio.png" alt="">
+                                    <img class="" src="./image/activity/dailypaper.png" alt="">
                                 </div>
                                 <div class="box">
                                     <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
+                                        <div class="sub-title">13기 Swing java gui</div>
+                                        <div class="title">ProMatch</div>
                                         <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
+                                            프로젝트 및 공모전 관리 웹사이트
                                         </div>
-                                        <button>
+                                        <button onclick="window.location.href='activitydetail.html?title=ProMatch'">
                                             <img src="./image/arrow-right-support.svg" alt="">
                                         </button>
                                     </div>
                                     <img class="" src="./image/activity/promatch.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
-                                        <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
-                                        </div>
-                                        <button>
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/sora.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
-                                        <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
-                                        </div>
-                                        <button>
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/owater.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -434,7 +429,7 @@
                         <div class="txt-box">
                             열정 있고 성장 의지가 충만한 분들을 기다리고 있어요 <br>
                             MSG와 함께 알찬 3년을 만들어가요! <br>
-                            <button>
+                            <button onclick="location.href='./guidelines.html'">
                                 15기 지원하기
                                 <img src="./image/arrow-right-support.svg" alt="">
                             </button>
@@ -445,7 +440,7 @@
             <div class="wrapper section" data-anchor="sixth" id="section6">
                 <div class="question-page">
                     <div class="txt-box">
-                        <div class="sub-title">FNA</div>
+                        <div class="sub-title">FAQ</div>
                         <div class="title">자주 묻는 질문</div>
                     </div>
                     <div class="faq-container">
@@ -464,11 +459,10 @@
                         </div>
                         <div class="faq">
                             <p class="faq-title">전공에 대한 지식과 실력이 없어도 지원할 수 있나요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-text">
+                                물론입니다! 저희도 처음 학교에 들어왔을 때는 아무것도 몰랐어요. 하지만 언니들이 언어부터 git 사용법, 툴까지 하나하나 알려주고 동아리 내에서 자체적으로
+                                진행했던 스터디와 협업 프로젝트들 덕분에 많은 성장을 할 수 있었답니다💕
+                            </p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -477,11 +471,11 @@
                         </div>
                         <div class="faq">
                             <p class="faq-title">동아리 분위기는 어떤가요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-text">
+                                MSG는 언제나 화목합니다🌞
+                                친구같은 선후배관계를 고수해오고 있으며, 무엇보다 스터디, 동아리 회식, 공모전 준비 등등을 통해 부원들은 물론 선배들과의 친목을 다질 수
+                                있습니다!
+                            </p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -489,12 +483,11 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <p class="faq-title">동아리 활동은 어떤 게 있나요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-title">동아리 활동으로는 무엇을 하나요? </p>
+                            <p class="faq-text">
+                                MSG는 교내외 공모전, IT쇼, 협업 프로젝트, 자율스터디, 개발블로그 작성 등 다양한 활동을 통해 전공 실력은 물론
+                                새학기 친해지기 프로젝트, 회식, 네트워킹을 통해 서로간의 친목을 다질 수 있답니다😍
+                            </p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -502,12 +495,8 @@
                             </button>
                         </div>
                         <div class="faq">
-                            <p class="faq-title">동아리 분위기는 어떤가요? </p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
+                            <p class="faq-title">담당 선생님은 누구신가요? </p>
+                            <p class="faq-text">MSG의 담당선생님은 이대형선생님으로 현재 2학년 국어를 맡고 계십니다🥰</p>
                             <button class="faq-toggle">
                                 <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
                                 <i class="fas fa-chevron-down"></i>
@@ -519,14 +508,14 @@
             </div>
         </main>
         <footer>
-            <div class="inner section fp-auto-height" data-anchor="seventh" id="section7">
+            <div class="inner">
                 <div class="footer-message">
-                    MSG <br>
+                    MSG <br />
                     Make Share Gather
                 </div>
                 <div class="footer-contact">
-                    13기 부장 노하은 | 010-2850-0614 <br>
-                    14기 부장 000 | 010-0000-0000
+                    <a class="instagram" href="https://www.instagram.com/haeunnohh/">13기 부장 노하은</a> | 010-2850-0614 <br />
+                    <a class="instagram" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a> | 010-3147-0249
                 </div>
                 <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
                 <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
