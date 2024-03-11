@@ -343,9 +343,9 @@ h2 {
         top: 40px;
     }
     .class {
-        font-size: 10px;
+        font-size: 8px;
         left: 140px;
-        top: 40px;
+        top: 42px;
     }
     .opener {
         font-size: 15px;
@@ -354,24 +354,24 @@ h2 {
     }
     .role {
         left: 140px;
-        font-size: 10px;
+        font-size: 8px;
         top: 78px;
     }
     .ment {
         font-size: 10px;
         left: -45px;
-        top: 150px;
+        top: 155px;
     }
     .github {
-        width:20px;
-        height: 20px;
+        width:15px;
+        height: 15px;
         left: 140px;
         top: 95px;
     }
     .velog {
-        width:20px;
-        height:20px;
-        left:167px;
+        width:15px;
+        height:15px;
+        left:164px;
         top: 95px;
     }
     .txt-box { line-height: 23px; }
@@ -386,16 +386,22 @@ h2 {
         width: 80px;
     }
     .name-i {
+        font-size: 14px;
         top: 95px;
         left: 130px;
     }
     .role-i {
-        top: 120px;
+        font-size: 8px;
+        top: 115px;
         left: 130px;
     }
-    .velog-i, .github-i { top: 140px; }
+    .velog-i, .github-i { 
+        top: 135px; 
+        width: 15px;
+        height: 15px;
+    }
     .github-i { left: 130px; }
-    .velog-i { left: 160px; }
+    .velog-i { left: 150px; }
     .q1, .q2, .q3 {
         font-size: 11px;
     }
@@ -413,11 +419,11 @@ h2 {
     .q3 { top: 390px; }
     .a3 { top: 430px; }
 
-    .title { font-size: 22px; }
-    .sub-title { font-size: 11px; }
-    .message { font-size: 10px; }
-    ul {
-        font-size: 11px;
+    .title { font-size: 18px; }
+    .sub-title { font-size: 10px; }
+    .message { font-size: 9px; }
+    li {
+        font-size: 9px;
     }
     h2 {
         font-size: 14px;
