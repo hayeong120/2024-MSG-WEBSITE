@@ -1,9 +1,9 @@
 // 다크 모드 토글 버튼 클릭 이벤트 핸들러
-document
-  .getElementById("darkModeToggle")
-  .addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-  });
+// document
+//   .getElementById("darkModeToggle")
+//   .addEventListener("click", function () {
+//     document.body.classList.toggle("dark-mode");
+//   });
 
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
@@ -40,15 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // category
 document.addEventListener("DOMContentLoaded", function () {
-  // 데이터 받아오기
   var jsonPath = "../data/activity-category-data.json";
-
-  // 카테고리 버튼 가져오기
   var categoryButtons = document.querySelectorAll(".inner-category p");
+  var activityDetailsContainer = document.querySelector(".activity-details");
 
-  // 초기 상태로 "all" 카테고리를 선택하도록 처리
-  var allCategoryButton = document.querySelector("#all"); // "all" 카테고리 버튼을 찾음
-  allCategoryButton.classList.add("underline"); // 밑줄 스타일을 추가
+  // Initial state: Select "all" category
+  var allCategoryButton = document.querySelector("#all");
+  allCategoryButton.classList.add("underline");
   fetch(jsonPath)
     .then((response) => response.json())
     .then((data) => {
@@ -74,11 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  function updateInnerBanner(data) {
-    var activityDetails = document.querySelector(".activity-details");
+  // Event listener for clicking on activity details
+  activityDetailsContainer.addEventListener("click", function (event) {
+    var clickedActivityDetail = event.target.closest(".activity-detail");
 
-    while (activityDetails.firstChild) {
-      activityDetails.removeChild(activityDetails.firstChild);
+    if (clickedActivityDetail) {
+      var title = clickedActivityDetail.querySelector("#detail-title").textContent;
+
+      // Navigate to activityDetails.html with the values
+      window.location.href = "activityDetail.html?title=" + encodeURIComponent(title);
+    }
+  });
+
+  function updateInnerBanner(data) {
+    while (activityDetailsContainer.firstChild) {
+      activityDetailsContainer.removeChild(activityDetailsContainer.firstChild);
     }
 
     data.forEach(function (item) {
@@ -129,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
       belowDiv.appendChild(tag1Element);
 
       activityDetail.appendChild(belowDiv);
-      activityDetails.appendChild(activityDetail);
+      activityDetailsContainer.appendChild(activityDetail);
     });
   }
 });
