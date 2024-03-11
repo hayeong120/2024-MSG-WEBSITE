@@ -250,15 +250,20 @@
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
 .speech-bubble {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     background: #F6F6F6;
     border-radius: .4em;
     padding: 20px;
-    width: calc(auto + 30px);
+    width: fit-content;
     min-height: auto;
 }
 
@@ -288,13 +293,14 @@
 
 .speech-name {
     position: relative;
-    width: var(--speech-margin);
+    min-width: calc(var(--speech-margin) + 30px);
     height: 100%;
     margin: 0 30px;
 }
 
 #name {
     position: absolute;
+    width: fit-content;
     font-size: small;
     color: var(--gray-color-02);
 }
@@ -309,7 +315,6 @@
     bottom: 0;
 }
 
-/* Right align even speech bubbles */
 .speech-group:nth-child(even)>.speech-bubble {
     transform: scaleX(-1);
 }
@@ -348,7 +353,6 @@
     }
 
     .speech-name {
-        width: var(--speech-margin-mid);
         margin: 0 25px;
     }
 
@@ -379,11 +383,9 @@
     }
 
     .slider-container {
-        width: var(--image-width-phone);
     }
 
     .slider-item {
-        width: var(--image-width-phone);
         height: 200px;
     }
 
@@ -394,7 +396,6 @@
 
     .speech-bubble {
         padding: 10px;
-        width: var(--speech-width-phone);
     }
 
     .explan-text {
@@ -414,7 +415,6 @@
     }
 
     .speech-name {
-        width: var(--speech-margin-phone);
         margin: 0 20px;
     }
 
