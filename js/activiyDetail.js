@@ -91,6 +91,7 @@ var titleValue = getParameterByName('title', currentUrl);
 // 결과 출력
 console.log("title 매개변수의 값: " + titleValue);
 // JSON 파일에서 데이터를 가져오기
+
 fetch('data/activity-category-data.json')
     .then(response => response.json())
     .then(jsonData => {
@@ -98,132 +99,126 @@ fetch('data/activity-category-data.json')
         var currentUrl = window.location.href;
         var titleValue = getParameterByName('title', currentUrl);
 
-        // "titleValue"와 일치하는 데이터 찾기
-        var matchingData = jsonData.reduce(function (accumulator, category) {
-            return accumulator.concat(category.items.filter(function (item) {
-                return item.title === titleValue;
-            }));
-        }, []);
+        // "all" category에 해당하는 데이터 필터링
+        var allCategoryData = jsonData.find(category => category.category === 'all');
 
-        // "below-tag" 클래스를 가진 요소 선택
-        var belowTagElement = document.querySelector('.below-tag');
-        var whatElement = document.querySelector('.what');
-        var titleElement = document.querySelector('.what-title');
-        var messageElement = document.querySelector('.what-message');
-        var memberElement = document.querySelector('#member');
-        var timeElement = document.querySelector('#time');
-        var langElement = document.querySelector('#lang');
-        var messageMemberElement = document.querySelector('.message-member');
-        var messageTimeElement = document.querySelector('.message-time');
-        var messageLangElement = document.querySelector('.message-lang');
+        if (allCategoryData) {
+            // "titleValue"와 일치하는 데이터 찾기
+            var matchingData = allCategoryData.items.filter(item => item.title === titleValue);
 
-        var wrapperElement = document.querySelector('.slider-wrapper');
+            // "below-tag" 클래스를 가진 요소 선택
+            var belowTagElement = document.querySelector('.below-tag');
+            var whatElement = document.querySelector('.what');
+            var titleElement = document.querySelector('.what-title');
+            var messageElement = document.querySelector('.what-message');
+            var memberElement = document.querySelector('#member');
+            var timeElement = document.querySelector('#time');
+            var langElement = document.querySelector('#lang');
+            var messageMemberElement = document.querySelector('.message-member');
+            var messageTimeElement = document.querySelector('.message-time');
+            var messageLangElement = document.querySelector('.message-lang');
 
-        var introduceElement = document.querySelector('.explan-detail');
-        var introduceTextElement = document.querySelector('.explan-text');
+            var wrapperElement = document.querySelector('.slider-wrapper');
 
-        var speechElement = document.querySelector('.speech');
+            var introduceElement = document.querySelector('.explan-detail');
+            var introduceTextElement = document.querySelector('.explan-text');
+
+            var speechElement = document.querySelector('.speech');
 
 
-        // 찾은 데이터에 대해 #tag(n) 값을 동적으로 추가
-        matchingData.forEach(function (data) {
+            // 찾은 데이터에 대해 #tag(n) 값을 동적으로 추가
+            matchingData.forEach(function (data) {
 
-            titleElement.textContent = data.title;
-            whatElement.appendChild(titleElement);
+                titleElement.textContent = data.title;
+                whatElement.appendChild(titleElement);
 
-            messageElement.textContent = data.explan;
-            whatElement.appendChild(messageElement);
+                messageElement.textContent = data.explan;
+                whatElement.appendChild(messageElement);
 
-            messageMemberElement.textContent = data.part;
-            memberElement.appendChild(messageMemberElement);
+                messageMemberElement.textContent = data.part;
+                memberElement.appendChild(messageMemberElement);
 
-            messageTimeElement.textContent = data.time;
-            timeElement.appendChild(messageTimeElement);
+                messageTimeElement.textContent = data.time;
+                timeElement.appendChild(messageTimeElement);
 
-            messageLangElement.textContent = data.lang;
-            langElement.appendChild(messageLangElement);
+                messageLangElement.textContent = data.lang;
+                langElement.appendChild(messageLangElement);
 
-            introduceElement.textContent = data.introduce;
-            introduceTextElement.appendChild(introduceElement);
+                introduceElement.textContent = data.introduce;
+                introduceTextElement.appendChild(introduceElement);
 
-            for (let i = 1; data['tag' + i] != null; i++) {
-                var tagKey = 'tag' + i;
-                var tagValue = data[tagKey];
+                for (let i = 1; data['tag' + i] != null; i++) {
+                    var tagKey = 'tag' + i;
+                    var tagValue = data[tagKey];
 
-                if (tagValue) {
-                    var tagElement = document.createElement('div');
-                    tagElement.id = 'tag';
+                    if (tagValue) {
+                        var tagElement = document.createElement('div');
+                        tagElement.id = 'tag';
 
-                    tagElement.textContent = tagValue;
+                        tagElement.textContent = tagValue;
 
-                    belowTagElement.appendChild(tagElement);
+                        belowTagElement.appendChild(tagElement);
+                    }
+                } let i = 0;
+                do {
+                    var imgValue = data['img' + i];
+                    console.log(imgValue);
+                    var item = document.createElement('div');
+                    item.className = 'slider-item';
+
+                    if (imgValue) {
+                        var img = document.createElement('img');
+                        img.src = imgValue;
+                    } else {
+                        // Assuming 'data.img' is the default image source if 'imgValue' is not present
+                        var img = document.createElement('img');
+                        img.src = data.img;
+                    }
+
+                    item.appendChild(img);
+                    wrapperElement.appendChild(item);
+                    showSlide(currentSlide);
+
+                    i++;
+                } while (data['img' + i] != null);
+
+
+
+
+                for (let i = 0; data['speech'][i] != null; i++) {
+                    var speechValue = data['speech'][i];
+                    // console.log(speechValue);
+
+                    if (speechValue) {
+                        var group = document.createElement('div');
+                        group.className = 'speech-group';
+
+                        var bubble = document.createElement('div');
+                        bubble.className = 'speech-bubble';
+
+                        var text = document.createElement('div');
+                        text.className = 'speech-text';
+                        text.textContent = speechValue.comment;
+
+                        var name = document.createElement('div');
+                        name.className = 'speech-name';
+
+                        var nameText = document.createElement('div');
+                        nameText.id = 'name';
+                        nameText.textContent = speechValue.name;
+
+                        name.appendChild(nameText);
+                        bubble.appendChild(text);
+                        group.appendChild(bubble);
+                        group.appendChild(name);
+                        speechElement.appendChild(group);
+                    }
+                    showSlide(currentSlide);
                 }
-            }
-
-            var imgValue = data.img;
-
-            if (imgValue) {
-                var itemElement = document.createElement('div');
-                itemElement.className = 'speech-item';
-
-                var img = document.createElement('img');
-                img.className = 'speech-group';
-
-                img.src = imgValue;
-
-                itemElement.appendChild(img);
-                wrapperElement.appendChild(itemElement);
-            }
-
-            for (let i = 1; data['img' + i] != null; i++) {
-                var imgKey = 'img' + i;
-                imgValue = data[imgKey];
-
-                if (imgValue) {
-                    var itemElement = document.createElement('div');
-                    itemElement.className = 'speech-item';
-
-                    var img = document.createElement('img');
-                    img.className = 'speech-group';
-
-                    img.src = imgValue;
-
-                    itemElement.appendChild(img);
-                    wrapperElement.appendChild(itemElement);
-                }
-            }
-
-            for (let i = 1; data['speech-text' + i] != null; i++) {
-                var speechKey = 'speech-text' + i;
-                var speechValue = data[speechKey];
-
-                if (speechValue) {
-                    var group = document.createElement('div');
-                    group.className = 'speech-group';
-
-                    var bubble = document.createElement('div');
-                    bubble.className = 'speech-bubble';
-
-                    var text = document.createElement('div');
-                    text.className = 'speech-text';
-                    text.textContent = speechValue;
-
-                    var name = document.createElement('div');
-                    name.className = 'speech-name';
-
-                    var nameText = document.createElement('div');
-                    nameText.className = 'name';
-                    text.textContent = data['speech-name' + i];
-
-                    text.appendChild(nameText);
-                    bubble.appendChild(text);
-                    group.appendChild(bubble);
-                    group.appendChild(name);
-                    speechElement.appendChild(group);
-                }
-            }
-
-        });
+            });
+        } else {
+            console.error('No data found for "all" category.');
+        }
     })
     .catch(error => console.error('JSON 데이터를 가져오는 중 오류 발생:', error));
 
