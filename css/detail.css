@@ -173,7 +173,7 @@
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 20px);
     width: 40px;
     height: 40px;
     padding: 0;
@@ -231,25 +231,24 @@
     text-align: left;
     justify-content: center;
     flex-direction: column;
-    width: 20vw;
+    width: 40vw;
     gap: 30px;
-    padding-bottom: 10%;
+    margin-bottom: 10%;
 }
 
 .speech {
     display: flex;
     width: var(--width-web);
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
 
 .speech-group {
-    min-width: 50vw;
+    width: 50vw;
     height: auto;
     display: flex;
-    align-items: center;
     flex-direction: row;
 }
 
@@ -258,7 +257,7 @@
     background: #F6F6F6;
     border-radius: .4em;
     padding: 20px;
-    width: calc(auto + 30px);
+    width: 100%;
     min-height: auto;
 }
 
@@ -288,9 +287,8 @@
 
 .speech-name {
     position: relative;
-    min-width: var(--speech-margin);
-    white-space : nowrap;
-    width: 100%;
+    width: fit-content;
+    white-space: nowrap;
     height: 100%;
     margin: 0 30px;
 }
@@ -368,9 +366,13 @@
         gap: 10px;
     }
 
+    .title .what-title {
+        font-size: 28px;
+    }
+
     .title .sub-title {
         margin-top: 30px;
-        font-size: 18px;
+        font-size: 12px;
     }
 
     .title .sub-tit {
@@ -378,9 +380,17 @@
     }
 
     .title .message {
-        font-size: 15px;
+        font-size: 12px;
         margin-top: 2px;
         margin-bottom: 50px;
+    }
+
+    .sub>.sub-message {
+        font-size: 10px;
+    }
+
+    .sub>.sub-tit {
+        font-size: 13px;
     }
 
     .slider-container {
@@ -484,7 +494,6 @@ body.dark-mode .title {
 .dark-mode .next {
     background-color: black;
 }
-
-.dark-mode.speech-text{
-    color: black;
 }
+/* .dark-mode.speech-text {
+    color: black; */
