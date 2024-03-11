@@ -1,15 +1,7 @@
 .member-page {
     position: relative;
-    width: 60vw;
+    width: 70%;
     margin: auto;
-    height: auto;
-}
-
-
-.container {
-    position: relative;
-    /* width: 60vw; */
-    /* background-color: aqua; */
 }
 
 
@@ -19,18 +11,13 @@
 }
 
 .member-page > .container > .txt-box > .title {
-    font-size: var(--title-font-size);
     color: var(--black-color-01);
     font-weight: var(--bold-weight);
-    line-height: 2.9vw;
-    margin-top: 1vh;
+    margin-bottom: 5px;
 }
 
 .member-page > .container > .txt-box > .message {
-    font-size: var(--subtitle-font-size);
     color: var(--gray-color-02);
-    line-height: 1.5vw;
-    margin-top: 3vh;
 }
 
 .member-page > .container > .txt-box {
@@ -38,12 +25,10 @@
     /* background-color: antiquewhite; */
     margin-top: 8%;
     width: 100%;
-    height: 20vh;
     text-align: left;
 }
 
 .member-page > .container > .txt-box > .sub-title {
-    font-size: var(--subtitle-font-size);
     color: var(--main-color);
     font-weight: var(--regular-weight);
 }
@@ -54,13 +39,12 @@
     left: 365px; 
     top: 600px;
     line-height: 51.20px;
-    font-size: var(--subtitle-font-size);
+    font-size: 12px;
     display: inline;
-    list-style-type: none;
 }
 
 .member-page > .container > .count > ul > li {
-    width: 103px; 
+    width: 72px; 
     left: 488px; 
     top: 618px; 
     color: #37373A;
@@ -71,13 +55,11 @@
 }
 
 .member-page > .container > .member-group {
-    height: 1800px;
+    height: 1100px;
 }
 
 .member-page > .container > .member-group > .member-box {
     z-index: 900;
-    width: 400px;
-    height: 310px;
     background: rgba(252,252,252,1);
     opacity: 1;
     position: relative;
@@ -89,7 +71,6 @@
     margin-right: 64px;
     display: inline-flex;
     margin: 20px;
-
 }
 
 .member-page > .container > .member-group > .member-box:hover {
@@ -100,47 +81,17 @@
     width: 213px;
     color: rgba(42,245,152,0.8500000238418579);
     position: absolute;
-    top: 40px;
-    left: 254px;
-    font-size: 16px;
     opacity: 1;
     text-align: left;
 }
 
-.member-page > .container > .member-group > .member-box > .name {
-    width: 83px;
-    color: rgba(25,31,40,1);
-    position: absolute;
-    top: 70px;
-    left: 254px;
-    font-size: 32px;
-    opacity: 1;
-    text-align: left;
-    color: var(--black-color-01);   
-    font-weight: var(--regular-weight);
-    cursor: pointer;
-}
 
-.member-page > .container > .member-group > .member-box > a > .name {
-    width: 83px;
-    color: rgba(25,31,40,1);
-    position: absolute;
-    top: 70px;
-    left: 254px;
-    font-size: 32px;
-    opacity: 1;
-    text-align: left;
-    color: var(--black-color-01);   
-    font-weight: var(--regular-weight);
-}
+
 
 .member-page > .container > .member-group > .member-box > .role {
     width: 288px;
     color: rgba(116,116,140,1);
     position: absolute;
-    top: 117px;
-    left: 254px;
-    font-size: 16px;
     opacity: 1;
     text-align: left;
     
@@ -151,43 +102,28 @@
     width: 348px;
     color: rgba(25,31,40,1);
     position: absolute;
-    top: 206px;
-    left: 35px;
-    font-size: 18px;
     opacity: 1;
     text-align: center;
     
 }
 .member-page > .container > .member-group > .member-box > a > .github {
-    width: 30px;
-    height: 30px;
     opacity: 1;
     position: absolute;
-    top: 150px;
-    left: 251px;
     overflow: hidden;
 }
 
 .member-page > .container > .member-group > .member-box > a > .velog {
-    width: 30px;
-    height: 30px;
     opacity: 1;
     position: absolute;
-    top: 150px;
-    left: 296px;
     overflow: hidden;
 }
 
 .member-page > .container > .member-group > .member-box > .profile {    
-    width: 156px;
-    height: 156px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 30px;
-    left: 40px;
     border-top-left-radius: 300px;
     border-top-right-radius: 300px;
     border-bottom-left-radius: 300px;
@@ -200,18 +136,19 @@
     position: absolute;
     width: 80px;
     color: rgba(42,245,152,0.8500000238418579);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     left: 40px;
+    top: 90px;
 }
 
 .int-img {
     position: absolute;
-    top: 110px;
-    width: 200px;
+    top: 140px;
+    width: 170px;
     margin-top: -10px;
     margin-left: 0px;
-    height: 190px;
+    height: 150px;
 }
 
 .name-i {
@@ -219,7 +156,6 @@
     width: 100px;
     font-size: 20px;
     font-weight: 600;
-    bottom: 95px;
     left: 40px;
 }
 
@@ -302,7 +238,7 @@
 .a1 {
     color: #37373A;
     position: absolute;
-    font-size: 13px;
+    font-size: 12px;
     width: 460px;
     top: 120px;
     left: 230px;
@@ -311,7 +247,7 @@
 .a2 {
     color: #37373A;
     position: absolute;
-    font-size: 13px;
+    font-size: 12px;
     width: 470px;
     top: 220px;
     left: 230px;
@@ -321,7 +257,7 @@
 .a3 {
     color: #37373A;
     position: absolute;
-    font-size: 13px;
+    font-size: 12px;
     width: 470px;
     top: 340px;
     left: 230px;
@@ -333,8 +269,8 @@
     color: rgba(25,31,40,1);
     position: absolute;
     top: 70px;
-    left: 254px;
-    font-size: 32px;
+    left: 244px;
+    font-size: 28px;
     opacity: 1;
     text-align: left;
     color: var(--black-color-01);   
@@ -358,13 +294,14 @@
   top: 0;
 }
 
-.layer .box {
-z-index: 10000;
+
+.box {
+  z-index: 10000;
   position: relative;
   padding: 20px 20px 60px;
   margin: 20px;
   width: 800px;
-  height: 420px;
+  height: 500px;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -392,7 +329,202 @@ z-index: 10000;
 }
 
 h2 {
+    position: relative;
     font-size: 20px;
     margin-bottom:25px;
     text-align: center;
+}
+/* Media queries max-width: 450px */
+@media all and (max-width: 450px) {
+    .member-page {
+        width: 70%;
+    }
+    .member-box {
+        width:245px;
+        height: 230px;
+    }
+    .profile {
+        width: 75px;
+        height: 75px;
+        left: 40px;
+        top: 40px;
+    }
+    .class {
+        font-size: 10px;
+        left: 140px;
+        top: 40px;
+    }
+    .opener {
+        font-size: 15px;
+        left: 140px;
+        top: 55px;
+    }
+    .role {
+        left: 140px;
+        font-size: 10px;
+        top: 78px;
+    }
+    .ment {
+        font-size: 10px;
+        left: -45px;
+        top: 150px;
+    }
+    .github {
+        width:20px;
+        height: 20px;
+        left: 140px;
+        top: 95px;
+    }
+    .velog {
+        width:20px;
+        height:20px;
+        left:167px;
+        top: 95px;
+    }
+    .txt-box { line-height: 23px; }
+    .class1 {
+        font-size: 8px;
+        left: 130px;
+        top: 80px;
+    }
+    .int-img {
+        left: 30px;
+        top: 60px;
+        width: 80px;
+    }
+    .name-i {
+        top: 95px;
+        left: 130px;
+    }
+    .role-i {
+        top: 120px;
+        left: 130px;
+    }
+    .velog-i, .github-i { top: 140px; }
+    .github-i { left: 130px; }
+    .velog-i { left: 160px; }
+    .q1, .q2, .q3 {
+        font-size: 11px;
+    }
+    .q1, .q2, .q3, .a1, .a2, .a3 {
+        left: 18px;
+    }
+    .a1, .a2, .a3 {
+        font-size: 9px;
+        width: 300px;
+    }
+    .q1 { top: 190px; }
+    .a1 { top: 230px; }
+    .q2 { top: 280px; }
+    .a2 { top: 320px; }
+    .q3 { top: 390px; }
+    .a3 { top: 430px; }
+
+    .title { font-size: 22px; }
+    .sub-title { font-size: 11px; }
+    .message { font-size: 10px; }
+    ul {
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 14px;
+        top: 4px;
+    }
+}
+
+/* Media queries max : 1024px min : 451px*/
+@media screen and (max-width: 1024px) and (min-width: 451px) {
+    .member-page {
+        width: 70%;
+    }
+    .member-box {
+        width:225px;
+        height: 230px;
+    }
+    .profile {
+        width: 75px;
+        height: 75px;
+        left: 40px;
+        top: 40px;
+    }
+    .class {
+        font-size: 10px;
+        left: 140px;
+        top: 40px;
+    }
+    .opener {
+        font-size: 15px;
+        left: 140px;
+        top: 55px;
+    }
+    .role {
+        left: 140px;
+        font-size: 10px;
+        top: 78px;
+    }
+    .ment {
+        font-size: 9px;
+        left: -60px;
+        top: 160px;
+    }
+    .github {
+        width:20px;
+        height: 20px;
+        left: 140px;
+        top: 95px;
+    }
+    .velog {
+        width:20px;
+        height:20px;
+        left:167px;
+        top: 95px;
+    }
+    .txt-box { line-height: 23px; }
+    .class1 {
+        font-size: 13px;
+        left: 60px;
+        top: 130px;
+    }
+    .int-img {
+        left: 30px;
+        top: 170px;
+        width: 180px;
+    }
+    .name-i {
+        top: 320px;
+        left: 60px;
+    }
+    .role-i {
+        top: 350px;
+        left: 60px;
+    }
+    .velog-i, .github-i { top: 370px; }
+    .github-i { left: 60px; }
+    .velog-i { left: 90px; }
+    .q1, .q2, .q3 {
+        font-size: 14px;
+    }
+    .q1, .q2, .q3, .a1, .a2, .a3 {
+        left: 270px;
+    }
+    .a1, .a2, .a3 {
+        font-size: 11px;
+        width: 400px;
+    }
+    .q1 { top: 100px; }
+    .a1 { top: 150px; }
+    .q2 { top: 220px; }
+    .a2 { top: 270px; }
+    .q3 { top: 340px; }
+    .a3 { top: 390px; }
+    .title { font-size: 22px; }
+    .sub-title { font-size: 11px; }
+    .message { font-size: 10px; }
+    ul {
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 17px;
+        top: 7px;
+    }
 }
