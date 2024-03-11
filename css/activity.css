@@ -247,7 +247,7 @@ body.dark-mode .swiper-prev {
 
   /* 활동 이름 스타일링 */
   .activity-name {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: var(--gray-color-01);
     margin-top: 5px;
@@ -412,14 +412,15 @@ body.dark-mode .swiper-prev {
     width: 105px;
     height: 105px;
     text-align: center;
+    border: 2px solid var(--main-color);
   }
 
   .info .sub-title {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .info .top {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 /* TODO : 태그, 이름 길때 안내려가도록 스타일 수정 */
@@ -575,6 +576,6 @@ body.dark-mode .swiper-prev {
 
   .activity-detail #detail-tag {
     margin-left: 2px;
-    font-size: 10px;
+    font-size: 11px;
   }
 }
