@@ -6,7 +6,7 @@
 .category,
 .info,
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* 다크모드 css */
@@ -49,7 +49,7 @@ body.dark-mode .swiper-prev {
 } */
 
 .title .sub-title {
-  margin-top: 5%;
+  margin-top: 4.5%;
   text-align: center;
   font-size: var(--subtitle-font-size);
   font-weight: bold;
@@ -68,7 +68,7 @@ body.dark-mode .swiper-prev {
   font-size: var(--small-font-size);
   color: var(--gray-color-02);
   margin-top: 1vw;
-  margin-bottom: 5vw;
+  margin-bottom: 2vw;
 }
 
 /* 휴대폰 사이즈에 대한 미디어 쿼리 추가 */
@@ -87,7 +87,7 @@ body.dark-mode .swiper-prev {
     font-size: 15px;
     /* 더 상대적인 크기로 변경 */
     margin-top: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -99,7 +99,7 @@ body.dark-mode .swiper-prev {
 }
 
 /* 내부 컨테이너 스타일링 */
-.inner {
+.activity > .inner {
   margin: 0 auto;
   height: 700px;
 }
@@ -170,7 +170,7 @@ body.dark-mode .swiper-prev {
 .swiper-pagination {
   position: relative;
   z-index: 1;
-  margin-top: 5%;
+  margin-top: 6%;
   bottom: 4%;
   left: 0;
   right: 0;
@@ -323,7 +323,7 @@ body.dark-mode .swiper-prev {
   padding: 2%;
   text-align: center;
   /* 그룹을 가운데 정렬하기 위해 */
-  padding-top: 20%;
+  padding-top: 5%;
   align-items: flex-start;
 }
 
