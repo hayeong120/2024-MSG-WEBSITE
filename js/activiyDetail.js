@@ -129,22 +129,22 @@ fetch('data/activity-category-data.json')
             // 찾은 데이터에 대해 #tag(n) 값을 동적으로 추가
             matchingData.forEach(function (data) {
 
-                titleElement.textContent = data.title;
+                titleElement.innerHTML = data.title;
                 whatElement.appendChild(titleElement);
 
-                messageElement.textContent = data.explan;
+                messageElement.innerHTML = data.explan;
                 whatElement.appendChild(messageElement);
 
-                messageMemberElement.textContent = data.part;
+                messageMemberElement.innerHTML = data.part;
                 memberElement.appendChild(messageMemberElement);
 
-                messageTimeElement.textContent = data.time;
+                messageTimeElement.innerHTML = data.time;
                 timeElement.appendChild(messageTimeElement);
 
-                messageLangElement.textContent = data.lang;
+                messageLangElement.innerHTML = data.lang;
                 langElement.appendChild(messageLangElement);
 
-                introduceElement.textContent = data.introduce;
+                introduceElement.innerHTML = data.introduce;
                 introduceTextElement.appendChild(introduceElement);
 
                 for (let i = 1; data['tag' + i] != null; i++) {
@@ -161,33 +161,30 @@ fetch('data/activity-category-data.json')
                     }
                 } let i = 0;
                 do {
-                    var imgValue = data['img' + i];
-                    console.log(imgValue);
                     var item = document.createElement('div');
                     item.className = 'slider-item';
 
-                    if (imgValue) {
-                        var img = document.createElement('img');
-                        img.src = imgValue;
-                    } else {
-                        // Assuming 'data.img' is the default image source if 'imgValue' is not present
-                        var img = document.createElement('img');
-                        img.src = data.img;
+                    var imgValue = 0;
+                    if(i == 0){
+                        imgValue = data.img;
+                    }else{
+                        imgValue = data['img' + i];
                     }
+
+                    var img = document.createElement('img');
+                    img.src = imgValue;
 
                     item.appendChild(img);
                     wrapperElement.appendChild(item);
                     showSlide(currentSlide);
-
                     i++;
                 } while (data['img' + i] != null);
 
-
-
+                
+                console.log(data);
 
                 for (let i = 0; data['speech'][i] != null; i++) {
                     var speechValue = data['speech'][i];
-                    // console.log(speechValue);
 
                     if (speechValue) {
                         var group = document.createElement('div');
@@ -196,9 +193,9 @@ fetch('data/activity-category-data.json')
                         var bubble = document.createElement('div');
                         bubble.className = 'speech-bubble';
 
-                        var text = document.createElement('div');
+                        var text = document.createElement('p');
                         text.className = 'speech-text';
-                        text.textContent = speechValue.comment;
+                        text.innerHTML = speechValue.comment;
 
                         var name = document.createElement('div');
                         name.className = 'speech-name';
