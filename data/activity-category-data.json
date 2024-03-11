@@ -5,6 +5,7 @@
       {
         "title": "PortFolio",
         "img": "./image/activity/portfolio.png",
+        "img1": "./image/project/portfolio1.png",
         "detail-tag": "#12기#App",
         "tag1": "앱",
         "tag2": "",
@@ -67,6 +68,7 @@
       {
         "title": "우주 오물오물",
         "img": "./image/activity/owater.png",
+        "img1": "./image/project/owater1.png",
         "detail-tag": "#12기#Game",
         "tag1": "Unity",
         "tag2": "",
@@ -98,6 +100,8 @@
       {
         "title": "기억",
         "img": "./image/activity/memory_main.png",
+        "img1": "./image/project/memory1.png",
+        "img2": "./image/project/memory2.png",
         "detail-tag": "#12기#web",
         "tag1": "web",
         "tag2": "IT쇼",
@@ -160,6 +164,9 @@
       {
         "title": "MSG 지원사이트",
         "img": "./image/activity/website_main.png",
+        "img1": "./image/project/website1.png",
+        "img2": "./image/project/website2.png",
+        "img3": "./image/project/website3.png",
         "detail-tag": "#13기#Web",
         "tag1": "Web",
         "tag2": "",
@@ -191,6 +198,7 @@
       {
         "title": "하루 한장",
         "img": "./image/activity/dailypaper.png",
+        "img1": "./image/project/dailypaper1.png",
         "detail-tag": "#14기#Swing",
         "tag1": "gui",
         "tag2": "java",
@@ -276,6 +284,7 @@
       {
         "title": "자료구조 스터디",
         "img": "./image/activity/ds_study_main.png",
+        "img1": "./image/project/ds_study1.png",
         "detail-tag": "#13기#발표",
         "tag1": "자료구조",
         "tag2": "",
@@ -369,6 +378,9 @@
       {
         "title": "미림 분식 회식",
         "img": "./image/activity/hoisick_main.png",
+        "img1": "./image/project/hoisick1.png",
+        "img2": "./image/project/hoisick2.png",
+        "img3": "./image/project/hoisick3.png",
         "detail-tag": "#12기#13기#14기",
         "tag1": "회식",
         "tag2": "미분",
@@ -400,6 +412,7 @@
       {
         "title": "선물주고받기",
         "img": "./image/activity/gangsick.png",
+        "img": "./image/project/gangsick1.png",
         "detail-tag": "#13기#14기",
         "tag1": "간식",
         "tag2": "귀요미",

@@ -280,8 +280,7 @@
 }
 
 .speech-text {
-    display: flex;
-    width: 100%;
+    width: auto;
     height: 100%;
     color: black;
 }
