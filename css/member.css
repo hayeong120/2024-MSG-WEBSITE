@@ -521,3 +521,109 @@ h2 {
         top: 7px;
     }
 }
+
+/* Media queries max : 1024px min : 451px*/
+@media screen and (min-width: 1024px) {
+    .member-page {
+        width: 70%;
+    }
+    .member-box {
+        width:320px;
+        height: 240px;
+    }
+    .profile {
+        width: 90px;
+        height: 90px;
+        left: 55px;
+        top: 40px;
+    }
+    .class {
+        font-size: 10px;
+        left: 170px;
+        top: 38px;
+    }
+    .opener {
+        font-size: 18px;
+        left: 170px;
+        top: 55px;
+    }
+    .role {
+        left: 170px;
+        font-size: 11px;
+        top: 80px;
+    }
+    .ment {
+        font-size: 12px;
+        left: -5px;
+        top: 160px;
+    }
+    .github {
+        width:20px;
+        height: 20px;
+        left: 170px;
+        top: 100px;
+    }
+    .velog {
+        width:20px;
+        height:20px;
+        left:200px;
+        top: 100px;
+    }
+    .txt-box { line-height: 23px; }
+    .box {
+        height: 400px;
+    }
+    .class1 {
+        font-size: 16px;
+        left: 40px;
+        top: 90px;
+
+    }
+    .int-img {
+        top: 140px;
+        width: 170px;
+        height: 150px;
+    }
+    .name-i {
+        
+        top: 300px;
+        left: 40px;
+
+    }
+    .role-i {
+        top: 330px;
+        left: 40px;
+    }
+    .velog-i, .github-i { top: 360px; }
+    .github-i { left: 40px; }
+    .velog-i { left: 70px; }
+    .q1, .q2, .q3 {
+        font-size: 14px;
+    }
+    .q1, .q2, .q3, .a1, .a2, .a3 {
+        left: 270px;
+    }
+    .a1, .a2, .a3 {
+        font-size: 11px;
+        width: 400px;
+    }
+    .q1 { top: 80px; }
+    .a1 { top: 120px; }
+    .q2 { top: 190px; }
+    .a2 { top: 230px; }
+    .q3 { top: 320px; }
+    .a3 { top: 360px; }
+    .title { font-size: 40px; }
+    .sub-title { font-size: 20px; }
+    .message { font-size: 18px; }
+    .txt-box {
+        line-height: 3vw;
+    }
+    ul {
+        font-size: 11px;
+    }
+    h2 {
+        font-size: 17px;
+        top: 7px;
+    }
+}
