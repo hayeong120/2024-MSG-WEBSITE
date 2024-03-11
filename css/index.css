@@ -67,7 +67,7 @@
     float: right;
     box-sizing: border-box;
     width: 50%;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     padding-left: 50px;
     /* background-color: aliceblue; */
@@ -82,8 +82,8 @@
 
 .main-page>.txt-box>.sub-title {
     font-size: 1vw;
-    padding-top: 3vh;
-    padding-bottom: 9vh;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
     line-height: 1.4vw;
 }
 
