@@ -4,6 +4,12 @@
     margin: auto;
 }
 
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
 .member-page > .container > .txt-box > .title {
     color: var(--black-color-01);
     font-weight: var(--bold-weight);
@@ -243,7 +249,7 @@
     position: absolute;
     font-size: 12px;
     width: 470px;
-    top: 230px;
+    top: 220px;
     left: 230px;
 }
 
@@ -287,6 +293,7 @@
   bottom: 0;
   top: 0;
 }
+
 
 .box {
   z-index: 10000;

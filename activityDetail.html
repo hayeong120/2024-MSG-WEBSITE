@@ -8,6 +8,7 @@
 
   <title>MSG ACTIVITY</title>
 
+  <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -27,14 +28,15 @@
 <body>
   <!-- header -->
   <header>
-    <img src="./image/logo.svg" class="header-img" alt="마이페이지" />
+    <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
     <nav>
       <ul>
-        <li><a href="./about.html" class="header-menu" id="header-about">ABOUT</a></li>
-        <li><a href="./member.html" class="header-menu" id="header-member">부원</a></li>
-        <li><a href="./activity.html" class="header-menu" id="header-activity">활동</a></li>
-        <li><a href="./qna.html" class="header-menu" id="header-qna">QNA</a></li>
-        <li><button>15기 지원하기</button></li>
+        <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
+        </li>
+        <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
+        <li><a href="./activity.html" class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
+        <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
+        <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
       </ul>
     </nav>
   </header>
@@ -42,7 +44,7 @@
   <!-- 다크 모드 토글 버튼 -->
   <!-- TODO : 다크모드 아이콘 추가하기  -->
   <!-- TODO : 슬라이드할때 같이 내려가도록  -->
-  <button id="darkModeToggle">다크 모드 토글</button>
+  <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
 
   <!-- main -->
   <main>
@@ -51,28 +53,24 @@
         <!-- title -->
         <section class="title">
           <div class="below-tag">
-            <div id="tag">IT쇼</div>
-            <div id="tag">WEB</div>
           </div>
           <div class="what">
-            <div class="title">프로젝트 이름</div>
-            <div class="message">
-              설명
-            </div>
+            <div class="title what-title"></div>
+            <div class="message what-message"></div>
           </div>
 
           <div class="details">
             <div class="sub" id="member">
               <div class="sub-tit">팀원</div>
-              <div class="sub-message">이름</div>
+              <div class="sub-message message-member"></div>
             </div>
             <div class="sub" id="time">
-              <div class="sub-tit">개발기간</div>
-              <div class="sub-message">2023...</div>
+              <div class="sub-tit">기간</div>
+              <div class="sub-message message-time"></div>
             </div>
             <div class="sub" id="lang">
               <div class="sub-tit">사용언어 & 툴</div>
-              <div class="sub-message">html</div>
+              <div class="sub-message message-lang"></div>
             </div>
           </div>
         </section>
@@ -82,13 +80,6 @@
           <div class="slider">
             <div class="slider-container">
               <div class="slider-wrapper">
-                <div class="slider-item">
-                  <img src="image\activity\your_planet_main.png" alt="이미지 1">
-                </div>
-                <div class="slider-item">
-                  <img src="image\activity\your_planet.png" alt="이미지 2">
-                </div>
-                <!-- 추가 이미지 계속해서 넣기 -->
               </div>
               <button class="prev" onclick="prevSlide()">❮</button>
               <button class="next" onclick="nextSlide()">❯</button>
@@ -101,60 +92,18 @@
               소개
             </div>
             <div class="explan-detail">
-              영화 “너의 이름은”에서 이름을 본따 만든 행성으로 성격 유형 검사를 할 수 있는 웹사이트입니다.
-              <br>
-              <br>
-              MSG 2학년 전원이 참가하여 전시 3일간 약 200분이 저희 웹사이트를 이용해주시는 등 많은 사랑을 받아 13기 전원이 귀중한 경험을 할 수 있었습니다.
             </div>
           </div>
 
         </section>
 
         <section class="speech">
-          <div class="speech-group">
-            <div class="speech-bubble">
-              <div class="speech-text">
-                홀리
-              </div>
-            </div>
-            <div class="speech-name">
-              <div id="name">노하은</div>
-            </div>
-          </div>
-          <div class="speech-group">
-            <div class="speech-bubble">
-              <div class="speech-text">
-                몰리
-              </div>
-            </div>
-            <div class="speech-name">
-              <div id="name">이가현</div>
-            </div>
-          </div>
-          <div class="speech-group">
-            <div class="speech-bubble">
-              <div class="speech-text">
-                과카
-              </div>
-            </div>
-            <div class="speech-name">
-              <div id="name">임지현</div>
-            </div>
-          </div>
-          <div class="speech-group">
-            <div class="speech-bubble">
-              <div class="speech-text">
-                몰리
-              </div>
-            </div>
-            <div class="speech-name">
-              <div id="name">박희현</div>
-            </div>
-          </div>
         </section>
 
         <section class="any">
-          <div class="any-button">다른 활동 보러가기</div>
+          <a href="activity.html">
+            <div class="any-button">다른 활동 보러가기</div>
+          </a>
         </section>
       </div>
     </div>
