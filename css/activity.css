@@ -226,6 +226,9 @@ body.dark-mode .swiper-prev {
 
 /* 휴대폰 사이즈에 대한 미디어 쿼리 추가 */
 @media only screen and (max-width: 600px) {
+  .activity > .inner {
+    height: 350px;
+  }
   .swiper-slide-active {
     box-shadow: 0 0 0;
   }
@@ -251,9 +254,6 @@ body.dark-mode .swiper-prev {
     margin-bottom: 15px;
   }
 
-  .swiper-container {
-    height: 200px;
-  }
   .main-img img {
     width: 250px;
     height: 100px;
@@ -265,18 +265,15 @@ body.dark-mode .swiper-prev {
   .swiper-next,
   .swiper-prev {
     top: 50%;
-    /* 중앙에 위치하도록 수정 */
   }
 
   .swiper-prev {
     left: 10px;
-    /* 왼쪽에 위치하도록 수정 */
     margin-left: 0;
   }
 
   .swiper-next {
     right: 10px;
-    /* 오른쪽에 위치하도록 수정 */
     margin-right: 0;
   }
 
@@ -290,10 +287,15 @@ body.dark-mode .swiper-prev {
   }
 
   .swiper-pagination .swiper-pagination-bullet-active {
-    width: 46px;
+    background-size: cover;
+    width: 50px;
     height: 10px;
     border-radius: 20%;
     background-image: url("../image/activity/promotion_slide_paper_on_small.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   body.dark-mode .swiper-next,
@@ -399,16 +401,9 @@ body.dark-mode .swiper-prev {
   }
 }
 @media only screen and (max-width: 600px) {
-  .info {
-    padding-top: 150px;
-  }
   .info .title {
     margin-left: 10px;
     font-size: 20px;
-  }
-
-  .group {
-    margin-top: 50px;
   }
 
   .blog,
@@ -533,16 +528,16 @@ body.dark-mode .swiper-prev {
   }
 
   .inner-category {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .category .inner-category p {
     margin-right: 12px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .category .inner-banner {
-    margin-left: 10px;
+    margin-left: 6%;
     margin-top: 20px;
   }
 
@@ -563,7 +558,7 @@ body.dark-mode .swiper-prev {
 
   .activity-detail #detail-title {
     margin-left: 5px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .activity-detail .below-top {
@@ -576,11 +571,10 @@ body.dark-mode .swiper-prev {
 
   .activity-detail #tag {
     font-size: 8px;
-    /* display: none; */
   }
 
   .activity-detail #detail-tag {
     margin-left: 2px;
-    font-size: 14px;
+    font-size: 10px;
   }
 }
