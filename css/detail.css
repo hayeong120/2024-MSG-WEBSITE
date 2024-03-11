@@ -283,7 +283,6 @@
     display: flex;
     width: 100%;
     height: 100%;
-    text-align: end;
     color: black;
 }
 
@@ -316,10 +315,12 @@
 }
 
 .speech-group:nth-child(odd)>.speech-bubble>.speech-text {
-    text-align: end;
+    text-align: start;
 }
 
 .speech-group:nth-child(even)>.speech-bubble>.speech-text {
+    display: flex;
+    justify-content: right;
     text-align: end;
     transform: scaleX(-1);
 }
