@@ -45,58 +45,67 @@
                 <section id="title-box">
                     <div id="sub-title">MSG 지원 페이지</div>
                     <div id="title">MSG 15기 지원하기</div>
-                    <div id="message">자신에 대해 마음껏 알려주세요!</div>
+                    <div id="message">다양한 스터디, 나만의 웹/앱 서비스, 다양한 교내외부 활동이 궁금하신가요? 지금이 바로 MSG를 지원할 때!</div>
                 </section>
 
                 <!-- Support Form -->
+                <img src="./image/apply/logo.png">
                 <form id="support-form" action="#">
-                    <img src="./image/apply/logo.png">
                     <fieldset class="support-box">
                         <ul>
                             <li class="form-control">
-                                <label for="username">이름을 입력해주세요.</label><br>
+                                <label for="username">이름을 입력해주세요.<span class="impact">*</span></label><br>
                                 <input type="text" id="username" placeholder="김미림" required>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="class-number">학번을 입력해주세요.</label><br>
+                                <label for="class-number">학번을 입력해주세요.<span class="impact">*</span></label><br>
                                 <input type="text" id="class-number" placeholder="1100" required>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)</label><br>
+                                <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)<span class="impact">*</span></label><br>
                                 <input type="tel" id="phone" placeholder="01012345678" required>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="mail">학교 이메일을 입력해주세요.</label><br>
+                                <label for="mail">학교 이메일을 입력해주세요.</label><span class="impact">*</span><br>
                                 <input type="email" id="mail" placeholder="s2400@e-mirim.hs.kr" required>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.</label><br>
+                                <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.<span class="impact">*</span></label><br>
                                 <textarea type="text" id="motive" placeholder="500자 이내로 작성해주세요." required></textarea>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="strength">자신의 장점에 대해 입력해주세요.</label><br>
+                                <label for="strength">자신의 장점에 대해 입력해주세요.<span class="impact">*</span></label><br>
                                 <textarea type="text" id="strength" placeholder="500자 이내로 작성해주세요." required></textarea>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="experience">실패 경험을 입력해주세요.</label><br>
+                                <label for="experience">실패 경험을 입력해주세요.<span class="impact">*</span></label><br>
                                 <textarea type="text" id="experience" placeholder="500자 이내로 작성해주세요."
                                     required></textarea>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="definition">나를 한 마디로 정의하자면?</label><br>
+                                <label for="definition">나를 한 마디로 정의하자면?<span class="impact">*</span></label><br>
                                 <input type="text" id="definition" placeholder="20글자 이내로 작성해주세요." required>
                                 <small class="error">필수 입력입니다.</small>
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li>
                                 <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
-                                <input type="text" id="question" placeholder="필수 사항이 아닙니다.">
+                                <input type="text" id="question" placeholder="">
+                                <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                         </ul>
                     </fieldset>
@@ -162,6 +171,28 @@
                 console.log(definition);
                 console.log(question);
                 console.log("입력 필요한 것 있음");
+            } else if (studentId.length !== 4) {
+                console.log("학번이 4글자가 아닙니다.");
+                const errorMessages = studentId.parentElement.querySelector('.wrong');
+                errorMessages.style.display = 'block';
+                input.style.bordercolor = 'black';             // 지금 이게 안됨
+                input.style.color = 'black';
+            }
+            else if (tel.length !== 11 || typeof Number(tel) !== number) {
+                console.log(typeof Number(tel));
+                console.log("tel이 11글자가 아니거나 숫자만 있는 게 아닙니다");
+            }
+            else if (!email.match("@e-mirim.hs.kr")) {
+                console.log("잘못된 이메일 형식");
+            }
+            else if (purpose.length > 500 ||
+                strengths.length > 500 ||
+                failure.length > 500) {
+                console.log("500자 초과함");
+            }
+            else if (definition.length > 20) {
+                console.log("20자 초과함");
+
             }
             else {
                 let param = {
