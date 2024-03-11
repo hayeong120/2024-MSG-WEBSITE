@@ -1,6 +1,6 @@
-* {
+/* * {
   overflow-x: visible !important;
-}
+} */
 
 .activity,
 .category,
@@ -68,7 +68,7 @@ body.dark-mode .swiper-prev {
   font-size: var(--small-font-size);
   color: var(--gray-color-02);
   margin-top: 1vw;
-  margin-bottom: 5vw;
+  margin-bottom: 2vw;
 }
 
 /* 휴대폰 사이즈에 대한 미디어 쿼리 추가 */
@@ -95,34 +95,36 @@ body.dark-mode .swiper-prev {
 .activity {
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 /* 내부 컨테이너 스타일링 */
-.inner {
-  margin: 0 auto;
+.activity > .inner {
+  overflow-x: hidden;
+  height: 700px;
 }
 
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  /* height: 600px; */
 }
 
 .swiper-slide {
+  overflow: hidden;
+  transition: transform 0.3s ease;
   opacity: 0.5;
-  width: 1900px;
-  justify-content: center;
-  align-items: center;
 }
 
 .slide-content {
-  /* width: 1000px; */
   text-align: center;
 }
 
 .swiper-slide-active {
+  margin-top: 50px;
+  padding-bottom: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* border: 2.5px solid #b1b1b1; */
+  transform: scale(1.2);
   border-radius: 3%;
   opacity: 1;
 }
@@ -133,7 +135,7 @@ body.dark-mode .swiper-prev {
   position: relative;
   left: 0;
   right: 0;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -164,13 +166,13 @@ body.dark-mode .swiper-prev {
   height: 260px;
   border-radius: 2%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .swiper-pagination {
   position: relative;
   z-index: 1;
-  margin-top: 8%;
-  bottom: 4%;
+  margin-top: 5%;
   left: 0;
   right: 0;
 }
@@ -322,7 +324,7 @@ body.dark-mode .swiper-prev {
   padding: 2%;
   text-align: center;
   /* 그룹을 가운데 정렬하기 위해 */
-  padding-top: 20%;
+  padding-top: 10%;
   align-items: flex-start;
 }
 
