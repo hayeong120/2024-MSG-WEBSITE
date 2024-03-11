@@ -194,6 +194,10 @@ footer {
     margin-top: 1rem;
 }
 
+.footer-contact > .instagram:hover {
+    color: pink;
+}
+
 .footer-instagram:hover {
     color: var(--main-color);
 }
