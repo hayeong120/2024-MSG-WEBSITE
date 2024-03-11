@@ -150,26 +150,32 @@ body.dark-mode #message {
 
     #support-form { height: inherit; }
     #support-form img { width: 10%; }
-    #support-box { width: 90%; }
-    #support-box li { margin: 10px 0; }
-    #support-box li > label { font-size: 12px; }
-    #support-box input { 
-        height: 35px; 
+    .support-box { width: 90%; }
+    .support-box li { margin: 10px 0; }
+    .support-box li > label { font-size: 12px; }
+    .support-box input { 
+        height: 40px; 
         font-size: 11px;
         margin: 5px 0;
     }
-    #support-box textarea { 
+    .support-box textarea { 
         height: 130px; 
         font-size: 11px;
         margin: 5px 0;
         padding: 12px;
      }
 
+    small {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
     #button-box button {
         width: 100px;
         height: 40px;
         font-size: 13px;
-        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
 }
 
