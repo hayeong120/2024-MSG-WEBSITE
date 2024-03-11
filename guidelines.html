@@ -1,150 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/guidelines.css" />
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- header -->
     <header>
-      <img
-        src="./image/logo.svg"
-        class="header-img"
-        alt="마이페이지"
-        onclick="goHome()"
-      />
-      <nav>
-        <ul>
-          <li>
-            <a
-              href="./index.html"
-              class="header-menu"
-              id="header-about"
-              onclick="changeFontColor()"
-              >ABOUT</a
-            >
-          </li>
-          <li>
-            <a
-              href="./member.html"
-              class="header-menu"
-              id="header-member"
-              onclick="changeFontColor()"
-              >부원</a
-            >
-          </li>
-          <li>
-            <a
-              href="./activity.html"
-              class="header-menu"
-              id="header-activity"
-              onclick="changeFontColor()"
-              >활동</a
-            >
-          </li>
-          <li>
-            <a
-              href="./qna.html"
-              class="header-menu"
-              id="header-qna"
-              onclick="changeFontColor()"
-              >QNA</a
-            >
-          </li>
-          <li>
-            <button onclick="location.href='./guidelines.html'">
-              15기 지원하기
-            </button>
-          </li>
-        </ul>
-      </nav>
+        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()" />
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
+                </li>
+                <li>
+                    <a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a>
+                </li>
+                <li>
+                    <a href="./activity.html" class="header-menu" id="header-activity"
+                        onclick="changeFontColor()">활동</a>
+                </li>
+                <li>
+                    <a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
+                </li>
+                <li>
+                    <button onclick="location.href='./guidelines.html'">
+                        15기 지원하기
+                    </button>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <div class="content-first">
-        <div class="sub-title">RECRUIT</div>
-        <br />
-        <div class="title" id="lh">MSG 15기 지원 하기</div>
-        <br />
-        <div class="content" id="lh">자신에 대해 마음껏 알려주세요!</div>
-        <br />
+        <div class="content-first">
+            <div class="sub-title">RECRUIT</div>
+            <br />
+            <div class="title" id="lh">MSG 15기 지원 하기</div>
+            <br />
+            <div class="content" id="lh">안녕하세요 MSG입니다! <br>
+                2024년 MSG를 이끌 15기 부원을 모집하고 있으니
+                많은 관심 부탁드립니다🥰</div>
+            <br />
 
-        <button class="btn" onclick="window.location.href='./apply.html'">
-          &nbsp&nbsp지원서 작성하러 가기&nbsp&nbsp
-        </button>
-      </div>
-      <div class="content-second">
-        <div class="greentext">지원 방법</div>
-        <div class="area">
-          <div class="box">
-            <div class="box-title">모집기간</div>
-            <div class="box-content">
-              <br />MSG에서는 1년에 한 번<br />
-              열정을 가지고 활동에 함께할<br />
-              팀원을 모집합니다.
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="box-title">지원자격</div>
-            <div class="box-content">
-              <br />활동하는데 문제가 없고,<br />
-              실력을 키우기 위해 배우려는<br />
-              의지가 있는 누구나
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="box-title">지원방법</div>
-            <div class="box-content-bold"><br />1차 서류</div>
-            <div class="box-content">지원서 작성 및 제출</div>
-            <div class="box-content-bold">2차 면접</div>
-            <div class="box-content">오프라인 인터뷰 이후 최종합격</div>
-          </div>
+            <button class="btn" onclick="window.location.href='./apply.html'">
+                지원서 작성하러 가기&nbsp&nbsp
+            </button>
         </div>
+        <div class="content-second">
+            <div class="greentext">지원 방법</div>
+            <div class="area">
+                <div class="box">
+                    <div class="box-title">15기수 모집 시작</div>
+                    <div class="box-content">
+                        <br />MSG에서는 1년에 한 번<br />
+                        열정을 가지고 활동에 함께할<br />
+                        팀원을 모집합니다.
+                    </div>
+                </div>
 
-        <div class="greentext">모집 일정</div>
-        <div class="area2">
-          <div class="box2">
-            <div class="box-title">1. 서류 접수</div>
-            <div class="box-content">2024.03.11(월) ~ 03.17(일) 23: 59</div>
-          </div>
-          <div class="box2">
-            <div class="box-title">2. 오프라인 면접</div>
-            <div class="box-content">2024.03.18(화)</div>
-          </div>
-          <div class="box2">
-            <div class="box-title">3. 최종 발표</div>
-            <div class="box-content">2024.03.18(화)</div>
-          </div>
+                <div class="box">
+                    <div class="box-title">지원자격</div>
+                    <div class="box-content">
+                        <br />활동하는데 문제가 없고,<br />
+                        실력을 키우기 위해 배우려는<br />
+                        의지가 있는 누구나
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-title">지원방법</div>
+                    <div class="box-content-bold"><br />1차 서류</div>
+                    <div class="box-content">지원서 작성 및 제출</div>
+                    <div class="box-content-bold">2차 면접</div>
+                    <div class="box-content">오프라인 인터뷰 이후 최종합격</div>
+                </div>
+            </div>
+
+            <div class="greentext" style="padding-top: 160px;">모집 일정</div>
+            <div class="area2">
+                <div class="box2">
+                    <div class="box-title">1. 홍보 기간</div>
+                    <div class="box-content">2024.03.11(월) ~ 03.15(금)</div>
+                    <div class="box-content-comment">저희 MSG 14기 부원들이<br>
+                        각 반을 찾아갑니다! </div>
+                </div>
+                <div class="box2">
+                    <div class="box-title">2. 모집 마감</div>
+                    <div class="box-content">2024.03.17(일) 오후 11:59</div>
+                    <div class="box-content-comment">MSG 15기의 문은<br>
+                        아직 활짝 열려있답니다! </div>
+                </div>
+                <div class="box2">
+                    <div class="box-title">3. 최종 면접 및 합격자 발표</div>
+                    <div class="box-content">2024.03.18(월)</div>
+                    <div class="box-content-comment">드디어 우리가 만나는 시간💕<br>
+                        자신의 열정을 뽐내주세요!</div>
+                </div>
+            </div>
+            <!-- <button id="darkModeToggle">다크 모드</button> -->
         </div>
-        <!-- <button id="darkModeToggle">다크 모드</button> -->
-      </div>
-      <script src="js/guidelines.js"></script>
+        <script src="js/guidelines.js"></script>
     </main>
     <!-- footer -->
     <footer>
-      <div class="inner">
-        <div class="footer-message">
-          MSG <br />
-          Make Share Gather
+        <div class="inner">
+            <div class="footer-message">
+                MSG <br />
+                Make Share Gather
+            </div>
+            <div class="footer-contact">
+                13기 부장 노하은 | 010-2850-0614 <br />
+                14기 부장 000 | 010-0000-0000
+            </div>
+            <div class="footer-instagram">@mirim_msg</div>
+            <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
         </div>
-        <div class="footer-contact">
-          13기 부장 노하은 | 010-2850-0614 <br />
-          14기 부장 000 | 010-0000-0000
-        </div>
-        <div class="footer-instagram">@mirim_msg</div>
-        <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
-      </div>
     </footer>
-  </body>
+</body>
+
 </html>
