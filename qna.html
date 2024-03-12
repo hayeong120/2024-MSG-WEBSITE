@@ -20,27 +20,18 @@
 <body>
     <!-- header -->
     <header>
-        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()" />
+        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
-                <li>
-                    <a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
+                <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
                 </li>
-                <li>
-                    <a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a>
+                <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a>
                 </li>
-                <li>
-                    <a href="./activity.html" class="header-menu" id="header-activity"
-                        onclick="changeFontColor()">활동</a>
+                <li><a href="./activity.html" class="header-menu" id="header-activity"
+                        onclick="changeFontColor()">활동</a></li>
+                <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
                 </li>
-                <li>
-                    <a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
-                </li>
-                <li>
-                    <button onclick="location.href='./guidelines.html'">
-                        15기 지원하기
-                    </button>
-                </li>
+                <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
             </ul>
         </nav>
     </header>
@@ -53,7 +44,7 @@
                 <div class="title-box">
                     <div class="sub-title">QNA</div>
                     <div class="title">익명게시판<br /></div>
-                    <div class="message">저희 MSG에 대한 모든 것을 답해드립니다! <br>
+                    <div class="message">MSG에게 궁금한 점을 물어보세요! 성심성의껏 답변해드립니다.<br>
                         익명성이 보장되는 만큼 양심적인 게시판 사용 부탁드립니다.</div>
                 </div>
 
@@ -153,14 +144,14 @@
 
             // 컨테이너 초기화
             questionContainer.empty();
-            // questionNum = getQuestions();
+            questionNum = getQuestions();
             // 가져온 데이터를 반복하여 역순으로 표시
             data.reverse().forEach(function (item, index) {
                 // 새로운 질문과 답변 엘리먼트 생성
                 console.log(index);
                 const element = $("<div class='answer-box'>").append(
                     // 질문 번호와 내용
-                    $("<p class='question'>").html(` ${index+1}. ${item.question}`),
+                    $("<p class='question'>").html(` ${index + 1}. ${item.question}`),
                     // Line 이미지
                     $("<hr>")
                         .attr("id", "line"),
@@ -179,7 +170,7 @@
                 questionNumbers.find("#asking").text(`개의 질문들`);
                 // 컨테이너에 추가
                 questionContainer.append(element);
-                questionNUm = data.length;
+                questionNUm = getQuestions();
             });
         }
 
