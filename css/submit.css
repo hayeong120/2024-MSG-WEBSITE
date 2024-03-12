@@ -2,6 +2,7 @@
     position: relative;
     width: 70%;
     margin: auto;
+    top: -5vh;
 }
 
 #img-box {
@@ -17,7 +18,7 @@
 #title-box {
     position: relative;
     text-align: center;
-    line-height: 3.4vw;
+    line-height: 3vw;
     margin: auto;
 }
 #title {
@@ -26,33 +27,45 @@
     font-weight: var(--bold-weight);
 }
 #sub-title {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     color: var(--main-color);
-    font-weight: var(--regular-weight);
+    /* font-weight: var(--regular-weight); */
 }
 #message {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     color: var(--gray-color-02);
+    line-height: 1.5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 #button-box {
     position: relative;
     text-align: center;
     border: none;
-    margin: 1vw;
+    margin: auto;
+    padding: 1vw;
 }
 #button-box button {
     width: 10vw;
-    height: 3vw;
+    height: 2.5vw;
     border: 1px solid var(--main-color);
     border-radius: 1.8vw; 
     background: none;
     color: var(--gray-color-02);
     font-size: 1vw;
+    transition: all 0.7s ease-out;
+    background: linear-gradient(270deg, rgba(89, 251, 213, 0.8), var(--main-color), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+    background-position: 1% 50%;
+    background-size: 300% 300%;
 }
 #button-box button:hover {
     background-color: var(--main-color);
-    color: black;
+    border: 0.1vw solid rgba(223, 190, 106, 0);
+    color: white;
+    background-position: 99% 50%;
+    text-align: center;
+    transform: translateY(-1px);
 }
 
 /* Dark Mode */
@@ -85,7 +98,7 @@ body.dark-mode #button-box button {
 }
 
 /* Media queries max-width: 450px */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .completion-page { 
         width: 100%; 
         margin: 25vh 0;
@@ -95,36 +108,18 @@ body.dark-mode #button-box button {
     #title-box { line-height: 24px; }
     #title { font-size: 18px; }
     #sub-title { font-size: 12px; }
-    #message { font-size: 11px; }
+    #message { 
+        position: relative;
+        font-size: 11px; 
+        line-height: 3vw;
+        top: -1vh;
+    }
 
     #button-box { margin: 10px; }
     #button-box button {
         width: 80px;
-        height: 30px;
+        height: 25px;
         font-size: 9px;
         border-radius: 13px;
-    }
-}
-
-/* Media queries max : 1024px min : 451px*/
-@media screen and (max-width: 1024px) and (min-width: 451px) {
-    .completion-page { 
-        width: 100%; 
-        margin: 25vh 0;
-    }
-
-    #img-box { margin: 0 0 40px; }
-    #img-box img { width: 30%; }
-    #title-box { line-height: 50px; }
-    #title { font-size: 42px; }
-    #sub-title { font-size: 21px; }
-    #message { font-size: 20px; }
-
-    #button-box { margin: 10px; }
-    #button-box button {
-        width: 150px;
-        height: 60px;
-        font-size: 16px;
-        border-radius: 25px;
     }
 }

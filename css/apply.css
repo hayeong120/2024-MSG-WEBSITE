@@ -28,7 +28,7 @@
     position: relative;
     font-size: 15px;
     color: var(--gray-color-02);
-    top: -2vh;
+    line-height: 1vw;
 }
 
 /* Support Form */

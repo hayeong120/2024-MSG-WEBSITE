@@ -532,12 +532,24 @@ h2 {
 /* Media queries max-width: 450px */
 @media all and (max-width: 450px) {
     .member-page {
-        width: 70%;
+        position: relative;
+        width: 100vw;
+        /* background-color: aliceblue; */
+        padding: 0;
+        margin: 0;
+    }
+
+    .contaienr {
+        position: relative;
+        /* background-color: aquamarine; */
     }
 
     .member-box {
-        width: 245px;
+        position: relative;
+        width: 100%;
         height: 230px;
+        left: -20px;
+        top: -20px;
     }
 
     .profile {
@@ -566,9 +578,12 @@ h2 {
     }
 
     .ment {
+        position: relative;
         font-size: 10px;
-        left: -45px;
+        /* left: -45px; */
         top: 155px;
+        text-align: center;
+        left: -15%;
     }
 
     .github {
@@ -585,13 +600,28 @@ h2 {
         top: 95px;
     }
 
-    .txt-box {
+    .container>.txt-box {
+        position: relative;
+        width: 80vw;
+        height: 100px;
         line-height: 23px;
+        /* background-color: aqua; */
     }
 
-    .txt-box>.sub-title {
+    .wrapper>.member-page>.container>.txt-box>.sub-title {
         position: relative;
         font-size: 10px;
+    }
+    
+    .wrapper>.member-page>.container>.txt-box>.message {
+        position: relative;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .wrapper>.member-page>.container>.txt-box>.title {
+        position: relative;
+        font-size: 18px;
     }
 
     .class1 {
@@ -639,7 +669,7 @@ h2 {
         position: absolute;
         font-size: 11px;
         left: -10vw;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
     }
 
     .q1,
@@ -680,6 +710,7 @@ h2 {
 
     .a3 {
         top: 430px;
+        padding-bottom: 50px;
     }
 
     .title {
@@ -695,12 +726,35 @@ h2 {
     }
 
     li {
-        font-size: 9px;
+        font-size: 13px;
     }
 
     h2 {
         font-size: 14px;
         top: 4px;
+    }
+
+    .layer>.box>h2 {
+        z-index: 999;
+        position: fixed;
+        top: 144px;
+        background-color: white;
+        height: 60px;
+        width: 93vw;
+        left: 13px;
+        padding-top: 20px;
+        border-radius: 1em;
+    }
+
+    .layer>.box>.close {
+        z-index: 999;
+        position: fixed;
+        top: 159px;
+
+    }
+
+    .member-group {
+        top: -15px;
     }
 }
 
@@ -728,7 +782,7 @@ h2 {
         top: 40px;
     }
 
-    .member-page > .container > .count > ul{
+    .member-page>.container>.count>ul {
         font-size: 12px;
     }
 
@@ -771,7 +825,7 @@ h2 {
     .member-page>.container>.txt-box>.sub-title {
         font-size: 10px;
     }
-    
+
     .member-page>.container>.txt-box>.message {
         font-size: 10px;
         line-height: 15px;
