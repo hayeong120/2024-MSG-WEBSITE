@@ -5,24 +5,30 @@
 .title-box {
   position: relative;
   text-align: left;
-  line-height: 3vw;
+  line-height: 2.5vw;
   margin-top: 3%;
   margin-left: 8%;
+  margin-bottom: 5vh;
 }
+
 .sub-title {
   font-size: var(--subtitle-font-size);
   color: var(--main-color);
   font-weight: var(--regular-weight);
 }
+
 .title {
   font-size: var(--title-font-size);
   color: var(--black-color-01);
   font-weight: var(--bold-weight);
+  margin-bottom: 2vh;
 }
+
 .message {
   font-size: var(--subtitle-font-size);
   color: var(--gray-color-02);
   font-weight: var(--light-weight);
+  line-height: 1vw;
 }
 
 .question-form {
@@ -36,34 +42,37 @@
   box-sizing: border-box;
   border: 1px solid #d2d2d2;
   border-radius: 15px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); */
   padding: 15px 23px;
+  padding-right: 5vw;
 }
+
 #question-input:focus {
-  border: 1px solid var(--main-color); /* 포커스 시 테두리 색상을 원하는 색상으로 지정하세요 */
+  border: 1px solid var(--main-color);
+  /* 포커스 시 테두리 색상을 원하는 색상으로 지정하세요 */
   transition: 0.5s;
-  outline: none; /* 포커스 효과 제거 */
+  outline: none;
+  /* 포커스 효과 제거 */
 }
 
 #submit-btn {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 2em;
-  margin-top: 1.5em;
-  margin-right: 10%;
+  width: 15px;
+  height: 15px;
+  right: 10.5vw;
+  margin-top: 1.8em;
   border: none;
   border-radius: 5px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-image: url(../image/qna/search.svg);
-  background-size: 30px;
+  background-size: 21px;
   padding: 15px 15px;
 }
 
 #submit-btn img {
-  width: 30px;
-  height: 30px;
+  /* width: 30px; */
+  /* height: 30px; */
 }
 
 body .showAlert-title {
@@ -100,14 +109,17 @@ body .showAlert-title {
 #warning {
   margin-left: 5px;
   color: red;
+  font-weight: 100;
 }
 
 .answer-box {
+  position: relative;
+  top: -5vh;
   width: 90%;
   height: fit-content;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
   box-sizing: border-box;
   border: 0.5px solid #d2d2d2;
   border-radius: 15px;
@@ -117,10 +129,11 @@ body .showAlert-title {
 
 /* 질문 및 답변 텍스트 스타일링 */
 .answer-box p {
+  position: relative;
   font-size: 15px;
   margin-bottom: 10px;
   /* background-color: aqua; */
-  font-weight: 900;
+  font-weight: 500;
 }
 
 /* 답변 부분 스타일링 */
@@ -130,12 +143,18 @@ body .showAlert-title {
   /* background-color: antiquewhite; */
 }
 
+.question-and-answer {
+  margin-bottom: 5.5vh;
+}
+
 .question-and-answer #line {
   position: relative;
   width: 100%;
   height: 75%;
-  /* margin: 5px 5; */
+  /* border: 1px solid blue; */
+  margin: 5px 0;
 }
+
 .question-and-answer #vector {
   position: absolute;
   margin-top: 0.5%;
@@ -150,25 +169,185 @@ body .showAlert-title {
   margin-top: 1px;
   border: none;
   outline: none;
-  padding-left: 100px; 
+  padding-left: 100px;
+}
+
+.answer-box hr {
+  border: 1px solid var(--gray-color-04);
 }
 
 /* 반응형 스타일 */
-/* @media only screen and (max-width: 768px) {
-  .answer-box p {
-    font-size: 15px;
+@media only screen and (max-width: 600px) {
+
+  .wrapper {
+    min-height: 69.5vh;
   }
 
-  .answer-box p:last-child {
-    font-size: 15px;
+  .title-box {
+    position: relative;
+    text-align: left;
+    line-height: 6vw;
+    /* margin-top: 3%; */
+    /* margin-left: 8%; */
+    margin-bottom: 5vh;
+    /* background-color: #d2d2d2; */
   }
+
+  .sub-title {
+    font-size: 10px;
+    color: var(--main-color);
+    /* font-weight: var(--regular-weight); */
+  }
+
+  .title {
+    font-size: 20px;
+    color: var(--black-color-01);
+    font-weight: var(--bold-weight);
+    margin-bottom: 1.5vh;
+  }
+
+  .message {
+    font-size: 10px;
+    color: var(--gray-color-02);
+    font-weight: var(--light-weight);
+    line-height: 3vw;
+  }
+
+  #question-input {
+    width: 90%;
+    height: 75%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;
+    border-radius: 12px;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); */
+    padding: 15px 23px;
+    padding-right: 10vw;
+    font-size: 10px;
+  }
+
+  #question-input:focus {
+    border: 1px solid var(--main-color);
+    /* 포커스 시 테두리 색상을 원하는 색상으로 지정하세요 */
+    transition: 0.5s;
+    outline: none;
+    /* 포커스 효과 제거 */
+  }
+
+  #submit-btn {
+    position: absolute;
+    /* top: 203px; */
+    width: 5px;
+    height: 5px;
+    right: 10.5vw;
+    margin-top: 1.8em;
+    border: none;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-image: url(../image/qna/search.svg);
+    background-size: 15px;
+    padding: 13px 13px;
+  }
+
+  #submit-btn>img {
+    bottom: 0;
+  }
+
+  body .showAlert-title {
+    font: var(--main-font);
+    color: white;
+  }
+
+  #p {
+    position: absolute;
+    /* padding: 5px; */
+    padding-left: 10px;
+    padding-top: 48px;
+    font-weight: bold;
+    font-size: 13px;
+    /* background-color: antiquewhite; */
+  }
+
+  #asking {
+    position: relative;
+    padding: 50px 25px;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+
+  .answer {
+    position: relative;
+    font-weight: medium;
+    top: 10px;
+    margin-left: 1vw;
+    padding-left: 10px;
+  }
+
+  #warning {
+    margin-left: 5px;
+    color: red;
+    font-weight: 100;
+    font-size: 10px;
+  }
+
+  .answer-box {
+    position: relative;
+    top: -5vh;
+    width: 90%;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 2%;
+  }
+
+  /* 질문 및 답변 텍스트 스타일링 */
+  .answer-box p {
+    position: relative;
+    font-size: 10px;
+    margin-bottom: 10px;
+    /* background-color: aqua; */
+    font-weight: 500;
+  }
+
+  /* 답변 부분 스타일링 */
+  .answer-box p:last-child {
+    color: var(--gray-color-02);
+    font-weight: 300;
+    /* background-color: antiquewhite; */
+  }
+
+  .question-and-answer {
+    margin-bottom: 5.5vh;
+  }
+
+  .question-and-answer #line {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    /* border: 1px solid blue; */
+    margin: 5px 0;
+  }
+
   .question-and-answer #vector {
+    position: absolute;
+    margin-top: 10px;
     width: 10px;
-    height: 15px;
+    height: 10px;
   }
 
   .question-and-answer #answerInput {
-    width: 80%;
-    margin-left: 35px;
+    position: relative;
+    width: 60%;
+    margin-left: 45px;
+    margin-top: 1px;
+    border: none;
+    outline: none;
+    padding-left: 100px;
   }
-} */
+}
