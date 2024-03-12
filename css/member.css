@@ -533,18 +533,21 @@ h2 {
 @media all and (max-width: 450px) {
     .member-page {
         width: 70%;
+        background-color: aliceblue;
+        padding: 0;
+        margin: 0;
     }
 
     .member-box {
-        width: 245px;
+        width: 100%;
         height: 230px;
     }
 
     .profile {
         width: 75px;
         height: 75px;
-        left: 40px;
-        top: 40px;
+        left: 20px;
+        top: 30px;
     }
 
     .class {
@@ -639,7 +642,7 @@ h2 {
         position: absolute;
         font-size: 11px;
         left: -10vw;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
     }
 
     .q1,
@@ -680,6 +683,7 @@ h2 {
 
     .a3 {
         top: 430px;
+        padding-bottom: 50px;
     }
 
     .title {
@@ -701,6 +705,24 @@ h2 {
     h2 {
         font-size: 14px;
         top: 4px;
+    }
+
+    .layer > .box > h2 {
+        z-index: 999;
+        position: fixed;
+        top: 193.5px;
+        background-color: white;
+        height: 60px;
+        width: 92vw;
+        left: 20px;
+        padding-top: 20px;
+        border-radius: 1em;
+    }
+    .layer > .box > .close {
+        z-index: 999;
+        position: fixed;
+        top: 210px;
+        
     }
 }
 
