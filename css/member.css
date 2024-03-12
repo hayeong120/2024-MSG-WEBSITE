@@ -1,13 +1,15 @@
 .member-page {
     position: relative;
-    width: 70%;
+    width: 70vw;
     margin: auto;
+    /* background-color: aliceblue; */
 }
 
 
 .wrapper {
     position: relative;
     width: 100%;
+    height: auto;
 }
 
 .member-page>.container>.txt-box>.title {
@@ -34,14 +36,14 @@
     position: relative;
     /* background-color: antiquewhite; */
     padding-top: 10vh;
-    width: 80%;
+    width: 70%;
     text-align: left;
     margin: auto;
 }
 
 .member-page>.container>.count {
     position: relative;
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -68,7 +70,7 @@
 
 .member-page>.container>.member-group {
     position: relative;
-    width: 80%;
+    width: 70%;
     margin: auto;
     height: 700px;
     /* background-color: antiquewhite; */
@@ -139,7 +141,6 @@
 .member-page>.container>.member-group>.member-box>.profile {
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
     opacity: 1;
     position: absolute;
     border-top-left-radius: 300px;
@@ -256,7 +257,7 @@
 .a1 {
     color: #37373A;
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
     width: 460px;
     top: 120px;
     left: 230px;
@@ -474,7 +475,7 @@ h2 {
 .a1,
 .a2,
 .a3 {
-    font-size: 11px;
+    font-size: 12.5px;
     width: 400px;
 }
 
