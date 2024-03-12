@@ -287,7 +287,7 @@
 
 .speech-name {
     position: relative;
-    width: fit-content;
+    min-width: var(--speech-margin);
     white-space: nowrap;
     height: 100%;
     margin: 0 30px;
