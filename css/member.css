@@ -530,7 +530,7 @@ h2 {
 
 
 /* Media queries max-width: 450px */
-@media all and (max-width: 450px) {
+@media all and (max-width: 500px) {
     .member-page {
         position: relative;
         width: 100vw;
@@ -737,19 +737,20 @@ h2 {
     .layer>.box>h2 {
         z-index: 999;
         position: fixed;
-        top: 144px;
+        top: 185px;
         background-color: white;
-        height: 60px;
+        height: 40px;
         width: 93vw;
         left: 13px;
         padding-top: 20px;
+        padding-bottom: -10px;   
         border-radius: 1em;
     }
 
     .layer>.box>.close {
         z-index: 999;
         position: fixed;
-        top: 159px;
+        top: 195px;
 
     }
 
@@ -759,7 +760,7 @@ h2 {
 }
 
 /* Media queries max : 1024px min : 451px*/
-@media screen and (max-width: 1024px) and (min-width: 451px) {
+@media screen and (max-width: 757px) and (min-width: 501px) {
     .member-page {
         width: 70%;
     }
@@ -927,23 +928,33 @@ h2 {
         top: 600px;
     }
 
-    /* .title {
-        font-size: 22px;
-    }
-
-    .sub-title {
-        font-size: 11px;
-    }
-
-    .message {
-        font-size: 10px;
-    } */
-
     h2 {
         font-size: 17px;
         top: 7px;
     }
+
+    .layer>.box>h2 {
+        z-index: 999;
+        position: fixed;
+        top: 60px;
+        background-color: white;
+        height: 40px;
+        width: 93vw;
+        left: 13px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border-radius: 1em;
+    }
+
+    .layer>.box>.close {
+        z-index: 999;
+        position: fixed;
+        top: 85px;
+
+    }
 }
 
 /* Media queries max : 1024px min : 451px*/
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 758px) {
+    
+}
