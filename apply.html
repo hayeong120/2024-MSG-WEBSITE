@@ -158,28 +158,6 @@
                 console.log(definition);
                 console.log(question);
                 console.log("입력 필요한 것 있음");
-            } else if (studentId.length !== 4) {
-                console.log("학번이 4글자가 아닙니다.");
-                const errorMessages = studentId.parentElement.querySelector('.wrong');
-                errorMessages.style.display = 'block';
-                input.style.bordercolor = 'black';             // 지금 이게 안됨
-                input.style.color = 'black';
-            }
-            else if (tel.length !== 11 || typeof Number(tel) !== number) {
-                console.log(typeof Number(tel));
-                console.log("tel이 11글자가 아니거나 숫자만 있는 게 아닙니다");
-            }
-            else if (!email.match("@e-mirim.hs.kr")) {
-                console.log("잘못된 이메일 형식");
-            }
-            else if (purpose.length > 500 ||
-                strengths.length > 500 ||
-                failure.length > 500) {
-                console.log("500자 초과함");
-            }
-            else if (definition.length > 20) {
-                console.log("20자 초과함");
-
             }
             else {
                 let param = {
