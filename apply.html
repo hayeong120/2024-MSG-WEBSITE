@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>15기 지원 페이지</title>
-
+    <title>MSG</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
+    
     <!--CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/apply.css">
-
-    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
 </head>
 
 <body>
@@ -19,13 +18,15 @@
         <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
         <nav>
             <ul>
-                <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
+                <li><a href="./index.html" class="header-menu" id="header-about"
+                        onclick="changeFontColor()">ABOUT</a>
                 </li>
-                <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a>
-                </li>
+                <li><a href="./member.html" class="header-menu" id="header-member"
+                        onclick="changeFontColor()">부원</a></li>
                 <li><a href="./activity.html" class="header-menu" id="header-activity"
                         onclick="changeFontColor()">활동</a></li>
-                <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a></li>
+                <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
+                </li>
                 <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
             </ul>
         </nav>
@@ -45,7 +46,9 @@
                 <section id="title-box">
                     <div id="sub-title">MSG 지원 페이지</div>
                     <div id="title">MSG 15기 지원하기</div>
-                    <div id="message">다음 MSG 15기 부원의 주인공은 바로 거기에 있는 당신!🥰</div>
+                    <div id="message">
+                        전공동아리, MSG에 지원할 수 있는 지원서입니다. 양식에 맞춰 성심성의껏 작성하여 제출해주세요. 🥰
+                    </div>
                 </section>
 
                 <!-- Support Form -->
@@ -78,7 +81,7 @@
                                 <small class="wrong">잘못된 입력입니다.</small>
                             </li>
                             <li class="form-control">
-                                <label for="motive">MSG를 지원하게 된 동기를 입력해주세요.<span class="impact">*</span></label><br>
+                                <label for="motive">MSG에 지원하게 된 동기를 입력해주세요.<span class="impact">*</span></label><br>
                                 <textarea type="text" id="motive" placeholder="500자 이내로 작성해주세요." required></textarea>
                                 <small class="error">필수 입력입니다.</small>
                                 <small class="wrong">잘못된 입력입니다.</small>
