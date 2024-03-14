@@ -65,7 +65,7 @@ body.dark-mode .swiper-prev {
 
 .title .message {
   text-align: center;
-  font-size: var(--small-font-size);
+  font-size: 15px;
   color: var(--gray-color-02);
   margin-top: 1vw;
   margin-bottom: 2vw;
