@@ -107,6 +107,7 @@
                         console.log("POST 요청 성공", data);
                         showAlert(question);
                         questionInput.val("");
+                        getQuestions();
                     },
                     error: function (xhr, status, error) {
                         console.error("질문 제출 오류:", status, error);
@@ -129,7 +130,7 @@
                     updateQuestions(data);
                     console.log(data.length);
                     questionNUm = data.length;
-                    return data.length;
+                    // return data.length;
                 },
                 error: function (xhr, status, error) {
                     console.error("질문 가져오기 오류:", status, error);
@@ -145,14 +146,14 @@
 
             // 컨테이너 초기화
             questionContainer.empty();
-            questionNum = getQuestions();
+            // questionNum = getQuestions();
             // 가져온 데이터를 반복하여 역순으로 표시
             data.reverse().forEach(function (item, index) {
                 // 새로운 질문과 답변 엘리먼트 생성
-                console.log(index);
+                console.log(typeof data.length);
                 const element = $("<div class='answer-box'>").append(
                     // 질문 번호와 내용
-                    $("<p class='question'>").html(` ${index + 1}. ${item.question}`),
+                    $("<p class='question'>").html(` ${data.length - index}. ${item.question}`),
                     // Line 이미지
                     $("<hr>")
                         .attr("id", "line"),

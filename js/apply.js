@@ -36,6 +36,10 @@ function checkInputs() {
                 errorMessages.textContent = "4글자 숫자로만 입력해주세요.";
                 console.log("학번", studentId);
                 allChecked = false; // 유효하지 않은 학번이 있으면 false로 설정
+            }else {
+                const errorMessages = input.parentElement.querySelector('.error');
+                errorMessages.style.display = 'none';
+                input.style.bordercolor = '#ccc';
             }
         } else if (input.id === 'phone') {
             const tel = input.value;
@@ -47,6 +51,10 @@ function checkInputs() {
                 errorMessages.textContent = "올바른 형식의 숫자로만 입력해주세요.";
                 console.log("전화번호");
                 allChecked = false; // 유효하지 않은 전화번호가 있으면 false로 설정
+            }else {
+                const errorMessages = input.parentElement.querySelector('.error');
+                errorMessages.style.display = 'none';
+                input.style.bordercolor = '#ccc';
             }
         } else if (input.id === 'mail') {
             const email = input.value;
@@ -58,18 +66,26 @@ function checkInputs() {
                 errorMessages.textContent = "학교 이메일을 입력해주세요.";
                 console.log("이메일");
                 allChecked = false; // 유효하지 않은 이메일이 있으면 false로 설정
+            }else {
+                const errorMessages = input.parentElement.querySelector('.error');
+                errorMessages.style.display = 'none';
+                input.style.bordercolor = '#ccc';
             }
         } else if (input.id === 'motive' || input.id === 'strength' || input.id === 'experience') {
-            const purpose = input.value;
-            if (purpose.length > 500) {
+            const value = input.value;
+            if (value.length > 500) {
                 const fieldName = input.id === 'motive' ? '지원동기' : input.id === 'strength' ? '자신의 장점' : '실패했던 경험';
                 showAlert(input, `${fieldName}을(를) 다시 입력해주세요.`);
                 const errorMessages = input.parentElement.querySelector('.error');
                 errorMessages.style.display = 'block';
                 input.style.color = '';
                 errorMessages.textContent = "공백 포함 500자 이내로 입력해주세요.";
-                console.log(fieldName);
+                console.log(fieldName+" "+value.length);
                 allChecked = false; // 유효하지 않은 값이 있으면 false로 설정
+            }else {
+                const errorMessages = input.parentElement.querySelector('.error');
+                errorMessages.style.display = 'none';
+                input.style.bordercolor = '#ccc';
             }
         } else if (input.id === 'definition') {
             const definition = input.value;
@@ -79,8 +95,12 @@ function checkInputs() {
                 errorMessages.style.display = 'block';
                 input.style.color = '';
                 errorMessages.textContent = "공백 포함 20자 이내로 입력해주세요.";
-                console.log("한마디");
+                console.log("한마디"+ definition.length);
                 allChecked = false; // 유효하지 않은 한 마디가 있으면 false로 설정
+            } else {
+                const errorMessages = input.parentElement.querySelector('.error');
+                errorMessages.style.display = 'none';
+                input.style.bordercolor = '#ccc';
             }
         }
     });
@@ -127,6 +147,7 @@ function apply() {
     let definition = $('#definition').val();
     let question = $('#question').val();
 
+    console.log(definition.length+" 왜안돼ㅜㅜㅜㅜ");
 
     let param = {
         "name": name,
