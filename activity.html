@@ -1,223 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSG ACTIVITY</title>
 
-  <title>MSG</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
-  
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Include ScrollSpy Plugin -->
+    <script src="https://raw.githubusercontent.com/mental/mixins/master/jquery.scrollspy.js"></script>
 
-  <!-- Include ScrollSpy Plugin -->
-  <script src="https://raw.githubusercontent.com/mental/mixins/master/jquery.scrollspy.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/activity.css" />
+    <script src="./js/script.js"></script>
+  </head>
 
-  <!-- Include jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/activity.css" />
-  <script src="./js/script.js"></script>
-</head>
+  <body>
+    <!-- header -->
+    <header>
+      <img
+        src="./image/logo.svg"
+        class="header-img"
+        alt="마이페이지"
+        onclick="goHome()"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="./index.html"
+              class="header-menu"
+              id="header-about"
+              onclick="changeFontColor()"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="./member.html"
+              class="header-menu"
+              id="header-member"
+              onclick="changeFontColor()"
+              >부원</a
+            >
+          </li>
+          <li>
+            <a
+              href="./activity.html"
+              class="header-menu"
+              id="header-activity"
+              onclick="changeFontColor()"
+              >활동</a
+            >
+          </li>
+          <li>
+            <a
+              href="./qna.html"
+              class="header-menu"
+              id="header-qna"
+              onclick="changeFontColor()"
+              >QNA</a
+            >
+          </li>
+          <li>
+            <button onclick="location.href='./guidelines.html'">
+              15기 지원하기
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 다크 모드 토글 버튼 -->
+    <!-- TODO : 다크모드 아이콘 추가하기  -->
+    <!-- TODO : 슬라이드할때 같이 내려가도록  -->
+    <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
 
-<body>
-  <!-- header -->
-  <header>
-    <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
-    <nav>
-      <ul>
-        <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
-        </li>
-        <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
-        <li><a href="./activity.html" class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
-        <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
-        </li>
-        <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- 다크 모드 토글 버튼 -->
-  <!-- TODO : 다크모드 아이콘 추가하기  -->
-  <!-- TODO : 슬라이드할때 같이 내려가도록  -->
-  <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
-
-  <!-- main -->
-  <main>
-    <div class="wrapper">
-      <div class="container">
-        <!-- title -->
-        <section class="title">
-          <div class="sub-title">Activity</div>
-          <div class="title">활동</div>
-          <div class="message">
-            MSG가 지금까지 걸어온 길을 보여드릴게요 <br />
-            이 여정에 함께해요!
-          </div>
-        </section>
-
-        <!-- activity -->
-        <section class="activity">
-          <div class="inner">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <!-- 각각의 활동 슬라이드 -->
-                <div class="swiper-slide" data-year="2023" data-name="It show">
-                  <div class="slide-content">
-                    <div class="title">
-                      <p class="year">2023</p>
-                      <div class="activity-name">It show</div>
-                    </div>
-                    <div class="main-img">
-                      <img src="./image/activity/your_planet.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide" data-year="2023" data-name="GUI 프로젝트">
-                  <div class="slide-content">
-                    <div class="title">
-                      <p class="year">2023</p>
-                      <div class="activity-name">GUI 프로젝트</div>
-                    </div>
-                    <div class="main-img">
-                      <img src="./image/activity/gui.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide" data-year="2023" data-name="공모전">
-                  <div class="slide-content">
-                    <div class="title">
-                      <p class="year">2023</p>
-                      <div class="activity-name">공모전</div>
-                    </div>
-                    <div class="main-img">
-                      <img src="./image/activity/gongmozon.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide" data-year="2023" data-name="자료구조 스터디">
-                  <div class="slide-content">
-                    <div class="title">
-                      <p class="year">2023</p>
-                      <div class="activity-name">자료구조 스터디</div>
-                    </div>
-                    <div class="main-img">
-                      <img src="./image/activity/ds_study.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide" data-year="2023" data-name="회식">
-                  <div class="slide-content">
-                    <div class="title">
-                      <p class="year">2023</p>
-                      <div class="activity-name">회식</div>
-                    </div>
-                    <div class="main-img">
-                      <img src="./image/activity/hoisick.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Swiper 페이징, 이전/다음 버튼 -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper-next">
-                <img src="./image/activity/activity-right-icon.svg" alt="" />
-              </div>
-              <div class="swiper-prev">
-                <img src="./image/activity/activity-left-icon.svg" alt="" />
-              </div>
+    <!-- main -->
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <!-- title -->
+          <section class="title">
+            <div class="sub-title">Activity</div>
+            <div class="title">활동</div>
+            <div class="message">
+              MSG가 지금까지 걸어온 길을 보여드릴게요 <br />
+              이 여정에 함께해요!
             </div>
-          </div>
-        </section>
+          </section>
 
-        <script src="./js/activity.js"></script>
-        <!-- info -->
-        <section class="info">
-          <div id="slide1" class="slide">
-            <p class="title">숫자가 보여주는 열정</p>
-            <div class="group">
-              <div class="period">
-                <p class="sub-title">운영기간</p>
-                <div class="top">
-                  <p class="num counting" id="years">0</p>
-                  년
-                </div>
-              </div>
-              <div class="count">
-                <p class="sub-title">2023년 모임 횟수</p>
-                <div class="top">
-                  <p class="num counting" id="meetings">0</p>
-                  일
-                </div>
-              </div>
-              <div class="blog">
-                <p class="sub-title">동아리 관련 <br />누적 개발 블로그</p>
-                <div class="top">
-                  <p class="num counting" id="blogs">0</p>
-                  +
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- category  -->
-        <section class="category">
-          <div class="inner-category">
-            <p id="all">ALL</p>
-            <p id="project">웹/앱 프로젝트</p>
-            <p id="study">스터디</p>
-            <p id="contest">공모전/전시</p>
-            <p id="etc">기타</p>
-          </div>
-          <div class="inner-banner">
-            <div class="activity-details">
-              <div class="activity-detail">
-                <div class="below">
-                  <span class="below-top">
-                    <p id="detail-title">너의 행성은</p>
-                    <div class="below-tag">
-                      <div id="tag">IT쇼</div>
-                      <div id="tag">WEB</div>
+          <!-- activity -->
+          <section class="activity">
+            <div class="inner">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <!-- 각각의 활동 슬라이드 -->
+                  <div
+                    class="swiper-slide"
+                    data-year="2023"
+                    data-name="It show"
+                  >
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">It show</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity/your_planet.png" alt="" />
+                      </div>
                     </div>
-                  </span>
-                  <p id="detail-tag">#13기#Web</p>
+                  </div>
+
+                  <div
+                    class="swiper-slide"
+                    data-year="2023"
+                    data-name="GUI 프로젝트"
+                  >
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">GUI 프로젝트</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity/gui.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-year="2023" data-name="공모전">
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">공모전</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity/gongmozon.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="swiper-slide"
+                    data-year="2023"
+                    data-name="자료구조 스터디"
+                  >
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">자료구조 스터디</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity/ds_study.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide" data-year="2023" data-name="회식">
+                    <div class="slide-content">
+                      <div class="title">
+                        <p class="year">2023</p>
+                        <div class="activity-name">회식</div>
+                      </div>
+                      <div class="main-img">
+                        <img src="./image/activity/hoisick.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Swiper 페이징, 이전/다음 버튼 -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-next">
+                  <img src="./image/activity/activity-right-icon.svg" alt="" />
+                </div>
+                <div class="swiper-prev">
+                  <img src="./image/activity/activity-left-icon.svg" alt="" />
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </main>
+          </section>
 
-  <!-- footer -->
-  <footer>
-    <div class="inner">
-      <div class="footer-message">
-        MSG <br />
-        Make Share Gather
-      </div>
-      <div class="footer-contact">
-        <a class="instagram" href="https://www.instagram.com/haeunnohh/">13기 부장 노하은</a>
-        | 010-2850-0614 <br />
-        <a class="instagram" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a>
-        | 010-3147-0249
-      </div>
-      <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
-      <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
-    </div>
-  </footer>
-</body>
+          <script src="./js/activity.js"></script>
+          <!-- info -->
+          <section class="info">
+            <div id="slide1" class="slide">
+              <p class="title">숫자가 보여주는 열정</p>
+              <div class="group">
+                <div class="period">
+                  <p class="sub-title">운영기간</p>
+                  <div class="top">
+                    <p class="num counting" id="years">0</p>
+                    년
+                  </div>
+                </div>
+                <div class="count">
+                  <p class="sub-title">2023년 모임 횟수</p>
+                  <div class="top">
+                    <p class="num counting" id="meetings">0</p>
+                    일
+                  </div>
+                </div>
+                <div class="blog">
+                  <p class="sub-title">동아리 관련 <br />누적 개발 블로그</p>
+                  <div class="top">
+                    <p class="num counting" id="blogs">0</p>
+                    +
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <!-- category  -->
+          <section class="category">
+            <div class="inner-category">
+              <p id="all">ALL</p>
+              <p id="project">웹/앱 프로젝트</p>
+              <p id="study">스터디</p>
+              <p id="contest">공모전/전시</p>
+              <p id="etc">기타</p>
+            </div>
+            <div class="inner-banner">
+              <div class="activity-details">
+                <div class="activity-detail">
+                  <div class="below">
+                    <span class="below-top">
+                      <p id="detail-title">너의 행성은</p>
+                      <div class="below-tag">
+                        <div id="tag">IT쇼</div>
+                        <div id="tag">WEB</div>
+                      </div>
+                    </span>
+                    <p id="detail-tag">#13기#Web</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <div class="footer-message">
+          MSG <br />
+          Make Share Gather
+        </div>
+        <div class="footer-contact">
+          <a class="instagram" href="https://www.instagram.com/haeunnohh/"
+            >13기 부장 노하은</a
+          >
+          | 010-2850-0614 <br />
+          <a class="instagram" href="https://www.instagram.com/hy_____120/"
+            >14기 부장 장하영</a
+          >
+          | 010-3147-0249
+        </div>
+        <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram"
+          >@mirim_msg</a
+        >
+        <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
+      </div>
+    </footer>
+  </body>
 </html>
