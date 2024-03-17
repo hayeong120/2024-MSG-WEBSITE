@@ -1,474 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MSG</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
-    <link rel="stylesheet" href="./css/test.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="cssscreen.css">
-    <link rel="stylesheet" type="text/css" media="print" href="cssprint.css">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="cssscreen.css"
+    />
+    <link rel="stylesheet" type="text/css" media="print" href="cssprint.css" />
+  </head>
 
-<body>
+  <body>
     <div class="wrap">
-
-        <header>
-            <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="header-menu" id="header-about"
-                            onclick="changeFontColor()">ABOUT</a>
-                    </li>
-                    <li><a href="./member.html" class="header-menu" id="header-member"
-                            onclick="changeFontColor()">부원</a></li>
-                    <li><a href="./activity.html" class="header-menu" id="header-activity"
-                            onclick="changeFontColor()">활동</a></li>
-                    <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
-                    </li>
-                    <li><button onclick="location.href='./deadline.html'">15기 지원하기</button></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
-        <main>
-            <div class="wrapper section active" id="section1" data-anchor="first">
-                <div class="container">
-                    <div class="main-page">
-                        <div class="img-box">
-                            <img src="./image/logo.svg" alt="">
-                        </div>
-                        <div class="txt-box">
-                            <div class="title">MSG</div>
-                            <div class="sub-title">
-                                내가 원하는 서비스를 만들고<br>
-                                나의 의견을 공유하고 <br>
-                                함께 모여 성장하는 동아리<br>
-                            </div>
-                            <button onclick="location.href='./deadline.html'">
-                                15기 지원하기
-                                <img src="./image/arrow-right-support.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="main_arrow">
-                            <div class="scroll-arrow"></div>
-                            <div class="scroll-arrow"></div>
-                            <div class="scroll-arrow"></div>
-                        </div>
-                    </div>
-                    <div class="message-box">
-                        Make 만들고 <br>
-                        Share 공유하고 <br>
-                        Gather 참여하고
-                    </div>
+      <header>
+        <img
+          src="./image/logo.svg"
+          class="header-img"
+          alt="마이페이지"
+          onclick="goHome()"
+        />
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="./index.html"
+                class="header-menu"
+                id="header-about"
+                onclick="changeFontColor()"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a
+                href="./member.html"
+                class="header-menu"
+                id="header-member"
+                onclick="changeFontColor()"
+                >부원</a
+              >
+            </li>
+            <li>
+              <a
+                href="./activity.html"
+                class="header-menu"
+                id="header-activity"
+                onclick="changeFontColor()"
+                >활동</a
+              >
+            </li>
+            <li>
+              <a
+                href="./qna.html"
+                class="header-menu"
+                id="header-qna"
+                onclick="changeFontColor()"
+                >QNA</a
+              >
+            </li>
+            <li>
+              <button onclick="location.href='./guidelines.html'">
+                15기 지원하기
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
+      <main>
+        <div class="wrapper section active" id="section1" data-anchor="first">
+          <div class="container">
+            <div class="main-page">
+              <div class="img-box">
+                <img src="./image/logo.svg" alt="" />
+              </div>
+              <div class="txt-box">
+                <div class="title">MSG</div>
+                <div class="sub-title">
+                  내가 원하는 서비스를 만들고<br />
+                  나의 의견을 공유하고 <br />
+                  함께 모여 성장하는 동아리<br />
                 </div>
+                <button onclick="location.href='./guidelines.html'">
+                  15기 지원하기
+                  <img src="./image/arrow-right-support.svg" alt="" />
+                </button>
+              </div>
+              <div class="main_arrow">
+                <div class="scroll-arrow"></div>
+                <div class="scroll-arrow"></div>
+                <div class="scroll-arrow"></div>
+              </div>
             </div>
-            <div class="wrapper section" id="section2" data-anchor="second">
-                <div class="tutorial-page">
-                    <div class="container">
-                        <div class="keyword">IDEA</div>
-                        <div class="keyword">CO-WORKING</div>
-                        <div class="keyword">STUDY</div>
-                        <div class="keyword">CONTEST</div>
-                        <div class="keyword">NETWORKING</div>
-                    </div>
+            <div class="message-box">
+              Make 만들고 <br />
+              Share 공유하고 <br />
+              Gather 참여하고
+            </div>
+          </div>
+        </div>
+        <div class="wrapper section" id="section2" data-anchor="second">
+          <div class="tutorial-page">
+            <div class="container">
+              <div class="keyword">IDEA</div>
+              <div class="keyword">CO-WORKING</div>
+              <div class="keyword">STUDY</div>
+              <div class="keyword">CONTEST</div>
+              <div class="keyword">NETWORKING</div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper section" id="section3" data-anchor="third">
+          <div class="about-page">
+            <div class="container">
+              <div class="txt-box">
+                <div class="sub-title">ABOUT</div>
+                <div class="title">
+                  성장 의지를 가진 사람들이 모여 <br />
+                  만들어내는 시너지의 힘
                 </div>
-            </div>
-            <div class="wrapper section" id="section3" data-anchor="third">
-                <div class="about-page">
-                    <div class="container">
-
-                        <div class="txt-box">
-                            <div class="sub-title">
-                                ABOUT
-                            </div>
-                            <div class="title">
-                                성장 의지를 가진 사람들이 모여 <br>
-                                만들어내는 시너지의 힘
-                            </div>
-                            <div class="message">
-                                온전히 나의 성장을 위해 노력해본 적이 있나요? <br>
-                                MSG는 나와 팀의 성장을 목표로 진취적으로 나아가고 있어요 <br>
-                                프로젝트와 활동에 열정을 가지고 임하며 함께 성장해요
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="./image/logo.svg" alt="">
-                        </div>
-                    </div>
-
+                <div class="message">
+                  온전히 나의 성장을 위해 노력해본 적이 있나요? <br />
+                  MSG는 나와 팀의 성장을 목표로 진취적으로 나아가고 있어요
+                  <br />
+                  프로젝트와 활동에 열정을 가지고 임하며 함께 성장해요
                 </div>
+              </div>
+              <div class="img-box">
+                <img src="./image/logo.svg" alt="" />
+              </div>
             </div>
-            <div class="wrapper section">
-                <div class="activity-page">
-                    <div class="container">
-                        <div class="txt-box">
-                            <div class="sub-title">Activity</div>
-                            <div class="title">활동</div>
-                            <div class="message">
-                                MSG는 어떻게 성장하나요? <br>
-                                누구보다 알찬 1년을 보내기 위한 가이드
-                            </div>
-                        </div>
-                        <ul class="content-box">
-                            <li class="box">
-                                <div class="title">프로젝트</div>
-                                <div class="sub-title">Project</div>
-                                <div class="message">
-                                    아이디어 기획부터 프로젝트 개발까지 <br>
-                                    협업 경험을 쌓아요 <br>
-                                    프로젝트 발표와 회고를 통해 <br>
-                                    전체적인 프로세스를 돌아보며 개선점을 찾아요 <br>
-                                </div>
-                            </li>
-                            <li class="box">
-                                <div class="title">공모전</div>
-                                <div class="sub-title">Contest</div>
-                                <div class="message">
-                                    아이디어 & 개발 공모전에 팀을 꾸려 참가해요 <br>
-                                    정기적인 모임 시간을 활용하여 <br>
-                                    체계적인 준비가 가능해요
-
-                                </div>
-                            </li>
-                            <li class="box">
-                                <div class="title">IT쇼</div>
-                                <div class="sub-title">IT show</div>
-                                <div class="message">
-                                    3학년뿐만 아니라 2학년도 IT쇼에 참가해요 <br>
-                                    내가 개발한 서비스를 다른 사람이 사용하는 <br>
-                                    사용자 경험을 일찍이 접할 수 있어요
-                                </div>
-                            </li>
-                            <li class="box">
-                                <div class="title">스터디 & 개발블로그</div>
-                                <div class="sub-title">Study & Development Blog</div>
-                                <div class="message">
-                                    정기 코딩테스트 스터디와 자율 스터디를 <br>
-                                    매년 진행하고 있어요 <br>
-                                    스터디를 통해 개발 블로그를 작성하며 <br>
-                                    나만의 배움의 기록을 쌓을 수 있어요
-                                </div>
-                            </li>
-                            <li class="box">
-                                <div class="title">네트워킹</div>
-                                <div class="sub-title">Networking</div>
-                                <div class="message">
-                                    선후배간의 거리낌없는 네트워킹이 이루어져요 <br>
-                                    TMI부터 궁금한 전공 이야기까지 <br>
-                                    친해지는 시간을 가져요
-                                </div>
-                            </li>
-                            <li class="box">
-                                <div class="title">회고</div>
-                                <div class="sub-title">Review</div>
-                                <div class="message">
-                                    프로젝트가 마무리된 이후 회고의 시간을 가져요 <br>
-                                    전반적인 프로세스를 돌아보며 <br>
-                                    항상 부족한 점을 보완하려 노력해요
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+          </div>
+        </div>
+        <div class="wrapper section">
+          <div class="activity-page">
+            <div class="container">
+              <div class="txt-box">
+                <div class="sub-title">Activity</div>
+                <div class="title">활동</div>
+                <div class="message">
+                  MSG는 어떻게 성장하나요? <br />
+                  누구보다 알찬 1년을 보내기 위한 가이드
                 </div>
+              </div>
+              <ul class="content-box">
+                <li class="box">
+                  <div class="title">프로젝트</div>
+                  <div class="sub-title">Project</div>
+                  <div class="message">
+                    아이디어 기획부터 프로젝트 개발까지 <br />
+                    협업 경험을 쌓아요 <br />
+                    프로젝트 발표와 회고를 통해 <br />
+                    전체적인 프로세스를 돌아보며 개선점을 찾아요 <br />
+                  </div>
+                </li>
+                <li class="box">
+                  <div class="title">공모전</div>
+                  <div class="sub-title">Contest</div>
+                  <div class="message">
+                    아이디어 & 개발 공모전에 팀을 꾸려 참가해요 <br />
+                    정기적인 모임 시간을 활용하여 <br />
+                    체계적인 준비가 가능해요
+                  </div>
+                </li>
+                <li class="box">
+                  <div class="title">IT쇼</div>
+                  <div class="sub-title">IT show</div>
+                  <div class="message">
+                    3학년뿐만 아니라 2학년도 IT쇼에 참가해요 <br />
+                    내가 개발한 서비스를 다른 사람이 사용하는 <br />
+                    사용자 경험을 일찍이 접할 수 있어요
+                  </div>
+                </li>
+                <li class="box">
+                  <div class="title">스터디 & 개발블로그</div>
+                  <div class="sub-title">Study & Development Blog</div>
+                  <div class="message">
+                    정기 코딩테스트 스터디와 자율 스터디를 <br />
+                    매년 진행하고 있어요 <br />
+                    스터디를 통해 개발 블로그를 작성하며 <br />
+                    나만의 배움의 기록을 쌓을 수 있어요
+                  </div>
+                </li>
+                <li class="box">
+                  <div class="title">네트워킹</div>
+                  <div class="sub-title">Networking</div>
+                  <div class="message">
+                    선후배간의 거리낌없는 네트워킹이 이루어져요 <br />
+                    TMI부터 궁금한 전공 이야기까지 <br />
+                    친해지는 시간을 가져요
+                  </div>
+                </li>
+                <li class="box">
+                  <div class="title">회고</div>
+                  <div class="sub-title">Review</div>
+                  <div class="message">
+                    프로젝트가 마무리된 이후 회고의 시간을 가져요 <br />
+                    전반적인 프로세스를 돌아보며 <br />
+                    항상 부족한 점을 보완하려 노력해요
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="wrapper section">
-                <div class="project-page">
-                    <div class="container">
-
-                        <div class="txt-box">
-                            <div class="sub-title">Project</div>
-                            <div class="title">프로젝트</div>
-                            <div class="message">
-                                현재까지 MSG가 개발한 프로젝트예요 <br>
-                                1학년부터 3학년까지 다양한 학년의 부원들이 개발에 참여했어요
-                            </div>
-                        </div>
-                        <div id="slider">
-                            <div class="image-box">
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">12기 App</div>
-                                        <div class="title">PortFolio</div>
-                                        <div class="message">
-                                            자신의 프로필, 공부한 언어, 취득 자격증, 프로젝트 등<br>정보를 작성하면 정리해서 보여주는 앱
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=PortFolio'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/portfolio.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">12기 App</div>
-                                        <div class="title">소라고동</div>
-                                        <div class="message">
-                                            사용자가 한 질문에 대한 대답을 해주는 앱
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=소라고동'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/sora.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">12기 Unity Game</div>
-                                        <div class="title">우주 오물오물</div>
-                                        <div class="message">
-                                            우주쓰레기를 치우는 게임 (슈팅게임)
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=우주 오물오물'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/owater.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">12기 web IT show</div>
-                                        <div class="title">기억</div>
-                                        <div class="message">
-                                            기억을 소재로 한 온라인 전시회<br>자신의 기억을 전시해서 공유할 수 있는 웹페이지
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=기억'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/memory_main.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">13기 IT show</div>
-                                        <div class="title">너의행성은</div>
-                                        <div class="message">
-                                            사용자의 성격을 행성의 특징에 비유하여 <br>
-                                            나의 행성을 보여주는 성격 유형 검사 웹사이트
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=너의 행성은'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/your_planet_main.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">13기 Web</div>
-                                        <div class="title">MSG 지원사이트</div>
-                                        <div class="message">
-                                            MSG 동아리 웹사이트
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=MSG 지원사이트'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/website_main.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">14기 Swing java gui</div>
-                                        <div class="title">하루 한장</div>
-                                        <div class="message">
-                                            하루에 한 번 질문에 대한 자신의 생각을 일기처럼 작성하여<br>시간이 지났을 때 지난 날의 나의 생각들을 보며 나의 성장을 볼 수 있는 성장 기록 앱사이트
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=하루 한장'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/dailypaper.png" alt="">
-                                </div>
-                                <div class="box">
-                                    <div class="blur-box">
-                                        <div class="sub-title">13기 Swing java gui</div>
-                                        <div class="title">ProMatch</div>
-                                        <div class="message">
-                                            프로젝트 및 공모전 관리 웹사이트
-                                        </div>
-                                        <button onclick="window.location.href='activityDetail.html?title=ProMatch'">
-                                            <img src="./image/arrow-right-support.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <img class="" src="./image/activity/promatch.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="wrapper section">
+          <div class="project-page">
+            <div class="container">
+              <div class="txt-box">
+                <div class="sub-title">Project</div>
+                <div class="title">프로젝트</div>
+                <div class="message">
+                  현재까지 MSG가 개발한 프로젝트예요 <br />
+                  1학년부터 3학년까지 다양한 학년의 부원들이 개발에 참여했어요
                 </div>
-            </div>
-            <div class="wrapper section" data-anchor="forth" id="section4">
-
-                <div class="opinion-page">
-                    <div class="txt-box">
-                        <div class="sub-title">Opinion</div>
-                        <div class="title">부원들의 목소리</div>
-                        <div class="message">
-                            현재 기수들의 생생한 후기 <br>
-                            MSG에서의 1년은 어땠나요?
-                        </div>
+              </div>
+              <div id="slider">
+                <div class="image-box">
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">12기 App</div>
+                      <div class="title">PortFolio</div>
+                      <div class="message">
+                        자신의 프로필, 공부한 언어, 취득 자격증, 프로젝트 등<br />정보를
+                        작성하면 정리해서 보여주는 앱
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=PortFolio'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
                     </div>
-                    <div class="opinion-box">
-                        <div class="opinion" id="op1">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-
-                                동아리의 부장으로 있으면서 항상 자부심을 가졌던 점은 부원들끼리의 화합이 잘 맞았다는 점이에요. <br>
-                                성장하려는 의지가 있는 사람들끼리 모이니 그 누구도 대충대충 넘기지 않고 열심히 임해주었어요. <br>
-                                서로에게 배우고 가르치며 함께 성장할 분들을 기다리고 있어요. <br>
-                                우리 MSG에서 함께 놀아요! <br>
-                            </div>
-                            <div class="member-box">13기 노하은</div>
-                        </div>
-                        <div class="opinion" id="op2">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-
-                                학교 수업에서는 배울 수 없는 것들을 <br>
-                                선배님들과 함께 스터디를 하면서 <br>
-                                동아리 활동을 통해 계속해서 성장하고 있습니다. <br>
-                                이 동아리에 들어온 걸 행운으로 생각하고 있습니다🍀💕 <br>
-                                MSG 화이팅~ <br>
-                            </div>
-                            <div class="member-box">14기 조수빈</div>
-                        </div>
-                        <div class="opinion" id="op1">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-
-                                MSG에 들어온게 1학년 동안 내가 제일 잘한 일 중 하나다. <br>
-                                동아리원 모두가 이 동아리에 대한 애정이 크다는 것이 <br>
-                                느껴져서 너무 좋았다. <br>
-                            </div>
-                            <div class="member-box">14기 장하영 </div>
-                        </div>
-                        <div class="opinion" id="op2">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-
-                                MSG에서의 지난 1년 동안, 팀원들과 같이 시간을 보내면서 정말 즐거웠고 다 함께 성장해가는게 느껴졌습니다. MSG에서 전공스터디와 IT show, 개발
-                                블로그 작성하기 등등 다양한 활동을 하면서 서로의 지식을 공유하며 자신이 부족했던 부분을 채워 나갈 수 있었던 것 같습니다. 또한 선후배간의 네트워킹이 잘
-                                되어 후배들과 함께 성장 할 수 있어서 좋았습니다.
-                                MSG라서 정말 자랑스럽습니다. 🥰
-                            </div>
-                            <div class="member-box">13기 임지현</div>
-                        </div>
-                        <div class="opinion" id="op1">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-                                동아리 활동 중 스택이라는 공모전을 나가 기획부터 예선 합격, 발표까지 진행하여 가작상을 받을 수 있었습니다.
-                                미림에서는 더 다양한 활동을 하며 많은 것을 경험하는것이 중요하다고 생각하는데
-                                이렇게 열심히 참여하고 성과를 내본 경험이 더 다양한 공모전에 도전할 수 있게 만들었습니다.
-                                전공 관련된 부분에서도 다른 동아리와 다르게 제일 먼저 github 사용법을 배우고,
-                                코딩 테스트를 풀고, 벨로그도 적는 등 후에는 프로젝트까지 마쳤습니다.
-                                때로는 바쁜 일정에 조금 더 널널한 다른 동아리가 부럽기도 했지만,
-                                이렇게 열정적으로 참여했던 동아리 활동 덕분에 전공실력을 더 향상시킬수 있었습니다.
-                            </div>
-                            <div class="member-box">14기 양혜원</div>
-                        </div>
-                        <div class="opinion" id="op2">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-
-                                올해 MSG를 통해 함께 스터디를 나누고
-                                회사에서 사용하는 프로그램들을 사용해보면서 익히고
-                                코딩 테스트도 하고, 학교에서 배운내용을 다시 정리하며
-                                서로에게 설명함으로써 새로운 것들을 배우고
-                                의욕을 가질 수 있었어요
-                                모두가 적극적으로 참여하여 팀 분위기가 활기차게
-                                유지되어 매우 만족스러웠습니다
-                            </div>
-                            <div class="member-box">13기 이가현 </div>
-                        </div>
-                        <div class="opinion" id="op1">
-                            <div class="img-box">
-                                <img src="./image/opinion-icon.svg" alt="">
-                            </div>
-                            <div class="message-box">
-
-                                선배, 후배가 사이좋게 사담할 수 있는 시간이 있어 좋았어요
-                                실무를 위한 여러 시스템이 갖춰져 있어 도움이 되었고
-                                여러 프로젝트를 진행함으로써 팀원과 협력해 볼 수 있다는 점이
-                                큰 의미가 되어줬습니다
-                            </div>
-                            <div class="member-box">13기 박희현</div>
-                        </div>
+                    <img class="" src="./image/activity/portfolio.png" alt="" />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">12기 App</div>
+                      <div class="title">소라고동</div>
+                      <div class="message">
+                        사용자가 한 질문에 대한 대답을 해주는 앱
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=소라고동'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
                     </div>
+                    <img class="" src="./image/activity/sora.png" alt="" />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">12기 Unity Game</div>
+                      <div class="title">우주 오물오물</div>
+                      <div class="message">
+                        우주쓰레기를 치우는 게임 (슈팅게임)
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=우주 오물오물'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
+                    </div>
+                    <img class="" src="./image/activity/owater.png" alt="" />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">12기 web IT show</div>
+                      <div class="title">기억</div>
+                      <div class="message">
+                        기억을 소재로 한 온라인 전시회<br />자신의 기억을
+                        전시해서 공유할 수 있는 웹페이지
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=기억'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
+                    </div>
+                    <img
+                      class=""
+                      src="./image/activity/memory_main.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">13기 IT show</div>
+                      <div class="title">너의행성은</div>
+                      <div class="message">
+                        사용자의 성격을 행성의 특징에 비유하여 <br />
+                        나의 행성을 보여주는 성격 유형 검사 웹사이트
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=너의 행성은'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
+                    </div>
+                    <img
+                      class=""
+                      src="./image/activity/your_planet_main.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">13기 Web</div>
+                      <div class="title">MSG 지원사이트</div>
+                      <div class="message">MSG 동아리 웹사이트</div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=MSG 지원사이트'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
+                    </div>
+                    <img
+                      class=""
+                      src="./image/activity/website_main.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">14기 Swing java gui</div>
+                      <div class="title">하루 한장</div>
+                      <div class="message">
+                        하루에 한 번 질문에 대한 자신의 생각을 일기처럼
+                        작성하여<br />시간이 지났을 때 지난 날의 나의 생각들을
+                        보며 나의 성장을 볼 수 있는 성장 기록 앱사이트
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=하루 한장'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
+                    </div>
+                    <img
+                      class=""
+                      src="./image/activity/dailypaper.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="box">
+                    <div class="blur-box">
+                      <div class="sub-title">13기 Swing java gui</div>
+                      <div class="title">ProMatch</div>
+                      <div class="message">
+                        프로젝트 및 공모전 관리 웹사이트
+                      </div>
+                      <button
+                        onclick="window.location.href='activityDetail.html?title=ProMatch'"
+                      >
+                        <img src="./image/arrow-right-support.svg" alt="" />
+                      </button>
+                    </div>
+                    <img class="" src="./image/activity/promatch.png" alt="" />
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="wrapper section" data-anchor="fifth" id="section5">
-                <div class="support-page">
-                    <div class="container">
-
-                        <div class="img-box">
-                            <img src="./image/logo.svg" alt="">
-                        </div>
-                        <div class="txt-box">
-                            열정 있고 성장 의지가 충만한 분들을 기다리고 있어요 <br>
-                            MSG와 함께 알찬 3년을 만들어가요! <br>
-                            <button onclick="location.href='./guidelines.html'">
-                                15기 지원하기
-                                <img src="./image/arrow-right-support.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="wrapper section" data-anchor="forth" id="section4">
+          <div class="opinion-page">
+            <div class="txt-box">
+              <div class="sub-title">Opinion</div>
+              <div class="title">부원들의 목소리</div>
+              <div class="message">
+                현재 기수들의 생생한 후기 <br />
+                MSG에서의 1년은 어땠나요?
+              </div>
+            </div>
+            <div class="opinion-box">
+              <div class="opinion" id="op1">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
                 </div>
+                <div class="message-box">
+                  동아리의 부장으로 있으면서 항상 자부심을 가졌던 점은
+                  부원들끼리의 화합이 잘 맞았다는 점이에요. <br />
+                  성장하려는 의지가 있는 사람들끼리 모이니 그 누구도 대충대충
+                  넘기지 않고 열심히 임해주었어요. <br />
+                  서로에게 배우고 가르치며 함께 성장할 분들을 기다리고 있어요.
+                  <br />
+                  우리 MSG에서 함께 놀아요! <br />
+                </div>
+                <div class="member-box">13기 노하은</div>
+              </div>
+              <div class="opinion" id="op2">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
+                </div>
+                <div class="message-box">
+                  학교 수업에서는 배울 수 없는 것들을 <br />
+                  선배님들과 함께 스터디를 하면서 <br />
+                  동아리 활동을 통해 계속해서 성장하고 있습니다. <br />
+                  이 동아리에 들어온 걸 행운으로 생각하고 있습니다🍀💕 <br />
+                  MSG 화이팅~ <br />
+                </div>
+                <div class="member-box">14기 조수빈</div>
+              </div>
+              <div class="opinion" id="op1">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
+                </div>
+                <div class="message-box">
+                  MSG에 들어온게 1학년 동안 내가 제일 잘한 일 중 하나다. <br />
+                  동아리원 모두가 이 동아리에 대한 애정이 크다는 것이 <br />
+                  느껴져서 너무 좋았다. <br />
+                </div>
+                <div class="member-box">14기 장하영</div>
+              </div>
+              <div class="opinion" id="op2">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
+                </div>
+                <div class="message-box">
+                  MSG에서의 지난 1년 동안, 팀원들과 같이 시간을 보내면서 정말
+                  즐거웠고 다 함께 성장해가는게 느껴졌습니다. MSG에서
+                  전공스터디와 IT show, 개발 블로그 작성하기 등등 다양한 활동을
+                  하면서 서로의 지식을 공유하며 자신이 부족했던 부분을 채워 나갈
+                  수 있었던 것 같습니다. 또한 선후배간의 네트워킹이 잘 되어
+                  후배들과 함께 성장 할 수 있어서 좋았습니다. MSG라서 정말
+                  자랑스럽습니다. 🥰
+                </div>
+                <div class="member-box">13기 임지현</div>
+              </div>
+              <div class="opinion" id="op1">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
+                </div>
+                <div class="message-box">
+                  동아리 활동 중 스택이라는 공모전을 나가 기획부터 예선 합격,
+                  발표까지 진행하여 가작상을 받을 수 있었습니다. 미림에서는 더
+                  다양한 활동을 하며 많은 것을 경험하는것이 중요하다고
+                  생각하는데 이렇게 열심히 참여하고 성과를 내본 경험이 더 다양한
+                  공모전에 도전할 수 있게 만들었습니다. 전공 관련된 부분에서도
+                  다른 동아리와 다르게 제일 먼저 github 사용법을 배우고, 코딩
+                  테스트를 풀고, 벨로그도 적는 등 후에는 프로젝트까지
+                  마쳤습니다. 때로는 바쁜 일정에 조금 더 널널한 다른 동아리가
+                  부럽기도 했지만, 이렇게 열정적으로 참여했던 동아리 활동 덕분에
+                  전공실력을 더 향상시킬수 있었습니다.
+                </div>
+                <div class="member-box">14기 양혜원</div>
+              </div>
+              <div class="opinion" id="op2">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
+                </div>
+                <div class="message-box">
+                  올해 MSG를 통해 함께 스터디를 나누고 회사에서 사용하는
+                  프로그램들을 사용해보면서 익히고 코딩 테스트도 하고, 학교에서
+                  배운내용을 다시 정리하며 서로에게 설명함으로써 새로운 것들을
+                  배우고 의욕을 가질 수 있었어요 모두가 적극적으로 참여하여 팀
+                  분위기가 활기차게 유지되어 매우 만족스러웠습니다
+                </div>
+                <div class="member-box">13기 이가현</div>
+              </div>
+              <div class="opinion" id="op1">
+                <div class="img-box">
+                  <img src="./image/opinion-icon.svg" alt="" />
+                </div>
+                <div class="message-box">
+                  선배, 후배가 사이좋게 사담할 수 있는 시간이 있어 좋았어요
+                  실무를 위한 여러 시스템이 갖춰져 있어 도움이 되었고 여러
+                  프로젝트를 진행함으로써 팀원과 협력해 볼 수 있다는 점이 큰
+                  의미가 되어줬습니다
+                </div>
+                <div class="member-box">13기 박희현</div>
+              </div>
             </div>
-            <div class="wrapper section" data-anchor="sixth" id="section6">
-                <div class="question-page">
-                    <div class="txt-box">
-                        <div class="sub-title">FAQ</div>
-                        <div class="title">자주 묻는 질문</div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="faq">
-                            <p class="faq-title">MSG는 어떤 동아리인가요?</p>
-                            <p class="faq-text">MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을 가진 미림의 전공동아리 중 하나입니다.
-                                입사를 준비하며 협업 프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은 다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과 소통하며
-                                성장할 수
-                                있는
-                                동아리입니다.</p>
-                            <button class="faq-toggle">
-                                <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <p class="faq-title">스터디 그룹이면 정말 딱 공부만 하나요?</p>
-                            <p class="faq-text">
-                                그렇지 않습니다! MSG는 미림의 자율 전공 동아리로서 스터디라는 활동을 추가로 할 뿐이지 공모전, IT쇼, 협업 프로젝트, 회식 등 다양한 활동을 활발히 하고 있답니다😍 자세한 활동 내용은 "활동페이지" 를 참고해주세요!
-                            </p>
-                            <button class="faq-toggle">
-                                <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <!-- <div class="faq">
+          </div>
+        </div>
+        <div class="wrapper section" data-anchor="fifth" id="section5">
+          <div class="support-page">
+            <div class="container">
+              <div class="img-box">
+                <img src="./image/logo.svg" alt="" />
+              </div>
+              <div class="txt-box">
+                열정 있고 성장 의지가 충만한 분들을 기다리고 있어요 <br />
+                MSG와 함께 알찬 3년을 만들어가요! <br />
+                <button onclick="location.href='./guidelines.html'">
+                  15기 지원하기
+                  <img src="./image/arrow-right-support.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper section" data-anchor="sixth" id="section6">
+          <div class="question-page">
+            <div class="txt-box">
+              <div class="sub-title">FAQ</div>
+              <div class="title">자주 묻는 질문</div>
+            </div>
+            <div class="faq-container">
+              <div class="faq">
+                <p class="faq-title">MSG는 어떤 동아리인가요?</p>
+                <p class="faq-text">
+                  MSG는 Make Share Gather, 만들고 공유하고 모인다는 슬로건을
+                  가진 미림의 전공동아리 중 하나입니다. 입사를 준비하며 협업
+                  프로젝트 진행, 공모전 참가, 전공 스터디 모임, IT쇼 등과 같은
+                  다양한 활동을 함으로써 전공 실력은 물론 다양한 사람들과
+                  소통하며 성장할 수 있는 동아리입니다.
+                </p>
+                <button class="faq-toggle">
+                  <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="faq">
+                <p class="faq-title">스터디 그룹이면 정말 딱 공부만 하나요?</p>
+                <p class="faq-text">
+                  그렇지 않습니다! MSG는 미림의 자율 전공 동아리로서 스터디라는
+                  활동을 추가로 할 뿐이지 공모전, IT쇼, 협업 프로젝트, 회식 등
+                  다양한 활동을 활발히 하고 있답니다😍 자세한 활동 내용은
+                  "활동페이지" 를 참고해주세요!
+                </p>
+                <button class="faq-toggle">
+                  <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <!-- <div class="faq">
                             <p class="faq-title">전공에 대한 지식과 실력이 없어도 지원할 수 있나요? </p>
                             <p class="faq-text">
                                 물론입니다! 저희도 처음 학교에 들어왔을 때는 아무것도 몰랐어요. 하지만 선배들이 언어부터 git 사용법, 툴까지 하나하나 알려주고 동아리 내에서 자체적으로
@@ -479,71 +557,93 @@
                                 <i class="fas fa-times"></i>
                             </button>
                         </div> -->
-                        <div class="faq">
-                            <p class="faq-title">동아리 분위기는 어떤가요? </p>
-                            <p class="faq-text">
-                                MSG는 언제나 화목합니다🌞
-                                친구같은 선후배관계를 고수해오고 있으며, 무엇보다 스터디, 동아리 회식, 공모전 준비 등등을 통해 부원들은 물론 선배들과의 친목을 다질 수
-                                있습니다!
-                            </p>
-                            <button class="faq-toggle">
-                                <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <p class="faq-title">동아리 활동으로는 무엇을 하나요? </p>
-                            <p class="faq-text">
-                                MSG는 교내외 공모전, IT쇼, 협업 프로젝트, 자율스터디, 개발블로그 작성 등 다양한 활동을 통해 전공 실력은 물론
-                                새학기 친해지기 프로젝트, 회식, 네트워킹을 통해 서로간의 친목을 다질 수 있답니다😍
-                            </p>
-                            <button class="faq-toggle">
-                                <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <p class="faq-title">담당 선생님은 누구신가요? </p>
-                            <p class="faq-text">MSG의 담당선생님은 이대형선생님으로 현재 2학년 국어를 맡고 계십니다🥰</p>
-                            <button class="faq-toggle">
-                                <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+              <div class="faq">
+                <p class="faq-title">동아리 분위기는 어떤가요?</p>
+                <p class="faq-text">
+                  MSG는 언제나 화목합니다🌞 친구같은 선후배관계를 고수해오고
+                  있으며, 무엇보다 스터디, 동아리 회식, 공모전 준비 등등을 통해
+                  부원들은 물론 선배들과의 친목을 다질 수 있습니다!
+                </p>
+                <button class="faq-toggle">
+                  <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="faq">
+                <p class="faq-title">동아리 활동으로는 무엇을 하나요?</p>
+                <p class="faq-text">
+                  MSG는 교내외 공모전, IT쇼, 협업 프로젝트, 자율스터디,
+                  개발블로그 작성 등 다양한 활동을 통해 전공 실력은 물론 새학기
+                  친해지기 프로젝트, 회식, 네트워킹을 통해 서로간의 친목을 다질
+                  수 있답니다😍
+                </p>
+                <button class="faq-toggle">
+                  <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="faq">
+                <p class="faq-title">담당 선생님은 누구신가요?</p>
+                <p class="faq-text">
+                  MSG의 담당선생님은 이대형선생님으로 현재 2학년 국어를 맡고
+                  계십니다🥰
+                </p>
+                <button class="faq-toggle">
+                  <!-- <img src="./image/arrow-bottom.svg" class="fas fa-chevron-down" alt=""> -->
+                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
             </div>
-        </main>
-        <footer>
-            <div class="inner">
-                <div class="footer-message">
-                    MSG <br />
-                    Make Share Gather
-                </div>
-                <div class="footer-contact">
-                    <a class="instagram" href="https://www.instagram.com/haeunnohh/">13기 부장 노하은</a> | 010-2850-0614 <br />
-                    <a class="instagram" href="https://www.instagram.com/hy_____120/">14기 부장 장하영</a> | 010-3147-0249
-                </div>
-                <a href="https://www.instagram.com/mirim_msg/" class="footer-instagram">@mirim_msg</a>
-                <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
-            </div>
-        </footer>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="inner">
+          <div class="footer-message">
+            MSG <br />
+            Make Share Gather
+          </div>
+          <div class="footer-contact">
+            <a class="instagram" href="https://www.instagram.com/haeunnohh/"
+              >13기 부장 노하은</a
+            >
+            | 010-2850-0614 <br />
+            <a class="instagram" href="https://www.instagram.com/hy_____120/"
+              >14기 부장 장하영</a
+            >
+            | 010-3147-0249
+          </div>
+          <a
+            href="https://www.instagram.com/mirim_msg/"
+            class="footer-instagram"
+            >@mirim_msg</a
+          >
+          <div class="footer-copyright">
+            Copyright ⓒ MSG All rights reserved
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="./js/script.js"></script>
-<script type="text/javascript" src="https://static.navercorp.com/static/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
-<script type="text/javascript" src="./js/test.js"></script>
-<script type="text/javascript" src="./js/qna_dropdown.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
-<script>
+  </body>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script
+    type="text/javascript"
+    src="https://static.navercorp.com/static/libs/jquery/3.1.1/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"
+  ></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/test.js"></script>
+  <script type="text/javascript" src="./js/qna_dropdown.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+  <script>
     AOS.init();
-</script>
-
+  </script>
 </html>

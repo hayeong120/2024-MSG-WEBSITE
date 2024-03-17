@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSG</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
-
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg" />
+    <script src="./js/script.js"></script>
     <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/apply.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/apply.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- sweet alert style -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css"
+    />
     <!--Jquery-->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header>
-        <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
-        <nav>
-            <ul>
-                <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
-                </li>
-                <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a>
-                </li>
-                <li><a href="./activity.html" class="header-menu" id="header-activity"
-                        onclick="changeFontColor()">활동</a></li>
-                <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
-                </li>
-                <li><button onclick="location.href='./deadline.html'">15기 지원하기</button></li>
-            </ul>
-        </nav>
+      <img
+        src="./image/logo.svg"
+        class="header-img"
+        alt="마이페이지"
+        onclick="goHome()"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="./index.html"
+              class="header-menu"
+              id="header-about"
+              onclick="changeFontColor()"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="./member.html"
+              class="header-menu"
+              id="header-member"
+              onclick="changeFontColor()"
+              >부원</a
+            >
+          </li>
+          <li>
+            <a
+              href="./activity.html"
+              class="header-menu"
+              id="header-activity"
+              onclick="changeFontColor()"
+              >활동</a
+            >
+          </li>
+          <li>
+            <a
+              href="./qna.html"
+              class="header-menu"
+              id="header-qna"
+              onclick="changeFontColor()"
+              >QNA</a
+            >
+          </li>
+          <li>
+            <button onclick="location.href='./guidelines.html'">
+              15기 지원하기
+            </button>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- 
@@ -42,83 +81,155 @@
 
     <!-- main -->
     <main>
-        <div class="wrapper">
-            <div class="support-page">
-
-                <!-- title -->
-                <section id="title-box">
-                    <div id="sub-title">MSG 지원 페이지</div>
-                    <div id="title">MSG 15기 지원하기</div>
-                    <div id="message">
-                        전공동아리, MSG에 지원할 수 있는 지원서입니다. 양식에 맞춰 성심성의껏 작성하여 제출해주세요. 🥰
-                    </div>
-                </section>
-
-                <!-- Support Form -->
-                <img src="./image/apply/logo.png">
-                <form id="support-form" action="#" method="post">
-                    <fieldset class="support-box">
-                        <ul>
-                            <li class="form-control">
-                                <label for="username">이름을 입력해주세요.<span class="impact">*</span></label><br>
-                                <input type="text" id="username" placeholder="김미림" required>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="class-number">학번을 입력해주세요.<span class="impact">*</span></label><br>
-                                <input type="text" id="class-number" placeholder="1100" required>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="phone">전화번호를 입력해주세요. (-기호는 빼주세요)<span class="impact">*</span></label><br>
-                                <input type="tel" id="phone" placeholder="01012345678" required>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="mail">학교 이메일을 입력해주세요.</label><span class="impact">*</span><br>
-                                <input type="email" id="mail" placeholder="s2400@e-mirim.hs.kr" required>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="motive">MSG에 지원하게 된 동기를 입력해주세요.<span class="impact">*</span></label><br>
-                                <textarea type="text" id="motive" placeholder="500자 이내로 작성해주세요." required></textarea>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="strength">자신의 장점에 대해 입력해주세요.<span class="impact">*</span></label><br>
-                                <textarea type="text" id="strength" placeholder="500자 이내로 작성해주세요." required></textarea>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="experience">인생에서 실패했던 경험을 입력해주세요.<span class="impact">*</span></label><br>
-                                <textarea type="text" id="experience" placeholder="500자 이내로 작성해주세요."
-                                    required></textarea>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="definition">나를 한 마디로 정의하자면?<span class="impact">*</span></label><br>
-                                <input type="text" id="definition" placeholder="20글자 이내로 작성해주세요." required>
-                                <small class="error">필수 입력입니다.</small>
-                            </li>
-                            <li class="form-control">
-                                <label for="question">MSG에 대해 궁금한 점을 물어봐주세요!</label><br>
-                                <input type="text" id="question" placeholder="필수사항이 아닙니다.">
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset id="button-box">
-                        <button type="submit" id="submit-button">제출하기</button>
-                    </fieldset>
-                </form>
-
+      <div class="wrapper">
+        <div class="support-page">
+          <!-- title -->
+          <section id="title-box">
+            <div id="sub-title">MSG 지원 페이지</div>
+            <div id="title">MSG 15기 지원하기</div>
+            <div id="message">
+              전공동아리, MSG에 지원할 수 있는 지원서입니다. 양식에 맞춰
+              성심성의껏 작성하여 제출해주세요. 🥰
             </div>
+          </section>
+
+          <!-- Support Form -->
+          <img src="./image/apply/logo.png" />
+          <form id="support-form" action="#" method="post">
+            <fieldset class="support-box">
+              <ul>
+                <li class="form-control">
+                  <label for="username"
+                    >이름을 입력해주세요.<span class="impact">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder="김미림"
+                    required
+                  />
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="class-number"
+                    >학번을 입력해주세요.<span class="impact">*</span></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="class-number"
+                    placeholder="1100"
+                    required
+                  />
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="phone"
+                    >전화번호를 입력해주세요. (-기호는 빼주세요)<span
+                      class="impact"
+                      >*</span
+                    ></label
+                  ><br />
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="01012345678"
+                    required
+                  />
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="mail">학교 이메일을 입력해주세요.</label
+                  ><span class="impact">*</span><br />
+                  <input
+                    type="email"
+                    id="mail"
+                    placeholder="s2400@e-mirim.hs.kr"
+                    required
+                  />
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="motive"
+                    >MSG에 지원하게 된 동기를 입력해주세요.<span class="impact"
+                      >*</span
+                    ></label
+                  ><br />
+                  <textarea
+                    type="text"
+                    id="motive"
+                    placeholder="500자 이내로 작성해주세요."
+                    required
+                  ></textarea>
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="strength"
+                    >자신의 장점에 대해 입력해주세요.<span class="impact"
+                      >*</span
+                    ></label
+                  ><br />
+                  <textarea
+                    type="text"
+                    id="strength"
+                    placeholder="500자 이내로 작성해주세요."
+                    required
+                  ></textarea>
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="experience"
+                    >인생에서 실패했던 경험을 입력해주세요.<span class="impact"
+                      >*</span
+                    ></label
+                  ><br />
+                  <textarea
+                    type="text"
+                    id="experience"
+                    placeholder="500자 이내로 작성해주세요."
+                    required
+                  ></textarea>
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="definition"
+                    >나를 한 마디로 정의하자면?<span class="impact"
+                      >*</span
+                    ></label
+                  ><br />
+                  <input
+                    type="text"
+                    id="definition"
+                    placeholder="20글자 이내로 작성해주세요."
+                    required
+                  />
+                  <small class="error">필수 입력입니다.</small>
+                </li>
+                <li class="form-control">
+                  <label for="question"
+                    >MSG에 대해 궁금한 점을 물어봐주세요!</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="question"
+                    placeholder="필수사항이 아닙니다."
+                  />
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset id="button-box">
+              <button type="submit" id="submit-button">제출하기</button>
+            </fieldset>
+          </form>
         </div>
+      </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/apply.js"></script>
-</body>
-
+  </body>
 </html>
