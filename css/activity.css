@@ -65,7 +65,7 @@ body.dark-mode .swiper-prev {
 
 .title .message {
   text-align: center;
-  font-size: var(--small-font-size);
+  font-size: 15px;
   color: var(--gray-color-02);
   margin-top: 1vw;
   margin-bottom: 2vw;
@@ -75,17 +75,15 @@ body.dark-mode .swiper-prev {
 @media only screen and (max-width: 600px) {
   .title .sub-title {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .title .title {
-    font-size: 25px;
-    /* 더 상대적인 크기로 변경 */
+    font-size: 22px;
   }
 
   .title .message {
-    font-size: 15px;
-    /* 더 상대적인 크기로 변경 */
+    font-size: 12px;
     margin-top: 2px;
     margin-bottom: 30px;
   }
@@ -247,7 +245,7 @@ body.dark-mode .swiper-prev {
 
   /* 활동 이름 스타일링 */
   .activity-name {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: var(--gray-color-01);
     margin-top: 5px;
@@ -400,6 +398,13 @@ body.dark-mode .swiper-prev {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 800px) {
+  .rounded-div {
+    width: 200px;
+    height: 200px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .info .title {
     margin-left: 10px;
@@ -538,14 +543,14 @@ body.dark-mode .swiper-prev {
   }
 
   .category .inner-banner {
-    margin-left: 6%;
+    margin-left: 5%;
     margin-top: 20px;
   }
 
   .activity-detail {
     width: 155px;
     height: 150px;
-    margin-right: 8px;
+    margin-right: 2%;
     margin-bottom: 10px;
   }
 

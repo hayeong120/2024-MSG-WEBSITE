@@ -123,6 +123,12 @@ small .wrong {
     margin: 10px 0;
     display: none;
 }
+
+body .showAlert-title {
+    font: var(--main-font);
+    color: white;
+  }
+
 /* .form-control small {
     visibility: hidden;
 } 

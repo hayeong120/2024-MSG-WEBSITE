@@ -1,130 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSG</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-  <title>MSG</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./image/logo.svg">
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Include ScrollSpy Plugin -->
+    <script src="https://raw.githubusercontent.com/mental/mixins/master/jquery.scrollspy.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+  </head>
 
-  <!-- Include ScrollSpy Plugin -->
-  <script src="https://raw.githubusercontent.com/mental/mixins/master/jquery.scrollspy.js"></script>
+  <body>
+    <!-- header -->
+    <header>
+      <img
+        src="./image/logo.svg"
+        class="header-img"
+        alt="마이페이지"
+        onclick="goHome()"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="./index.html"
+              class="header-menu"
+              id="header-about"
+              onclick="changeFontColor()"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              href="./member.html"
+              class="header-menu"
+              id="header-member"
+              onclick="changeFontColor()"
+              >부원</a
+            >
+          </li>
+          <li>
+            <a
+              href="./activity.html"
+              class="header-menu"
+              id="header-activity"
+              onclick="changeFontColor()"
+              >활동</a
+            >
+          </li>
+          <li>
+            <a
+              href="./qna.html"
+              class="header-menu"
+              id="header-qna"
+              onclick="changeFontColor()"
+              >QNA</a
+            >
+          </li>
+          <li>
+            <button onclick="location.href='./guidelines.html'">
+              15기 지원하기
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Include jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/detail.css" />
+    <!-- 다크 모드 토글 버튼 -->
+    <!-- TODO : 다크모드 아이콘 추가하기  -->
+    <!-- TODO : 슬라이드할때 같이 내려가도록  -->
+    <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
 
-</head>
-
-<body>
-  <!-- header -->
-  <header>
-    <img src="./image/logo.svg" class="header-img" alt="마이페이지" onclick="goHome()">
-    <nav>
-      <ul>
-        <li><a href="./index.html" class="header-menu" id="header-about" onclick="changeFontColor()">ABOUT</a>
-        </li>
-        <li><a href="./member.html" class="header-menu" id="header-member" onclick="changeFontColor()">부원</a></li>
-        <li><a href="./activity.html" class="header-menu" id="header-activity" onclick="changeFontColor()">활동</a></li>
-        <li><a href="./qna.html" class="header-menu" id="header-qna" onclick="changeFontColor()">QNA</a>
-        </li>
-        <li><button onclick="location.href='./guidelines.html'">15기 지원하기</button></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- 다크 모드 토글 버튼 -->
-  <!-- TODO : 다크모드 아이콘 추가하기  -->
-  <!-- TODO : 슬라이드할때 같이 내려가도록  -->
-  <!-- <button id="darkModeToggle">다크 모드 토글</button> -->
-
-  <!-- main -->
-  <main>
-    <div class="wrapper">
-      <div class="container">
-        <!-- title -->
-        <section class="title">
-          <div class="below-tag">
-          </div>
-          <div class="what">
-            <div class="title what-title"></div>
-            <div class="message what-message"></div>
-          </div>
-
-          <div class="details">
-            <div class="sub" id="member">
-              <div class="sub-tit">팀원</div>
-              <div class="sub-message message-member"></div>
+    <!-- main -->
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <!-- title -->
+          <section class="title">
+            <div class="below-tag"></div>
+            <div class="what">
+              <div class="title what-title"></div>
+              <div class="message what-message"></div>
             </div>
-            <div class="sub" id="time">
-              <div class="sub-tit">기간</div>
-              <div class="sub-message message-time"></div>
-            </div>
-            <div class="sub" id="lang">
-              <div class="sub-tit">사용언어 & 툴</div>
-              <div class="sub-message message-lang"></div>
-            </div>
-          </div>
-        </section>
 
-        <section class="explan">
-
-          <div class="slider">
-            <div class="slider-container">
-              <div class="slider-wrapper">
+            <div class="details">
+              <div class="sub" id="member">
+                <div class="sub-tit">팀원</div>
+                <div class="sub-message message-member"></div>
               </div>
-              <button class="prev" onclick="prevSlide()">❮</button>
-              <button class="next" onclick="nextSlide()">❯</button>
-              <div class="slide-indicators"></div>
+              <div class="sub" id="time">
+                <div class="sub-tit">기간</div>
+                <div class="sub-message message-time"></div>
+              </div>
+              <div class="sub" id="lang">
+                <div class="sub-tit">사용언어 & 툴</div>
+                <div class="sub-message message-lang"></div>
+              </div>
             </div>
-          </div>
+          </section>
 
-          <div class="explan-text">
-            <div class="explan-title">
-              소개
+          <section class="explan">
+            <div class="slider">
+              <div class="slider-container">
+                <div class="slider-wrapper"></div>
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+                <div class="slide-indicators"></div>
+              </div>
             </div>
-            <div class="explan-detail">
+
+            <div class="explan-text">
+              <div class="explan-title">소개</div>
+              <div class="explan-detail"></div>
             </div>
-          </div>
+          </section>
 
-        </section>
+          <section class="speech"></section>
 
-        <section class="speech">
-        </section>
-
-        <section class="any">
-          <a href="activity.html">
-            <div class="any-button">다른 활동 보러가기</div>
-          </a>
-        </section>
+          <section class="any">
+            <a href="activity.html">
+              <div class="any-button">다른 활동 보러가기</div>
+            </a>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- footer -->
-  <footer>
-    <div class="inner">
-      <div class="footer-message">
-        MSG <br />
-        Make Share Gather
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <div class="footer-message">
+          MSG <br />
+          Make Share Gather
+        </div>
+        <div class="footer-contact">
+          13기 부장 노하은 | 010-2850-0614 <br />
+          14기 부장 000 | 010-0000-0000
+        </div>
+        <div class="footer-instagram">@mirim_msg</div>
+        <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
       </div>
-      <div class="footer-contact">
-        13기 부장 노하은 | 010-2850-0614 <br />
-        14기 부장 000 | 010-0000-0000
-      </div>
-      <div class="footer-instagram">@mirim_msg</div>
-      <div class="footer-copyright">Copyright ⓒ MSG All rights reserved</div>
-    </div>
-  </footer>
-  <script src="js/activiyDetail.js"></script>
-</body>
-
+    </footer>
+    <script src="js/activiyDetail.js"></script>
+  </body>
 </html>
